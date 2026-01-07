@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.195.0 (2026-01-07)
+
+**New features:**
+
+- \[MINOR] feat: add git .getReleaseTags() method (● [dc9eb8a](https://github.com/c0rejs/core/commit/dc9eb8ad8); 👬 zdm)
+
+- \[MINOR] feat: add git .getTags() method (● [cd4c91d](https://github.com/c0rejs/core/commit/cd4c91df6); 👬 zdm)
+
+Compare with the previous release: [v7.194.0](https://github.com/c0rejs/core/compare/v7.194.0...v7.195.0)
+
 ### v7.194.0 (2026-01-05)
 
 **New features:**
