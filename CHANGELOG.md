@@ -1,5 +1,11 @@
 # Changelog
 
+### v7.195.1 (2026-01-07)
+
+No changes since the previous release.
+
+Compare with the previous release: [v7.195.0](https://github.com/c0rejs/core/compare/v7.195.0...v7.195.1)
+
 ### v7.195.0 (2026-01-07)
 
 **New features:**
