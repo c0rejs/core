@@ -1,5 +1,29 @@
 # Changelog
 
+### v7.197.0 (2026-01-18)
+
+**New features:**
+
+- \[MINOR] feat: enable nginx gzip (● [f1c6a79](https://github.com/c0rejs/core/commit/f1c6a79d7); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: add nginx vary: range (● [7ca58b8](https://github.com/c0rejs/core/commit/7ca58b8ff); 👬 zdm)
+
+- \[PATCH] fix: fix default http compression (● [99112bb](https://github.com/c0rejs/core/commit/99112bb72); 👬 zdm)
+
+- \[PATCH] fix: fix http message static constructor (● [613ca59](https://github.com/c0rejs/core/commit/613ca5948); 👬 zdm)
+
+- \[PATCH] fix: fix inspect method (● [9545ad4](https://github.com/c0rejs/core/commit/9545ad426); 👬 zdm)
+
+- \[PATCH] fix: fix nginx gzip types (● [e0c897a](https://github.com/c0rejs/core/commit/e0c897a55); 👬 zdm)
+
+- \[PATCH] fix: fix nginx ranges (● [fe24a8e](https://github.com/c0rejs/core/commit/fe24a8e68), [048c8b8](https://github.com/c0rejs/core/commit/048c8b8e0); 👬 zdm)
+
+- \[PATCH] fix: fix static comparator (● [5d14cb3](https://github.com/c0rejs/core/commit/5d14cb3b9); 👬 zdm)
+
+Compare with the previous release: [v7.196.1](https://github.com/c0rejs/core/compare/v7.196.1...v7.197.0)
+
 ### v7.196.1 (2026-01-18)
 
 **Bug fixes:**
