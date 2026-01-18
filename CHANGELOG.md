@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.196.1 (2026-01-18)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx config (● [bccdbb9](https://github.com/c0rejs/core/commit/bccdbb9ba); 👬 zdm)
+
+Compare with the previous release: [v7.196.0](https://github.com/c0rejs/core/compare/v7.196.0...v7.196.1)
+
 ### v7.196.0 (2026-01-18)
 
 **New features:**
