@@ -1,5 +1,23 @@
 # Changelog
 
+### v7.197.10 (2026-01-23)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix http message compression (● [b8aee31](https://github.com/c0rejs/core/commit/b8aee314b), [6cfa022](https://github.com/c0rejs/core/commit/6cfa02259); 👬 zdm)
+
+- \[PATCH] fix: fix nginx config (● [711b26f](https://github.com/c0rejs/core/commit/711b26f1f); 👬 zdm)
+
+- \[PATCH] fix: fix nginx slice config (● [e21582b](https://github.com/c0rejs/core/commit/e21582b97), [7a2df64](https://github.com/c0rejs/core/commit/7a2df647d), [b75b48e](https://github.com/c0rejs/core/commit/b75b48e50), [75194d0](https://github.com/c0rejs/core/commit/75194d05c); 👬 zdm)
+
+- \[PATCH] fix: fix text wrap for multichar graphemes (● [dbf01c2](https://github.com/c0rejs/core/commit/dbf01c2e6); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename table.add() to table.write() (● [1099948](https://github.com/c0rejs/core/commit/109994855); 👬 zdm)
+
+Compare with the previous release: [v7.197.9](https://github.com/c0rejs/core/compare/v7.197.9...v7.197.10)
+
 ### v7.197.9 (2026-01-18)
 
 **Bug fixes:**
