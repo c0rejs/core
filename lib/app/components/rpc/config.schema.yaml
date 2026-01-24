@@ -14,7 +14,7 @@
           anyOf:
             - type: "null" # use server default
             - type: boolean
-            - { type: integer, minimum: 0 }
+            - { type: string, format: digital-size }
 
       additionalProperties: false
       required: [location, maxApiRequestBodySize, idleTimeout, sendPingsAutomatically, compress]

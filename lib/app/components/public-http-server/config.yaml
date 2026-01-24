@@ -11,6 +11,10 @@ config:
   setRealIpFrom: [local, private]
   realIpHeader: x-real-ip
 
+  rangesEnabled: false
+  httpCompress: false
+  webSocketCompress: false
+
   nginx:
     enabled: true
     port: 80
