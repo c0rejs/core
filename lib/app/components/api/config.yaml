@@ -101,7 +101,8 @@ config:
     maxApiRequestBodySize: 10 MB
     idleTimeout: 960 seconds # send pings, required for Nginx, CloudFlare
     sendPingsAutomatically: true
-    compress: ~
+    httpCompress: ~
+    webSocketCompress: 10 KB
 
   # users
   signupEnabled: true

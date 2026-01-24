@@ -10,14 +10,19 @@
         maxApiRequestBodySize: { type: string, format: digital-size }
         idleTimeout: { type: string, format: interval }
         sendPingsAutomatically: { type: boolean }
-        compress:
+        httpCompress:
+          anyOf:
+            - type: "null" # use server default
+            - type: boolean
+            - { type: string, format: digital-size }
+        webSocketCompress:
           anyOf:
             - type: "null" # use server default
             - type: boolean
             - { type: string, format: digital-size }
 
       additionalProperties: false
-      required: [location, maxApiRequestBodySize, idleTimeout, sendPingsAutomatically, compress]
+      required: [location, maxApiRequestBodySize, idleTimeout, sendPingsAutomatically, httpCompress, webSocketCompress]
 
   additionalProperties: false
   required: [defaultVersion, frontend]
