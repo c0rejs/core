@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.199.0 (2026-01-26)
+
+**New features:**
+
+- \[MINOR] feat: add fs.rm() function (● [5792dce](https://github.com/c0rejs/core/commit/5792dcee7), [acde269](https://github.com/c0rejs/core/commit/acde2699c); 👬 zdm)
+
+- \[MINOR] feat: add nginx .clearCache() method (● [ec0feab](https://github.com/c0rejs/core/commit/ec0feab5d), [32f05ca](https://github.com/c0rejs/core/commit/32f05ca1e), [0effe52](https://github.com/c0rejs/core/commit/0effe5213); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix http ranges (● [02ae0ae](https://github.com/c0rejs/core/commit/02ae0ae30), [ac675dd](https://github.com/c0rejs/core/commit/ac675dd9e), [81a3353](https://github.com/c0rejs/core/commit/81a33537e), [40c4dac](https://github.com/c0rejs/core/commit/40c4dacfd), [07552be](https://github.com/c0rejs/core/commit/07552be9f), [43ef2f7](https://github.com/c0rejs/core/commit/43ef2f79e), [096252b](https://github.com/c0rejs/core/commit/096252b01); 👬 zdm)
+
+Compare with the previous release: [v7.198.1](https://github.com/c0rejs/core/compare/v7.198.1...v7.199.0)
+
 ### v7.198.1 (2026-01-24)
 
 **Bug fixes:**
