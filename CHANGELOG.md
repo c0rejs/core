@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.199.3 (2026-01-28)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add fs.rm() ifDirectoryEmpty option (● [030f7b8](https://github.com/c0rejs/core/commit/030f7b838); 👬 zdm)
+
+**Other changes:**
+
+- chore(metadata): update package metadata (● [8cfb64f](https://github.com/c0rejs/core/commit/8cfb64fdc); 👬 zdm)
+
+Compare with the previous release: [v7.199.2](https://github.com/c0rejs/core/compare/v7.199.2...v7.199.3)
+
 ### v7.199.2 (2026-01-27)
 
 No changes since the previous release.
