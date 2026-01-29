@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.199.4 (2026-01-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix compare (● [fcccab1](https://github.com/c0rejs/core/commit/fcccab1f2); 👬 zdm)
+
+- \[PATCH] fix: fix git parser (● [610e9e3](https://github.com/c0rejs/core/commit/610e9e300); 👬 zdm)
+
+Compare with the previous release: [v7.199.3](https://github.com/c0rejs/core/compare/v7.199.3...v7.199.4)
+
 ### v7.199.3 (2026-01-28)
 
 **Code refactoring:**
