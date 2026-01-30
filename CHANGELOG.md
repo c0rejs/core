@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.199.5 (2026-01-30)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename current release -> parent release (● [67a7d56](https://github.com/c0rejs/core/commit/67a7d5687); 👬 zdm)
+
+- \[PATCH] refactor: rename currentRelease -> parentRelease (● [94e1740](https://github.com/c0rejs/core/commit/94e17407b); 👬 zdm)
+
+- \[PATCH] refactor: rename getCurrentRelease -> getParentRelease (● [dbddc11](https://github.com/c0rejs/core/commit/dbddc1160); 👬 zdm)
+
+Compare with the previous release: [v7.199.4](https://github.com/c0rejs/core/compare/v7.199.4...v7.199.5)
+
 ### v7.199.4 (2026-01-29)
 
 **Bug fixes:**
