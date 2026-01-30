@@ -1,5 +1,23 @@
 # Changelog
 
+### v7.200.0 (2026-01-30)
+
+**New features:**
+
+- \[MINOR] feat: add Git.compareBranches() (● [aa6717a](https://github.com/c0rejs/core/commit/aa6717a8d); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix get commits for branch (● [ad0de42](https://github.com/c0rejs/core/commit/ad0de4248); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: remove static comparator method (● [15cf4af](https://github.com/c0rejs/core/commit/15cf4af9f); 👬 zdm)
+
+- \[PATCH] refactor: rename parentRelease -> previousRelease (● [23c7f29](https://github.com/c0rejs/core/commit/23c7f29ee); 👬 zdm)
+
+Compare with the previous release: [v7.199.5](https://github.com/c0rejs/core/compare/v7.199.5...v7.200.0)
+
 ### v7.199.5 (2026-01-30)
 
 **Code refactoring:**
