@@ -1,7 +1,7 @@
 # Utils
 
 ```javascript
-import * as utils from "@c0rejs/utils";
+import * as utils from "@corejslib/utils";
 ```
 
 ### utils.sleep( timeout )
@@ -58,7 +58,7 @@ This function will be removed when node `import.meta.resolve()` will be released
 ## Net
 
 ```javascript
-import * as net from "@c0rejs/core/utils/net";
+import * as net from "@corejslib/core/utils/net";
 ```
 
 ### net.getDefaultPort( protocol )

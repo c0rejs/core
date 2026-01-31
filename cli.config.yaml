@@ -7,7 +7,7 @@ docs:
   logo: true
 
   externalTypes:
-    - c0rejs/result
+    - corejslib/result
 
   types:
     Auth: ~

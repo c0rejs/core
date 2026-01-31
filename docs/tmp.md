@@ -1,7 +1,7 @@
 # Tmp
 
 ```javascript
-import * as tmp from "@c0rejs/core/tmp";
+import * as tmp from "@corejslib/core/tmp";
 ```
 
 ## Class: TmpFile

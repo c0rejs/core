@@ -3,7 +3,7 @@
 ## Class: Threads
 
 ```javascript
-import Threads from "@c0rejs/core/threads";
+import Threads from "@corejslib/core/threads";
 
 const threads = new Threads();
 
@@ -92,7 +92,7 @@ Select remote thread (round robin) and calls remote method with the given argume
 ## Class: CondVar
 
 ```javascript
-import CondVar from "@c0rejs/core/threads/condvar";
+import CondVar from "@corejslib/core/threads/condvar";
 
 const cv = new CondVar().begin();
 
@@ -124,7 +124,7 @@ Resolves condvar, if it wasn't resolved previously.
 ## Class: Semaphore
 
 ```javascript
-import Semaphre from "@c0rejs/core/threads/semaphore";
+import Semaphre from "@corejslib/core/threads/semaphore";
 
 const semaphore = new Semaphore();
 ```
@@ -280,7 +280,7 @@ Delete semaphore from the set.
 ## Class: Mutex
 
 ```javascript
-import Mutex from "@c0rejs/core/threads/mutex";
+import Mutex from "@corejslib/core/threads/mutex";
 
 const mutex = new Mutex();
 ```
@@ -290,7 +290,7 @@ const mutex = new Mutex();
 ## Class: Signal
 
 ```javascript
-import Signal from "@c0rejs/core/threads/signal";
+import Signal from "@corejslib/core/threads/signal";
 
 const signal = new Signal();
 ```

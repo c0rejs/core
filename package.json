@@ -1,26 +1,26 @@
 {
-    "name": "@c0rejs/core",
+    "name": "@corejslib/core",
     "version": "7.200.0",
     "description": "Softisio core",
     "keywords": [
         "softvisio",
         "core"
     ],
-    "homepage": "https://c0rejs.github.io/core/",
+    "homepage": "https://corejslib.github.io/core/",
     "bugs": {
-        "url": "https://github.com/c0rejs/core/issues",
+        "url": "https://github.com/corejslib/core/issues",
         "email": "root <root@softvisio.net>"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/c0rejs/core.git"
+        "url": "git+https://github.com/corejslib/core.git"
     },
     "license": "ISC",
     "author": "root <root@softvisio.net>",
     "type": "module",
     "imports": {
         "#browser/*": "./lib/_browser/*.js",
-        "#lib/*": "@c0rejs/core/*",
+        "#lib/*": "@corejslib/core/*",
         "#resources/*": "./resources/*"
     },
     "exports": {
@@ -93,10 +93,10 @@
         "test": "node --test tests/**/*.test.js"
     },
     "dependencies": {
-        "@c0rejs/msgpack": "^3.0.0",
-        "@c0rejs/sqlite": "^1.15.39",
-        "@c0rejs/utils": "^2.0.0",
-        "@c0rejs/uws": "^2.0.0",
+        "@corejslib/msgpack": "^3.0.0",
+        "@corejslib/sqlite": "^1.15.39",
+        "@corejslib/utils": "^2.0.0",
+        "@corejslib/uws": "^2.0.0",
         "adm-zip": "^0.5.16",
         "ajv": "^8.0.1",
         "ajv-errors": "^3.0.0",

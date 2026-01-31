@@ -1,7 +1,7 @@
 # Text
 
 ```javascript
-import * as text from "@c0rejs/core/text";
+import * as text from "@corejslib/core/text";
 ```
 
 ### text.wrap( string, maxLength, options )
@@ -16,10 +16,10 @@ import * as text from "@c0rejs/core/text";
 ## ansi
 
 ```javascript
-import { ansi } from "@c0rejs/core/text";
+import { ansi } from "@corejslib/core/text";
 
 // or
-import ansi from "@c0rejs/core/text/ansi";
+import ansi from "@corejslib/core/text/ansi";
 
 console.log(ansi.cold.while.onRed("test"));
 ```
@@ -97,10 +97,10 @@ Removes ANSI reset code from the string.
 Draw text table.
 
 ```javascript
-import { Table } from "@c0rejs/core/text";
+import { Table } from "@corejslib/core/text";
 
 // or
-import Table from "@c0rejs/core/text/table";
+import Table from "@corejslib/core/text/table";
 
 const table = new Table({});
 

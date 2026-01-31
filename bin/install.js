@@ -18,15 +18,15 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-externalResources.add( "c0rejs/core/resources/certificates" );
-externalResources.add( "c0rejs/core/resources/dh-params" );
-externalResources.add( "c0rejs/core/resources/geolite2-country" );
-externalResources.add( "c0rejs/core/resources/http" );
-externalResources.add( "c0rejs/core/resources/mime" );
-externalResources.add( "c0rejs/core/resources/public-suffixes" );
-externalResources.add( "c0rejs/core/resources/subnets" );
-externalResources.add( "c0rejs/core/resources/tld" );
-externalResources.add( "c0rejs/core/resources/user-agent" );
+externalResources.add( "corejslib/core/resources/certificates" );
+externalResources.add( "corejslib/core/resources/dh-params" );
+externalResources.add( "corejslib/core/resources/geolite2-country" );
+externalResources.add( "corejslib/core/resources/http" );
+externalResources.add( "corejslib/core/resources/mime" );
+externalResources.add( "corejslib/core/resources/public-suffixes" );
+externalResources.add( "corejslib/core/resources/subnets" );
+externalResources.add( "corejslib/core/resources/tld" );
+externalResources.add( "corejslib/core/resources/user-agent" );
 
 const res = await externalResources.install( {
     "force": process.cli.options.force,

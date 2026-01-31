@@ -1,7 +1,7 @@
 # Class: File
 
 ```javascript
-import File from "@c0rejs/core/file";
+import File from "@corejslib/core/file";
 ```
 
 ### File.new( options? )

@@ -5,7 +5,7 @@ Backend application framework.
 ## Install
 
 ```sh
-npm install @c0rejs/core
+npm install @corejslib/core
 ```
 
 ## Usage

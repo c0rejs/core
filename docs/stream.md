@@ -3,7 +3,7 @@
 Adds some missed methods to the `node` streams.
 
 ```javascript
-import "@c0rejs/core/stream";
+import "@corejslib/core/stream";
 ```
 
 ## Class: stream.Readable

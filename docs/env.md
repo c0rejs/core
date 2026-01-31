@@ -3,7 +3,7 @@
 Provides set of function to manage project environment.
 
 ```javascript
-import env from "@c0rejs/core/env";
+import env from "@corejslib/core/env";
 
 console.log( env.root );
 ```

@@ -3,7 +3,7 @@
 Class, representing hostname.
 
 ```javascript
-import Hostname from "@c0rejs/core/hostname";
+import Hostname from "@corejslib/core/hostname";
 
 const hostname = new Hostname( "www.google.com" );
 ```

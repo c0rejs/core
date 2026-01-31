@@ -1,13 +1,13 @@
 # Introduction
 
 ```sh
-npm install @c0rejs/core
+npm install @corejslib/core
 ```
 
 ## Usage
 
 ```javascript
-import Api from "@c0rejs/core/api";
+import Api from "@corejslib/core/api";
 
 const api = new Api( {
     "url": "/api/",

@@ -1,7 +1,7 @@
 # Cache LRU
 
 ```javascript
-import CacheLRU from "@c0rejs/utils/cache-lru";
+import CacheLRU from "@corejslib/utils/cache-lru";
 
 const cache = new CacheLRU( { "max": 10 } );
 ```
