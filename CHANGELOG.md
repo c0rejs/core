@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.200.1 (2026-01-31)
+
+**Other changes:**
+
+- chore: rename package (● [e1adbb3](https://github.com/corejslib/core/commit/e1adbb3a6); 👬 zdm)
+
+Compare with the previous release: [v7.200.0](https://github.com/corejslib/core/compare/v7.200.0...v7.200.1)
+
 ### v7.200.0 (2026-01-30)
 
 **New features:**
