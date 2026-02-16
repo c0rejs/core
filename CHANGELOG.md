@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.203.0 (2026-02-16)
+
+**New features:**
+
+- \[MINOR] feat: refactor http headers (● [f0430c6](https://github.com/corejslib/core/commit/f0430c656); 👬 zdm)
+
+Compare with the previous release: [v7.202.0](https://github.com/corejslib/core/compare/v7.202.0...v7.203.0)
+
 ### v7.202.0 (2026-02-05)
 
 **New features:**
