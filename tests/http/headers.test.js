@@ -67,7 +67,7 @@ const TESTS = [
     // www-authenticate
     {
         "headers": {
-            "www-authenticate": `Digest realm="Test realm, with comma",   uri    =  "/"   , qop="auth, auth-int", algorithm=SHA-256   , nonce="7ypf/xlj9XXwfDPEoM4URrv/xwf94BcCAzFZH4GiTo0v", opaque = "FQhe/qaU925kfnzjCev0ciny7QMkPqMAFRtzCUYo5tdS"    `,
+            "www-authenticate": `Digest realm="Test realm, \\"with\\" comma",   uri    =  "/"   , qop="auth, auth-int", algorithm=SHA-256   , nonce="7ypf/xlj9XXwfDPEoM4URrv/xwf94BcCAzFZH4GiTo0v", opaque = "FQhe/qaU925kfnzjCev0ciny7QMkPqMAFRtzCUYo5tdS"    `,
         },
         "method": headers => headers.wwwAuthenticate,
         result ( res ) {
@@ -83,7 +83,7 @@ const TESTS = [
                 },
                 {
                     "scheme": "digest",
-                    "realm": "Test realm, with comma",
+                    "realm": `Test realm, "with" comma`,
                     "uri": "/",
                     "qop": "auth, auth-int",
                     "algorithm": "SHA-256",
@@ -110,7 +110,51 @@ const TESTS = [
                 {
                     "type": "form-data",
                     "name": "file",
-                    "filename": "тест-＂-;-.txt",
+                    "filename": `тест-"-;-.txt`,
+                }
+            );
+        },
+    },
+
+    // if-match
+    {
+        "headers": {
+            "if-match": `   W/"sdds" , " dd,;dd ", W/wew; w"we"w, aaa","bbb  `,
+        },
+        "method": headers => headers.ifMatch,
+        result ( res ) {
+            return deepStrictEqual( [ ...res.etags ], [ `W/"sdds"`, `" dd,;dd "`, `W/wew; w"we"w`, `aaa","bbb` ] );
+        },
+    },
+
+    // range
+    {
+        "headers": {
+            "range": " bytes = 2-3 , 4- , -33  ",
+        },
+        "method": headers => headers.range,
+        result ( res ) {
+            return deepStrictEqual( res.httpRange?.toHttpRange(), "2-3,4-,-33" );
+        },
+    },
+
+    // content-type
+    {
+        "headers": {
+            "content-type": `  text/plain  ; boundary="----aaa"  ; charset="UTF8"  `,
+        },
+        "method": headers => headers.contentType,
+        result ( res ) {
+            return deepStrictEqual(
+                {
+                    "type": res.type,
+                    "charset": res.charset,
+                    "boundary": res.boundary,
+                },
+                {
+                    "type": "text/plain",
+                    "charset": "utf8",
+                    "boundary": "----aaa",
                 }
             );
         },
