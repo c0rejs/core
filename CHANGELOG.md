@@ -1,5 +1,37 @@
 # Changelog
 
+### v7.204.0 (2026-02-18)
+
+**New features:**
+
+- \[MINOR] feat: add http server localTls option (● [189d6ac](https://github.com/corejslib/core/commit/189d6aced); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix access to header value (● [02b0950](https://github.com/corejslib/core/commit/02b09505c), [3ec7d62](https://github.com/corejslib/core/commit/3ec7d62d8), [c7e92a7](https://github.com/corejslib/core/commit/c7e92a71e); 👬 zdm)
+
+- \[PATCH] fix: fix cookie encode (● [07eda25](https://github.com/corejslib/core/commit/07eda256e); 👬 zdm)
+
+- \[PATCH] fix: fix cookies parser (● [468efcf](https://github.com/corejslib/core/commit/468efcfd3); 👬 zdm)
+
+- \[PATCH] fix: fix http headers decoder (● [d5b3bf3](https://github.com/corejslib/core/commit/d5b3bf330); 👬 zdm)
+
+- \[PATCH] fix: fix http headers string encode (● [cc613b1](https://github.com/corejslib/core/commit/cc613b133); 👬 zdm)
+
+- \[PATCH] fix: fix tests (● [5b4a879](https://github.com/corejslib/core/commit/5b4a879c6), [4d399a1](https://github.com/corejslib/core/commit/4d399a153); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: improve headers psrser (● [9742b26](https://github.com/corejslib/core/commit/9742b2664); 👬 zdm)
+
+- \[PATCH] refactor: refactor http date parser (● [72661e4](https://github.com/corejslib/core/commit/72661e472), [004ebd6](https://github.com/corejslib/core/commit/004ebd698), [10cab49](https://github.com/corejslib/core/commit/10cab49da); 👬 zdm)
+
+- \[PATCH] refactor: refactor http headers parser (● [bb488c4](https://github.com/corejslib/core/commit/bb488c410), [9b5eba1](https://github.com/corejslib/core/commit/9b5eba1df), [e2257ce](https://github.com/corejslib/core/commit/e2257ced7), [e720038](https://github.com/corejslib/core/commit/e72003803); 👬 zdm)
+
+- \[PATCH] refactor: update sanitize filename (● [4a07780](https://github.com/corejslib/core/commit/4a07780f1), [ed8c665](https://github.com/corejslib/core/commit/ed8c66539); 👬 zdm)
+
+Compare with the previous release: [v7.203.0](https://github.com/corejslib/core/compare/v7.203.0...v7.204.0)
+
 ### v7.203.0 (2026-02-16)
 
 **New features:**
