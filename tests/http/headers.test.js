@@ -26,9 +26,9 @@ const TESTS = [
 
             deepStrictEqual(
                 {
-                    "a": "1",
+                    "a": `"1"`,
                     "b": "ccc",
-                    "c": "1=2 3",
+                    "c": `"1=2 3"`,
                 },
                 res
             );
@@ -110,7 +110,7 @@ const TESTS = [
                 {
                     "type": "form-data",
                     "name": "file",
-                    "filename": "тест-_-;-.txt",
+                    "filename": "тест-＂-;-.txt",
                 }
             );
         },
