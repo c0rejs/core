@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.205.0 (2026-02-19)
+
+**New features:**
+
+- \[MINOR] feat: add authentication header (● [1a7278c](https://github.com/corejslib/core/commit/1a7278cac), [1d7e86b](https://github.com/corejslib/core/commit/1d7e86be6), [83dd015](https://github.com/corejslib/core/commit/83dd01516), [1896443](https://github.com/corejslib/core/commit/189644302), [fac55e8](https://github.com/corejslib/core/commit/fac55e8f9); 👬 zdm)
+
+- \[MINOR] feat: add content-range header (● [f1428aa](https://github.com/corejslib/core/commit/f1428aade), [ab812b9](https://github.com/corejslib/core/commit/ab812b9ae); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix range (● [61a278f](https://github.com/corejslib/core/commit/61a278f75), [24db108](https://github.com/corejslib/core/commit/24db1080b), [8a378a8](https://github.com/corejslib/core/commit/8a378a8cb), [512f322](https://github.com/corejslib/core/commit/512f32210), [2a56e04](https://github.com/corejslib/core/commit/2a56e046f); 👬 zdm)
+
+Compare with the previous release: [v7.204.0](https://github.com/corejslib/core/compare/v7.204.0...v7.205.0)
+
 ### v7.204.0 (2026-02-18)
 
 **New features:**
