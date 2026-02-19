@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.205.2 (2026-02-19)
+
+**Bug fixes:**
+
+- \[PATCH] fix: do not quote set-cookie path (● [0aae7c1](https://github.com/corejslib/core/commit/0aae7c145); 👬 zdm)
+
+- \[PATCH] fix: fix browser url encoding (● [d860c8b](https://github.com/corejslib/core/commit/d860c8b79); 👬 zdm)
+
+- \[PATCH] fix: fix cookies tests (● [e5f1d07](https://github.com/corejslib/core/commit/e5f1d075c); 👬 zdm)
+
+- \[PATCH] fix: fix http server request url builder (● [4e1a4ab](https://github.com/corejslib/core/commit/4e1a4abce); 👬 zdm)
+
+Compare with the previous release: [v7.205.1](https://github.com/corejslib/core/compare/v7.205.1...v7.205.2)
+
 ### v7.205.1 (2026-02-19)
 
 **Bug fixes:**
