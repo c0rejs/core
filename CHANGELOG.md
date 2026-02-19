@@ -1,5 +1,21 @@
 # Changelog
 
+### v7.205.1 (2026-02-19)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix content-range parser (● [5de9ad3](https://github.com/corejslib/core/commit/5de9ad3cb); 👬 zdm)
+
+- \[PATCH] fix: fix header encode value (● [9f9eb7b](https://github.com/corejslib/core/commit/9f9eb7be8); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor file tree (● [ec7bdd0](https://github.com/corejslib/core/commit/ec7bdd0b7); 👬 zdm)
+
+- \[PATCH] refactor: refactor http message (● [2b3caa0](https://github.com/corejslib/core/commit/2b3caa04b), [4cd2ee4](https://github.com/corejslib/core/commit/4cd2ee459); 👬 zdm)
+
+Compare with the previous release: [v7.205.0](https://github.com/corejslib/core/compare/v7.205.0...v7.205.1)
+
 ### v7.205.0 (2026-02-19)
 
 **New features:**
