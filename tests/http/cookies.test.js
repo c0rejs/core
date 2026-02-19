@@ -27,8 +27,8 @@ suite( "http", () => {
             },
             {
                 "name": "test",
-                "value": "test",
-                "path": "/aaa;/мама",
+                "value": "test value",
+                "path": "/aaa/мама/",
             },
         ];
 
@@ -55,7 +55,7 @@ async function testCookies ( cookie, useBrowser ) {
 
     const headers = await new Promise( resolve => getHeaders( cookie, useBrowser, resolve ) );
 
-    strictEqual( headers.cookie.cookies[ cookie.name ]?.value, cookie.value );
+    strictEqual( headers.cookie.cookies?.[ cookie.name ]?.value, cookie.value );
 }
 
 async function getHeaders ( cookie, useBrowser, callback ) {
@@ -65,9 +65,9 @@ async function getHeaders ( cookie, useBrowser, callback ) {
         if ( req.url.searchParams?.has( "done" ) ) {
             await req.end();
 
-            browser?.close();
-
             await server.stop();
+
+            browser?.close();
 
             callback( req.headers );
         }
@@ -75,7 +75,7 @@ async function getHeaders ( cookie, useBrowser, callback ) {
             await req.end( {
                 "status": 307,
                 "headers": {
-                    "location": `${ cookie.path || "/" }?done`,
+                    "location": `${ encodeURI( req.path ) }?done`,
                     "set-cookie": cookie,
                 },
             } );
@@ -84,7 +84,9 @@ async function getHeaders ( cookie, useBrowser, callback ) {
 
     res = await server.start( { "address": "localhost", "port": 0 } );
 
-    const url = `http://localhost:${ res.data.port }/`;
+    const url = new URL( `http://localhost:${ res.data.port }/` );
+
+    if ( cookie.path ) url.pathname = cookie.path;
 
     if ( useBrowser ) {
         browser = new Browser( url, {
