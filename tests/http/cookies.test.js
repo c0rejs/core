@@ -28,7 +28,7 @@ suite( "http", () => {
             {
                 "name": "test",
                 "value": "test value",
-                "path": "/aaa/мама/",
+                "path": "/aaa/мама;/",
             },
         ];
 
