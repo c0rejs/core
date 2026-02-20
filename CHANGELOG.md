@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.206.3 (2026-02-20)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix etag encoder (● [e2afc59](https://github.com/corejslib/core/commit/e2afc5936), [0aa1f26](https://github.com/corejslib/core/commit/0aa1f26f5); 👬 zdm)
+
+- \[PATCH] fix: fix http headers encoder (● [cb087bb](https://github.com/corejslib/core/commit/cb087bb66); 👬 zdm)
+
+Compare with the previous release: [v7.206.2](https://github.com/corejslib/core/compare/v7.206.2...v7.206.3)
+
 ### v7.206.2 (2026-02-20)
 
 **Bug fixes:**
