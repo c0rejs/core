@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.206.1 (2026-02-20)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix header value encoder (● [58f6a87](https://github.com/corejslib/core/commit/58f6a87d8); 👬 zdm)
+
+- \[PATCH] fix: fix headers encoder (● [cb7d8f6](https://github.com/corejslib/core/commit/cb7d8f664), [5f8f814](https://github.com/corejslib/core/commit/5f8f8140a), [dc5d633](https://github.com/corejslib/core/commit/dc5d6333c), [083c8d5](https://github.com/corejslib/core/commit/083c8d556), [ff9b0fe](https://github.com/corejslib/core/commit/ff9b0fee3), [7ab152d](https://github.com/corejslib/core/commit/7ab152d84), [de96c40](https://github.com/corejslib/core/commit/de96c401c); 👬 zdm)
+
+- \[PATCH] fix: fix location header encoder (● [04f3cd8](https://github.com/corejslib/core/commit/04f3cd813); 👬 zdm)
+
+Compare with the previous release: [v7.206.0](https://github.com/corejslib/core/compare/v7.206.0...v7.206.1)
+
 ### v7.206.0 (2026-02-20)
 
 **New features:**
