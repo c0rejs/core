@@ -97,7 +97,7 @@ const TESTS = [
     // content-disposition
     {
         "headers": {
-            "content-disposition": `   form-data  ;    name = file  ; filename = "тест-%22-;-.txt" ; fake1; fake2 = 234  `,
+            "content-disposition": `   form-data  ;    name = file  ; filename = "тест-\\"-;-.txt" ; fake1; fake2 = 234  `,
         },
         "method": headers => headers.contentDisposition,
         result ( res ) {

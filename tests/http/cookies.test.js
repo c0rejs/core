@@ -7,31 +7,31 @@ import fetch from "#lib/fetch";
 import Cookie from "#lib/http/cookie";
 import Server from "#lib/http/server";
 
+const TESTS = [
+    {
+        "name": "a",
+        "value": "b",
+        "path": "/",
+    },
+    {
+        "name": "test1",
+        "value": ` test- \x04-;",\\ мама`,
+    },
+    {
+        "name": "test",
+    },
+    {
+        "value": "test",
+    },
+    {
+        "name": "test яяя ;,=",
+        "value": "test value ййй ;,=",
+        "path": "/aaa/мама;,=/",
+    },
+];
+
 suite( "http", () => {
     suite( "cookies", () => {
-        const TESTS = [
-            {
-                "name": "a",
-                "value": "b",
-                "path": "/",
-            },
-            {
-                "name": "test1",
-                "value": ` test- \x04-;",\\ мама`,
-            },
-            {
-                "name": "test",
-            },
-            {
-                "value": "test",
-            },
-            {
-                "name": "test яяя ;,=",
-                "value": "test value ййй ;,=",
-                "path": "/aaa/мама;,=/",
-            },
-        ];
-
         suite( "browser", () => {
             for ( let n = 0; n < TESTS.length; n++ ) {
                 test( n + "", async () => {
