@@ -76,7 +76,7 @@ async function getHeaders ( cookie, useBrowser, callback ) {
                 "status": 307,
                 "headers": {
                     "location": {
-                        "url": req.path + "?done",
+                        "uri": req.path + "?done",
                     },
                     "set-cookie": cookie,
                 },
