@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.206.0 (2026-02-20)
+
+**New features:**
+
+- \[MINOR] feat: add http location header (● [1ddd247](https://github.com/corejslib/core/commit/1ddd247d5), [54e2351](https://github.com/corejslib/core/commit/54e235122); 👬 zdm)
+
+Compare with the previous release: [v7.205.2](https://github.com/corejslib/core/compare/v7.205.2...v7.206.0)
+
 ### v7.205.2 (2026-02-19)
 
 **Bug fixes:**
