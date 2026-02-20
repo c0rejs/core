@@ -26,7 +26,7 @@ const TESTS = [
     {
         "name": "test яяя ;,=",
         "value": "test value ййй ;,=",
-        "path": "/aaa/мама;,=/",
+        "path": "/aaa/ мама ; ,=/",
     },
 ];
 
