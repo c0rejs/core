@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.206.4 (2026-02-21)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: clone headers (● [dc1a0d1](https://github.com/corejslib/core/commit/dc1a0d15e); 👬 zdm)
+
+- \[PATCH] refactor: rename objectIsPlain to isPlainObject (● [cbfb7c7](https://github.com/corejslib/core/commit/cbfb7c7f9); 👬 zdm)
+
+Compare with the previous release: [v7.206.3](https://github.com/corejslib/core/compare/v7.206.3...v7.206.4)
+
 ### v7.206.3 (2026-02-20)
 
 **Bug fixes:**
