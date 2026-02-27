@@ -59,7 +59,7 @@ suite( "file", () => {
                     text = await stream.text(),
                     slice = CONTENT.slice( TESTS[ n ].start ?? undefined, TESTS[ n ].end ?? undefined );
 
-                strictEqual( slice.length, stream.size );
+                strictEqual( slice.length, stream.contentLength );
                 strictEqual( slice, text );
             } );
         }

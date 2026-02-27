@@ -11,8 +11,19 @@ const TESTS = [
         "headers": {
             "accept-encoding": "br;q=0.1, deflate, gzip;q=1.0, *;q=0.5    ",
         },
-        "method": headers => headers.acceptEncoding.encodings,
-        "result": new Set( [ "deflate", "gzip", "*", "br" ] ),
+        "result": headers => {
+            deepStrictEqual(
+                headers.acceptEncoding.encodings,
+                new Set( [
+
+                    //
+                    "deflate",
+                    "gzip",
+                    "*",
+                    "br",
+                ] )
+            );
+        },
     },
 
     // cookie
@@ -20,9 +31,12 @@ const TESTS = [
         "headers": {
             "cookie": `a="1"; b = ccc ; c=  "1=2 3"   `,
         },
-        "method": headers => headers.cookie.cookies,
-        result ( res ) {
-            for ( const name in res ) res[ name ] = res[ name ].value;
+        "result": headers => {
+            const cookies = {};
+
+            for ( const cookie of Object.values( headers.cookie.cookies ) ) {
+                cookies[ cookie.name ] = cookie.value;
+            }
 
             deepStrictEqual(
                 {
@@ -30,7 +44,7 @@ const TESTS = [
                     "b": "ccc",
                     "c": `"1=2 3"`,
                 },
-                res
+                cookies
             );
         },
     },
@@ -40,9 +54,8 @@ const TESTS = [
         "headers": {
             "set-cookie": `name=value; expires=${ new Date( 1000 ).toUTCString() }; path=/  ; domain = .мама.google.com  ;Secure; HttpOnly; SameSite=none`,
         },
-        "method": headers => headers.setCookie.cookies,
-        result ( res ) {
-            res = res.map( cookie => cookie.toJSON() );
+        "result": headers => {
+            const cookies = headers.setCookie.cookies.map( cookie => cookie.toJSON() );
 
             deepStrictEqual(
                 [
@@ -59,7 +72,7 @@ const TESTS = [
                         "partitioned": false,
                     },
                 ],
-                res
+                cookies
             );
         },
     },
@@ -67,23 +80,24 @@ const TESTS = [
     // www-authenticate
     {
         "headers": {
-            "www-authenticate": `Digest realm="Test realm, \\"with\\" comma",   uri    =  "/"   , qop="auth, auth-int", algorithm=SHA-256   , nonce="7ypf/xlj9XXwfDPEoM4URrv/xwf94BcCAzFZH4GiTo0v", opaque = "FQhe/qaU925kfnzjCev0ciny7QMkPqMAFRtzCUYo5tdS"    `,
+            "www-authenticate": `Digest realm="Test realm, \\"with\\" comma -- мама",   uri    =  "/"   , qop="auth, auth-int", algorithm=SHA-256   , nonce="7ypf/xlj9XXwfDPEoM4URrv/xwf94BcCAzFZH4GiTo0v", opaque = "FQhe/qaU925kfnzjCev0ciny7QMkPqMAFRtzCUYo5tdS"    `,
         },
-        "method": headers => headers.wwwAuthenticate,
-        result ( res ) {
+        "result": headers => {
+            const header = headers.wwwAuthenticate;
+
             deepStrictEqual(
                 {
-                    "scheme": res.scheme,
-                    "realm": res.realm,
-                    "uri": res.uri,
-                    "qop": res.qop,
-                    "algorithm": res.algorithm,
-                    "nonce": res.nonce,
-                    "opaque": res.opaque,
+                    "scheme": header.scheme,
+                    "realm": header.realm,
+                    "uri": header.uri,
+                    "qop": header.qop,
+                    "algorithm": header.algorithm,
+                    "nonce": header.nonce,
+                    "opaque": header.opaque,
                 },
                 {
                     "scheme": "digest",
-                    "realm": `Test realm, "with" comma`,
+                    "realm": `Test realm, "with" comma -- мама`,
                     "uri": "/",
                     "qop": "auth, auth-int",
                     "algorithm": "SHA-256",
@@ -97,20 +111,21 @@ const TESTS = [
     // content-disposition
     {
         "headers": {
-            "content-disposition": `   form-data  ;    name = file  ; filename = "тест-\\"-;-.txt" ; fake1; fake2 = 234  `,
+            "content-disposition": `   form-data  ;    name = "file \\%22 ---"  ; filename = "тест-%22-;-.txt" ; fake1; fake2 = 234  `,
         },
-        "method": headers => headers.contentDisposition,
-        result ( res ) {
-            return deepStrictEqual(
+        "result": headers => {
+            const header = headers.contentDisposition;
+
+            deepStrictEqual(
                 {
-                    "type": res.type,
-                    "name": res.name,
-                    "filename": res.filename,
+                    "type": header.type,
+                    "name": header.name,
+                    "filename": header.filename,
                 },
                 {
                     "type": "form-data",
-                    "name": "file",
-                    "filename": `тест-"-;-.txt`,
+                    "name": `file \\" ---`,
+                    "filename": 'тест-"-;-.txt',
                 }
             );
         },
@@ -121,9 +136,18 @@ const TESTS = [
         "headers": {
             "if-match": `   W/"sdds" , " dd,;dd ", W/wew; w"we"w, aaa","bbb  `,
         },
-        "method": headers => headers.ifMatch,
-        result ( res ) {
-            return deepStrictEqual( [ ...res.etags ], [ `W/"sdds"`, `" dd,;dd "`, `W/wew; w"we"w`, `aaa","bbb` ] );
+        "result": headers => {
+            deepStrictEqual(
+                [ ...headers.ifMatch.etags ],
+                [
+
+                    //
+                    `W/"sdds"`,
+                    `" dd,;dd "`,
+                    `W/wew; w"we"w`,
+                    `aaa","bbb`,
+                ]
+            );
         },
     },
 
@@ -132,9 +156,8 @@ const TESTS = [
         "headers": {
             "range": " bytes = 2-3 , 4- , -33  ",
         },
-        "method": headers => headers.range,
-        result ( res ) {
-            return deepStrictEqual( res.httpRange?.toHttpRange(), "2-3,4-,-33" );
+        "result": headers => {
+            deepStrictEqual( headers.range.ranges?.toHttpRange(), "2-3,4-,-33" );
         },
     },
 
@@ -143,13 +166,14 @@ const TESTS = [
         "headers": {
             "content-type": `  text/plain  ; boundary="----aaa"  ; charset="UTF8"  `,
         },
-        "method": headers => headers.contentType,
-        result ( res ) {
-            return deepStrictEqual(
+        "result": headers => {
+            const header = headers.contentType;
+
+            deepStrictEqual(
                 {
-                    "type": res.type,
-                    "charset": res.charset,
-                    "boundary": res.boundary,
+                    "type": header.type,
+                    "charset": header.charset,
+                    "boundary": header.boundary,
                 },
                 {
                     "type": "text/plain",
@@ -170,17 +194,7 @@ suite( "http", () => {
             test( `${ id }`, () => {
                 const headers = new Headers( _test.headers );
 
-                const res = _test.method( headers );
-
-                // console.log( "expected:", JSON.stringify( _test.result, null, 4 ) );
-                // console.log( "result:", JSON.stringify( res, null, 4 ) );
-
-                if ( typeof _test.result === "function" ) {
-                    _test.result( res );
-                }
-                else {
-                    deepStrictEqual( res, _test.result );
-                }
+                _test.result( headers );
             } );
         }
     } );
