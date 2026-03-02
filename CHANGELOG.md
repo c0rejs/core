@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.207.0 (2026-03-02)
+
+**New features:**
+
+- \[MINOR] feat: add phc module (● [b15f9c9](https://github.com/corejslib/core/commit/b15f9c9ee); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor message (● [f7efd6d](https://github.com/corejslib/core/commit/f7efd6dde), [fab53be](https://github.com/corejslib/core/commit/fab53bee5); 👬 zdm)
+
+- \[PATCH] refactor: refactor password hash (● [8c82c6b](https://github.com/corejslib/core/commit/8c82c6b54); 👬 zdm)
+
+Compare with the previous release: [v7.206.4](https://github.com/corejslib/core/compare/v7.206.4...v7.207.0)
+
 ### v7.206.4 (2026-02-21)
 
 **Code refactoring:**
