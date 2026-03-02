@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.207.1 (2026-03-02)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor message (● [a027951](https://github.com/corejslib/core/commit/a02795147); 👬 zdm)
+
+- \[PATCH] refactor: rename message transformers to middlewares (● [aa63685](https://github.com/corejslib/core/commit/aa63685db), [280a41d](https://github.com/corejslib/core/commit/280a41db4), [f9e0206](https://github.com/corejslib/core/commit/f9e0206be); 👬 zdm)
+
+- \[PATCH] refactor: rename message.hasTransformers to .isGenerated (● [847c87f](https://github.com/corejslib/core/commit/847c87fd7); 👬 zdm)
+
+Compare with the previous release: [v7.207.0](https://github.com/corejslib/core/compare/v7.207.0...v7.207.1)
+
 ### v7.207.0 (2026-03-02)
 
 **New features:**
