@@ -40,7 +40,7 @@
           requireAuthorization: { type: boolean }
           connectionType:
             anyOf:
-              - "null"
+              - type: "null"
               - { enum: [http, websockets] }
           maxParallelCallsPerClient:
             anyOf:
