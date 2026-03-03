@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.208.2 (2026-03-03)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix api schema (● [2555095](https://github.com/corejslib/core/commit/2555095a2); 👬 zdm)
+
+Compare with the previous release: [v7.208.1](https://github.com/corejslib/core/compare/v7.208.1...v7.208.2)
+
 ### v7.208.1 (2026-03-03)
 
 **Code refactoring:**
