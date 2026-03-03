@@ -1,5 +1,29 @@
 # Changelog
 
+### v7.208.0 (2026-03-03)
+
+**New features:**
+
+- \[MINOR] feat: add zlib module (● [bc5882d](https://github.com/corejslib/core/commit/bc5882db7), [32af7dd](https://github.com/corejslib/core/commit/32af7dd3c), [9d8c8c2](https://github.com/corejslib/core/commit/9d8c8c2ef); 👬 zdm)
+
+- \[MINOR] feat: add zlib xz decompressor (● [233fb36](https://github.com/corejslib/core/commit/233fb361a); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix headers.keys() (● [3e88b77](https://github.com/corejslib/core/commit/3e88b7790); 👬 zdm)
+
+- \[PATCH] fix: fix message generation (● [09c62d6](https://github.com/corejslib/core/commit/09c62d603), [a8bc031](https://github.com/corejslib/core/commit/a8bc0314b); 👬 zdm)
+
+- \[PATCH] fix: fix message ranges (● [a0a8948](https://github.com/corejslib/core/commit/a0a8948d5), [0a6b198](https://github.com/corejslib/core/commit/0a6b1981d), [2979d73](https://github.com/corejslib/core/commit/2979d7366), [44ee623](https://github.com/corejslib/core/commit/44ee6230f); 👬 zdm)
+
+- \[PATCH] fix: fix Message.new() (● [8b4d29b](https://github.com/corejslib/core/commit/8b4d29bac); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: use message in crypto (● [52c4415](https://github.com/corejslib/core/commit/52c4415a0); 👬 zdm)
+
+Compare with the previous release: [v7.207.1](https://github.com/corejslib/core/compare/v7.207.1...v7.208.0)
+
 ### v7.207.1 (2026-03-02)
 
 **Code refactoring:**
