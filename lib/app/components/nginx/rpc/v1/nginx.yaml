@@ -16,7 +16,7 @@ methods:
 
   update-proxies:
     title: Update nginx proxies
-    requirePersistentConnection: true
+    connectionType: websockets
     params:
       - name: app_name
         required: true

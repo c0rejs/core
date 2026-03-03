@@ -38,7 +38,10 @@
           deprecated: { type: boolean }
           permission: { type: ["null", string] }
           requireAuthorization: { type: boolean }
-          requirePersistentConnection: { type: boolean }
+          connectionType:
+            anyOf:
+              - "null"
+              - { enum: [http, websockets] }
           maxParallelCallsPerClient:
             anyOf:
               - type: "null"
