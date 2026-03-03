@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.208.1 (2026-03-03)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: change api requirePersistentConnection to connectionType (● [7229162](https://github.com/corejslib/core/commit/72291623b), [a6eaffd](https://github.com/corejslib/core/commit/a6eaffda8); 👬 zdm)
+
+Compare with the previous release: [v7.208.0](https://github.com/corejslib/core/compare/v7.208.0...v7.208.1)
+
 ### v7.208.0 (2026-03-03)
 
 **New features:**
