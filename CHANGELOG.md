@@ -1,5 +1,23 @@
 # Changelog
 
+### v7.208.4 (2026-03-06)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix message range (● [c73a4ae](https://github.com/corejslib/core/commit/c73a4ae1e); 👬 zdm)
+
+- \[PATCH] fix: fix password hash verification (● [da5677b](https://github.com/corejslib/core/commit/da5677ba0); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: optimize file stream without range creation (● [bb000fe](https://github.com/corejslib/core/commit/bb000fe6d); 👬 zdm)
+
+- \[PATCH] refactor: optimize fs file slice when no range is provided (● [819719a](https://github.com/corejslib/core/commit/819719a3f); 👬 zdm)
+
+- \[PATCH] refactor: refactor blob range (● [5a1595e](https://github.com/corejslib/core/commit/5a1595e63), [9990dd0](https://github.com/corejslib/core/commit/9990dd08e); 👬 zdm)
+
+Compare with the previous release: [v7.208.3](https://github.com/corejslib/core/compare/v7.208.3...v7.208.4)
+
 ### v7.208.3 (2026-03-06)
 
 **Bug fixes:**
