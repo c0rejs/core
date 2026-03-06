@@ -1,5 +1,25 @@
 # Changelog
 
+### v7.208.3 (2026-03-06)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix upgrade headers to utf8 (● [e62d022](https://github.com/corejslib/core/commit/e62d022aa); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor password-hash (● [536d123](https://github.com/corejslib/core/commit/536d123b8); 👬 zdm)
+
+- \[PATCH] refactor: update zlib algorithms (● [c8c501e](https://github.com/corejslib/core/commit/c8c501e47); 👬 zdm)
+
+**Other changes:**
+
+- build(deps): bump ejs@^5.0.0 (● [1545793](https://github.com/corejslib/core/commit/15457930f); 👬 zdm)
+
+- chore(metadata): update package metadata (● [cd4c430](https://github.com/corejslib/core/commit/cd4c430b8); 👬 zdm)
+
+Compare with the previous release: [v7.208.2](https://github.com/corejslib/core/compare/v7.208.2...v7.208.3)
+
 ### v7.208.2 (2026-03-03)
 
 **Bug fixes:**
