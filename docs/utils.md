@@ -24,7 +24,7 @@ import * as utils from "@corejslib/utils";
 - `object` {Object} Object to check.
 - Returns: {boolean} `true` if `object` is plain object.
 
-### utils.objectIsEmpty( object )
+### utils.isEmptyObject( object )
 
 - `object` {Object} Object to check.
 - Returns: {boolean} `true` if `object` has no properties.
