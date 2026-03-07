@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.208.5 (2026-03-07)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix file stream (● [97e6ddb](https://github.com/corejslib/core/commit/97e6ddbde); 👬 zdm)
+
+Compare with the previous release: [v7.208.4](https://github.com/corejslib/core/compare/v7.208.4...v7.208.5)
+
 ### v7.208.4 (2026-03-06)
 
 **Bug fixes:**
