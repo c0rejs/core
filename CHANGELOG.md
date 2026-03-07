@@ -1,5 +1,23 @@
 # Changelog
 
+### v7.209.0 (2026-03-07)
+
+**New features:**
+
+- \[MINOR] feat: add mutex dispose (● [544e94c](https://github.com/corejslib/core/commit/544e94c2d); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename objectIsEmpty to isEmptyObject (● [128a917](https://github.com/corejslib/core/commit/128a91719); 👬 zdm)
+
+- \[PATCH] refactor: update crypto mutex (● [25f4afc](https://github.com/corejslib/core/commit/25f4afc14); 👬 zdm)
+
+**Other changes:**
+
+- docs: update (● [3d0d4bb](https://github.com/corejslib/core/commit/3d0d4bbdb); 👬 zdm)
+
+Compare with the previous release: [v7.208.5](https://github.com/corejslib/core/compare/v7.208.5...v7.209.0)
+
 ### v7.208.5 (2026-03-07)
 
 **Bug fixes:**
