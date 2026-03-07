@@ -19,7 +19,7 @@ import * as utils from "@corejslib/utils";
 - `array` {Array}
 - Returns: {any} Random array value.
 
-### utils.objectIsPlain( object )
+### utils.isPlainObject( object )
 
 - `object` {Object} Object to check.
 - Returns: {boolean} `true` if `object` is plain object.
