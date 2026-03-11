@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.210.0 (2026-03-11)
+
+**New features:**
+
+- \[MINOR] feat: add download api (● [a44c643](https://github.com/corejslib/core/commit/a44c64349); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix tmp file constructor (● [389fa2c](https://github.com/corejslib/core/commit/389fa2c88); 👬 zdm)
+
+Compare with the previous release: [v7.209.0](https://github.com/corejslib/core/compare/v7.209.0...v7.210.0)
+
 ### v7.209.0 (2026-03-07)
 
 **New features:**
