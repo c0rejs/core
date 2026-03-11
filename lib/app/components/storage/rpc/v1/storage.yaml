@@ -1,6 +1,16 @@
 title: Storage
 
 methods:
+  download:
+    title: Download file from the storage
+    connectionType: http
+    params:
+      - name: path
+        required: true
+        schema:
+          type: string
+          path: { root: false, folder: false }
+
   upload:
     title: Upload file to the storage
     params:
