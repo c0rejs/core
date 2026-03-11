@@ -97,7 +97,7 @@ async function getHeaders ( cookie, useBrowser, callback ) {
         } );
     }
     else {
-        res = await fetch( url, {
+        await fetch( url, {
             "cookies": true,
             "redirect": "follow",
             "dispatcher": new fetch.Dispatcher( {
