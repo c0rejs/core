@@ -22,16 +22,12 @@ methods:
       - name: file
         required: true
         schema:
-          file: { maxSize: 50 GB }
+          message: { maxContentLength: 50 GB }
       - name: options
         schema:
           type: object
           properties:
             cwd: { type: string, path: { root: true, folder: false } }
-            lastModified: { type: string, format: date-time }
-            contentType: { type: string }
-            cacheControl: { type: string }
-            contentDisposition: { type: string }
             expires: { type: string, format: date-time }
             maxAge: { type: string, format: interval }
             inactiveMaxAge: { type: string, format: interval }
