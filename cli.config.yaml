@@ -15,6 +15,7 @@ docs:
     ProxyClient: ~
     Blob: "/blob.md#Class: Blob"
     File: "/file.md#Class: File"
+    Message: "/message.md#Class: Message"
     ApiClient: "/api-client.md#Class: ApiClient"
     ApiClientUpload: "/api-client.md#Class: ApiClientUpload"
     ApiClientConnection: "/api-client.md#Class: ApIClientConnection"
