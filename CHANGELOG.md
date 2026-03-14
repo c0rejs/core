@@ -1,5 +1,41 @@
 # Changelog
 
+### v7.211.0 (2026-03-14)
+
+**New features:**
+
+- \[MINOR] feat: add app ajv message keyword (● [53e6f7c](https://github.com/corejslib/core/commit/53e6f7caa), [b3cf224](https://github.com/corejslib/core/commit/b3cf224d1), [211a944](https://github.com/corejslib/core/commit/211a94473); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix Blob to JSON (● [48343ef](https://github.com/corejslib/core/commit/48343ef9d); 👬 zdm)
+
+- \[PATCH] fix: fix file upload (● [200ac94](https://github.com/corejslib/core/commit/200ac9477), [cd5e055](https://github.com/corejslib/core/commit/cd5e0552c); 👬 zdm)
+
+- \[PATCH] fix: fix json attachments serialization (● [8bfc3cc](https://github.com/corejslib/core/commit/8bfc3cca2), [7b47738](https://github.com/corejslib/core/commit/7b4773860); 👬 zdm)
+
+- \[PATCH] fix: fix Message to JSON (● [29e1198](https://github.com/corejslib/core/commit/29e119838); 👬 zdm)
+
+- \[PATCH] fix: fix npm api exit code processing (● [a28c5e3](https://github.com/corejslib/core/commit/a28c5e3d3); 👬 zdm)
+
+- \[PATCH] fix: fix x-api-void-call header (● [16e6e25](https://github.com/corejslib/core/commit/16e6e25f0); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor multipart parser (● [9681181](https://github.com/corejslib/core/commit/968118149), [533505d](https://github.com/corejslib/core/commit/533505de1), [0433960](https://github.com/corejslib/core/commit/04339601b); 👬 zdm)
+
+- \[PATCH] refactor: remove app ajv file keyword (● [76995e6](https://github.com/corejslib/core/commit/76995e6e8); 👬 zdm)
+
+- \[PATCH] refactor: update api http (● [0f2a01d](https://github.com/corejslib/core/commit/0f2a01dfc); 👬 zdm)
+
+- \[PATCH] refactor: update parse auth header (● [13a3c28](https://github.com/corejslib/core/commit/13a3c28d7); 👬 zdm)
+
+**Other changes:**
+
+- style: lint (● [115adc8](https://github.com/corejslib/core/commit/115adc86a); 👬 zdm)
+
+Compare with the previous release: [v7.210.0](https://github.com/corejslib/core/compare/v7.210.0...v7.211.0)
+
 ### v7.210.0 (2026-03-11)
 
 **New features:**
