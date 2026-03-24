@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.211.2 (2026-03-24)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix app frontend multipart reader (● [153da6d](https://github.com/corejslib/core/commit/153da6d6f); 👬 zdm)
+
+- \[PATCH] fix: fix stream buffer reader (● [5b00cf5](https://github.com/corejslib/core/commit/5b00cf552); 👬 zdm)
+
+- \[PATCH] fix: fix stream read chunk (● [a6e5193](https://github.com/corejslib/core/commit/a6e5193dd); 👬 zdm)
+
+Compare with the previous release: [v7.211.1](https://github.com/corejslib/core/compare/v7.211.1...v7.211.2)
+
 ### v7.211.1 (2026-03-24)
 
 **Bug fixes:**
