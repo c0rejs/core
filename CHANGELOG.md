@@ -1,5 +1,31 @@
 # Changelog
 
+### v7.211.1 (2026-03-24)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix file.stream() (● [47a42e0](https://github.com/corejslib/core/commit/47a42e0c5); 👬 zdm)
+
+- \[PATCH] fix: fix fs rmEmptyDir (● [2522491](https://github.com/corejslib/core/commit/2522491d6); 👬 zdm)
+
+- \[PATCH] fix: fix password-hash secret init (● [a0aeb2b](https://github.com/corejslib/core/commit/a0aeb2b99), [0286711](https://github.com/corejslib/core/commit/028671150); 👬 zdm)
+
+- \[PATCH] fix: fix Readable.from object mode (● [c50257f](https://github.com/corejslib/core/commit/c50257fa9); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add --long option to npm outdated deps (● [9d8e0cc](https://github.com/corejslib/core/commit/9d8e0cc62); 👬 zdm)
+
+- \[PATCH] refactor: refactor stream readers (● [2482fd3](https://github.com/corejslib/core/commit/2482fd300); 👬 zdm)
+
+**Other changes:**
+
+- chore(metadata): update package metadata (● [e8e78ce](https://github.com/corejslib/core/commit/e8e78ce44); 👬 zdm)
+
+- docs: add message docs (● [22d1091](https://github.com/corejslib/core/commit/22d1091c4); 👬 zdm)
+
+Compare with the previous release: [v7.211.0](https://github.com/corejslib/core/compare/v7.211.0...v7.211.1)
+
 ### v7.211.0 (2026-03-14)
 
 **New features:**
