@@ -1,126 +1,195 @@
 #!/usr/bin/env node
 
-import { strictEqual } from "node:assert";
+import { deepStrictEqual } from "node:assert";
 import { suite, test } from "node:test";
-import _stream from "#lib/stream";
+import { Readable } from "#lib/stream";
+import { sleep } from "#lib/utils";
 
-const buffer = "12-34--56--78-90";
-const encoding = "utf8";
-
-const READ_LINE = [
-
-    // streaming, match
-    { buffer, encoding, "eol": "--", "maxLength": null, "chunkSize": null, "line": "12-34", "rest": "56--78-90" },
-    { buffer, encoding, "eol": "--", "maxLength": null, "chunkSize": 1, "line": "12-34", "rest": "56--78-90" },
-    { buffer, encoding, "eol": "--", "maxLength": null, "chunkSize": 2, "line": "12-34", "rest": "56--78-90" },
-    { buffer, encoding, "eol": "--", "maxLength": null, "chunkSize": 3, "line": "12-34", "rest": "56--78-90" },
-    { buffer, encoding, "eol": "--", "maxLength": null, "chunkSize": 7, "line": "12-34", "rest": "56--78-90" },
-
-    // streaming, match, eol: "-"
-    { buffer, encoding, "eol": "-", "maxLength": null, "chunkSize": null, "line": "12", "rest": "34--56--78-90" },
-    { buffer, encoding, "eol": "-", "maxLength": null, "chunkSize": 1, "line": "12", "rest": "34--56--78-90" },
-    { buffer, encoding, "eol": "-", "maxLength": null, "chunkSize": 2, "line": "12", "rest": "34--56--78-90" },
-    { buffer, encoding, "eol": "-", "maxLength": null, "chunkSize": 3, "line": "12", "rest": "34--56--78-90" },
-    { buffer, encoding, "eol": "-", "maxLength": null, "chunkSize": 7, "line": "12", "rest": "34--56--78-90" },
-
-    // streaming, not match
-    { buffer, encoding, "eol": "---", "maxLength": null, "chunkSize": null, "line": undefined, "rest": "" },
-    { buffer, encoding, "eol": "---", "maxLength": null, "chunkSize": 1, "line": undefined, "rest": "" },
-    { buffer, encoding, "eol": "---", "maxLength": 5, "chunkSize": 1, "line": undefined, "rest": undefined, "exception": true },
-
-    // pre-buffered, match
-    { buffer, encoding, "eol": "--", "maxLength": null, "chunkSize": null, "preinit": true, "line": "12-34", "rest": "56--78-90" },
-    { buffer, encoding, "eol": "--", "maxLength": 7, "chunkSize": null, "preinit": true, "line": "12-34", "rest": "56--78-90" },
-
-    // pre-buffered, not match
-    { buffer, encoding, "eol": "---", "maxLength": null, "chunkSize": null, "preinit": true, "line": undefined, "rest": undefined },
-    { buffer, encoding, "eol": "---", "maxLength": 4, "chunkSize": null, "preinit": true, "line": undefined, "rest": undefined, "exception": true },
-    { buffer, encoding, "eol": "---", "maxLength": 6, "chunkSize": null, "preinit": true, "line": undefined, "rest": undefined, "exception": true },
-];
-
-const READ_CHUNK = [
-    { buffer, encoding, "length": 1, "line": "1", "rest": "2-34--56--78-90" },
-    { buffer, encoding, "length": 5, "line": "12-34", "rest": "--56--78-90" },
-    { buffer, encoding, "length": 16, "line": "12-34--56--78-90", "rest": "" },
-    { buffer, encoding, "length": 100, "line": undefined, "rest": "" },
-];
-
-const sleep = () => new Promise( resolve => setTimeout( resolve, 1 ) );
+const buffer = "12-34--56--78-90",
+    encoding = "utf8",
+    chunkSizes = [ null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+    eols = [ "-", "--", "---" ],
+    maxLengths = [ null, 1, 2, 3, 4, 5, 6 ],
+    lastEols = [ true, false ];
 
 suite( "stream", () => {
 
     // read line
     suite( "readline", () => {
-        for ( let n = 0; n < READ_LINE.length; n++ ) {
-            test( n + "", async () => {
-                const data = READ_LINE[ n ];
+        for ( const chunkSize of chunkSizes ) {
+            for ( const eol of eols ) {
+                for ( const maxLength of maxLengths ) {
+                    for ( const lastEolRequired of lastEols ) {
+                        for ( const addLastEol of lastEols ) {
+                            test( `${ chunkSize }_${ eol }_${ maxLength }_${ lastEolRequired }_${ addLastEol }`, async () => {
+                                const dataBuffer = addLastEol
+                                        ? buffer + eol
+                                        : buffer,
+                                    data = {
+                                        "buffer": dataBuffer,
+                                        chunkSize,
+                                        eol,
+                                        maxLength,
+                                        lastEolRequired,
+                                    },
+                                    expected = [],
+                                    lines = dataBuffer.split( eol );
 
-                const [ line, rest, exception ] = await readLine( data );
+                                for ( const line of lines ) {
+                                    if ( maxLength && line.length > maxLength ) {
+                                        break;
+                                    }
+                                    else {
+                                        expected.push( line );
+                                    }
+                                }
 
-                strictEqual( line, data.line );
+                                // has last eol
+                                if ( expected.at( -1 ) === "" ) {
+                                    expected.pop();
+                                }
 
-                strictEqual( rest, data.rest );
+                                // has no last eol
+                                else {
+                                    if ( lastEolRequired ) {
+                                        expected.pop();
+                                    }
+                                }
 
-                strictEqual( !!exception, !!data.exception );
-            } );
+                                expected.push( undefined );
+
+                                const actual = await readLine( data );
+
+                                try {
+                                    deepStrictEqual( actual, expected );
+                                }
+                                catch ( e ) {
+                                    console.log( "data:    ", data );
+                                    console.log( "expected:", expected );
+                                    console.log( "actial:  ", actual );
+                                    process.exit();
+
+                                    throw e;
+                                }
+                            } );
+                        }
+                    }
+                }
+            }
         }
     } );
 
     // read chunk
     suite( "readchunk", () => {
-        for ( let n = 0; n < READ_CHUNK.length; n++ ) {
-            test( n + "", async () => {
-                const data = READ_CHUNK[ n ];
+        for ( const chunkSize of chunkSizes ) {
+            for ( let length = 1; length <= buffer.length; length++ ) {
+                for ( const maxLength of maxLengths ) {
+                    test( `${ chunkSize }_${ length }_${ maxLength }`, async () => {
+                        const data = {
+                                buffer,
+                                length,
+                                maxLength,
+                                chunkSize,
+                            },
+                            expected = [];
 
-                const [ line, rest ] = await readChunk( data );
+                        var dataBuffer = buffer;
 
-                strictEqual( line, data.line );
+                        while ( true ) {
+                            const chunk = dataBuffer.slice( 0, length );
 
-                strictEqual( rest, data.rest );
-            } );
+                            if ( chunk.length < length ) {
+                                break;
+                            }
+                            else if ( maxLength && chunk.length > maxLengths ) {
+                                break;
+                            }
+                            else {
+                                expected.push( chunk );
+
+                                dataBuffer = dataBuffer.slice( chunk.length );
+                            }
+                        }
+
+                        expected.push( undefined );
+
+                        const actual = await readChunk( data );
+
+                        // eslint-disable-next-line no-useless-catch
+                        try {
+                            deepStrictEqual( actual, expected );
+                        }
+                        catch ( e ) {
+
+                            // console.log( "data:    ", data );
+                            // console.log( "expected:", expected );
+                            // console.log( "actial:  ", actual );
+                            // process.exit();
+
+                            throw e;
+                        }
+                    } );
+                }
+            }
         }
     } );
 } );
 
 async function readLine ( data ) {
-    const stream = new _stream.Readable( { read () {} } );
+    const stream = createReadStream( data );
 
-    if ( data.preinit ) await push( stream, data );
-    else push( stream, data );
+    const actual = [];
 
-    var exception;
+    while ( true ) {
+        const line = await stream.readLine( {
+            "eol": data.eol,
+            encoding,
+            "maxLength": data.maxLength,
+            "lastEolRequired": data.lastEolRequired,
+        } );
 
-    const line = await stream.readLine( { "eol": data.eol, "encoding": data.encoding, "maxLength": data.maxLength } ).catch( e => {
-        exception = true;
-    } );
+        actual.push( line );
 
-    const rest = await stream.buffer();
+        if ( line === undefined ) break;
+    }
 
-    return [ line, rest
-        ? rest.toString()
-        : rest, exception ];
+    return actual;
 }
 
 async function readChunk ( data ) {
-    const stream = new _stream.Readable( { read () {} } );
+    const stream = createReadStream( data );
 
-    if ( data.preinit ) await push( stream, data );
-    else push( stream, data );
+    const actual = [];
 
-    const line = await stream.readChunk( data.length, { "encoding": data.encoding } );
+    while ( true ) {
+        const line = await stream.readChunk( data.length, {
+            encoding,
+            "maxLength": data.maxLength,
+        } );
 
-    return [ line, await stream.text() ];
-}
+        actual.push( line );
 
-async function push ( stream, data ) {
-    await sleep( 1 );
-
-    for ( const buf of data.buffer.split( new RegExp( `(.{1,${ data.chunkSize }})` ) ).filter( buf => buf !== "" ) ) {
-        stream.push( buf );
-        await sleep( 1 );
+        if ( line === undefined ) break;
     }
 
-    // eof
-    stream.push( null );
-    await sleep( 1 );
+    return actual;
+}
+
+function createReadStream ( { buffer, chunkSize } ) {
+    return new Readable( {
+        async read () {
+            await sleep( 1 );
+
+            const data = buffer.slice( 0, chunkSize || undefined );
+
+            if ( data.length ) {
+                buffer = buffer.slice( data.length );
+
+                this.push( data, encoding );
+            }
+            else {
+                this.push( null );
+            }
+        },
+    } );
 }
