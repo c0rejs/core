@@ -67,7 +67,7 @@ suite( "stream", () => {
                                     console.log( "data:    ", data );
                                     console.log( "expected:", expected );
                                     console.log( "actial:  ", actual );
-                                    process.exit();
+                                    process.exit( 1 );
 
                                     throw e;
                                 }
@@ -82,12 +82,12 @@ suite( "stream", () => {
     // read chunk
     suite( "readchunk", () => {
         for ( const chunkSize of chunkSizes ) {
-            for ( let length = 1; length <= buffer.length; length++ ) {
+            for ( let chunkLength = 1; chunkLength <= buffer.length; chunkLength++ ) {
                 for ( const maxLength of maxLengths ) {
-                    test( `${ chunkSize }_${ length }_${ maxLength }`, async () => {
+                    test( `${ chunkSize }_${ chunkLength }_${ maxLength }`, async () => {
                         const data = {
                                 buffer,
-                                length,
+                                chunkLength,
                                 maxLength,
                                 chunkSize,
                             },
@@ -96,9 +96,9 @@ suite( "stream", () => {
                         var dataBuffer = buffer;
 
                         while ( true ) {
-                            const chunk = dataBuffer.slice( 0, length );
+                            const chunk = dataBuffer.slice( 0, chunkLength );
 
-                            if ( chunk.length < length ) {
+                            if ( chunk.length < chunkLength ) {
                                 break;
                             }
                             else if ( maxLength && chunk.length > maxLengths ) {
@@ -115,16 +115,14 @@ suite( "stream", () => {
 
                         const actual = await readChunk( data );
 
-                        // eslint-disable-next-line no-useless-catch
                         try {
                             deepStrictEqual( actual, expected );
                         }
                         catch ( e ) {
-
-                            // console.log( "data:    ", data );
-                            // console.log( "expected:", expected );
-                            // console.log( "actial:  ", actual );
-                            // process.exit();
+                            console.log( "data:    ", data );
+                            console.log( "expected:", expected );
+                            console.log( "actial:  ", actual );
+                            process.exit( 1 );
 
                             throw e;
                         }
@@ -136,9 +134,8 @@ suite( "stream", () => {
 } );
 
 async function readLine ( data ) {
-    const stream = createReadStream( data );
-
-    const actual = [];
+    const stream = createReadStream( data ),
+        actual = [];
 
     while ( true ) {
         const line = await stream.readLine( {
@@ -157,19 +154,18 @@ async function readLine ( data ) {
 }
 
 async function readChunk ( data ) {
-    const stream = createReadStream( data );
-
-    const actual = [];
+    const stream = createReadStream( data ),
+        actual = [];
 
     while ( true ) {
-        const line = await stream.readChunk( data.length, {
+        const chunk = await stream.readChunk( data.chunkLength, {
             encoding,
             "maxLength": data.maxLength,
         } );
 
-        actual.push( line );
+        actual.push( chunk );
 
-        if ( line === undefined ) break;
+        if ( chunk === undefined ) break;
     }
 
     return actual;
