@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.211.3 (2026-03-24)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix npm api pack (● [1608ca6](https://github.com/corejslib/core/commit/1608ca6e8); 👬 zdm)
+
+Compare with the previous release: [v7.211.2](https://github.com/corejslib/core/compare/v7.211.2...v7.211.3)
+
 ### v7.211.2 (2026-03-24)
 
 **Bug fixes:**
