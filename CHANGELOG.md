@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.211.5 (2026-03-25)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix api docs generator (● [4629c8d](https://github.com/corejslib/core/commit/4629c8dfc), [19df0ad](https://github.com/corejslib/core/commit/19df0ada7); 👬 zdm)
+
+- \[PATCH] fix: fix digital size to string (● [ca31319](https://github.com/corejslib/core/commit/ca313192e); 👬 zdm)
+
+Compare with the previous release: [v7.211.4](https://github.com/corejslib/core/compare/v7.211.4...v7.211.5)
+
 ### v7.211.4 (2026-03-25)
 
 **Code refactoring:**
