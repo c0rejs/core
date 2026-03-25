@@ -16,6 +16,7 @@ docs:
     Blob: "/blob.md#Class: Blob"
     File: "/file.md#Class: File"
     Message: "/message.md#Class: Message"
+    Attachment: "/attachment.md#Class: Attachment"
     ApiClient: "/api-client.md#Class: ApiClient"
     ApiClientUpload: "/api-client.md#Class: ApiClientUpload"
     ApiClientConnection: "/api-client.md#Class: ApIClientConnection"

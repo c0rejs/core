@@ -22,7 +22,7 @@ methods:
       - name: file
         required: true
         schema:
-          message: { maxContentLength: 50 GB }
+          attachment: { maxContentLength: 50 GB }
       - name: options
         schema:
           type: object
