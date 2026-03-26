@@ -6,7 +6,6 @@ optionalDependencies:
 
 config:
   listenIpFamily: 4
-  dockerEnabled: false
 
   maxBodySize: 10 MB
 
