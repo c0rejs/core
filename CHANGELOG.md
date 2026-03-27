@@ -1,5 +1,29 @@
 # Changelog
 
+### v7.214.0 (2026-03-27)
+
+**New features:**
+
+- \[MINOR] feat: add File / Blob .json() method (● [626e062](https://github.com/corejslib/core/commit/626e06276); 👬 zdm)
+
+- \[MINOR] feat: add http request / response .toMessage() method (● [c0300f3](https://github.com/corejslib/core/commit/c0300f362); 👬 zdm)
+
+- \[MINOR] feat: add transfer-encoding header (● [5526e23](https://github.com/corejslib/core/commit/5526e2347), [9cc6431](https://github.com/corejslib/core/commit/9cc643163); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: do not create http request / response enpty body (● [5a20df6](https://github.com/corejslib/core/commit/5a20df6e8); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: do not inherit http response from Result (● [8b10ee8](https://github.com/corejslib/core/commit/8b10ee80c), [1b285a3](https://github.com/corejslib/core/commit/1b285a3f4); 👬 zdm)
+
+- \[PATCH] refactor: rename content accessor methods (● [1ef7ab3](https://github.com/corejslib/core/commit/1ef7ab3f7), [6cc0741](https://github.com/corejslib/core/commit/6cc074165), [bd80761](https://github.com/corejslib/core/commit/bd80761a9), [8dd0816](https://github.com/corejslib/core/commit/8dd0816fe), [954e8e3](https://github.com/corejslib/core/commit/954e8e3e5), [71f47a0](https://github.com/corejslib/core/commit/71f47a0b3), [100ce04](https://github.com/corejslib/core/commit/100ce041f); 👬 zdm)
+
+- \[PATCH] refactor: rename multipartData to parseMultipartBody (● [8391c0c](https://github.com/corejslib/core/commit/8391c0cd5); 👬 zdm)
+
+Compare with the previous release: [v7.213.0](https://github.com/corejslib/core/compare/v7.213.0...v7.214.0)
+
 ### v7.213.0 (2026-03-27)
 
 **New features:**
