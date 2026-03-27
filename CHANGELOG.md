@@ -1,5 +1,27 @@
 # Changelog
 
+### v7.212.0 (2026-03-27)
+
+**New features:**
+
+- \[MINOR] feat: add headers .deleteContentHeaders() (● [29129d9](https://github.com/corejslib/core/commit/29129d96f); 👬 zdm)
+
+- \[MINOR] feat: add message reusable body methods (● [97a4f5d](https://github.com/corejslib/core/commit/97a4f5d31), [4e6c30f](https://github.com/corejslib/core/commit/4e6c30fdf); 👬 zdm)
+
+- \[MINOR] feat: add storage support for streaming body (● [c46f33e](https://github.com/corejslib/core/commit/c46f33e38); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix message range middleware (● [e83533f](https://github.com/corejslib/core/commit/e83533f65), [4039471](https://github.com/corejslib/core/commit/403947151), [bfb87bd](https://github.com/corejslib/core/commit/bfb87bd79); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: remove app nginx docker support (● [0b7e98a](https://github.com/corejslib/core/commit/0b7e98af6); 👬 zdm)
+
+- \[PATCH] refactor: rename message body type accessors (● [4ec0eb7](https://github.com/corejslib/core/commit/4ec0eb7e2), [d28bcdc](https://github.com/corejslib/core/commit/d28bcdcae), [9e04602](https://github.com/corejslib/core/commit/9e0460241); 👬 zdm)
+
+Compare with the previous release: [v7.211.5](https://github.com/corejslib/core/compare/v7.211.5...v7.212.0)
+
 ### v7.211.5 (2026-03-25)
 
 **Bug fixes:**
