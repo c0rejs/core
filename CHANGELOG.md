@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.213.0 (2026-03-27)
+
+**New features:**
+
+- \[MINOR] feat: resource name removed (● [0ff1267](https://github.com/corejslib/core/commit/0ff126799); 👬 zdm)
+
+Compare with the previous release: [v7.212.0](https://github.com/corejslib/core/compare/v7.212.0...v7.213.0)
+
 ### v7.212.0 (2026-03-27)
 
 **New features:**
