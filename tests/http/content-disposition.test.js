@@ -89,7 +89,7 @@ async function getHeaders ( header, client, postFormData, callback ) {
             let headers;
 
             if ( req.headers.contentType.type.startsWith( "multipart/" ) ) {
-                const multipartData = await req.multipartData();
+                const multipartData = await req.parseMultipartBody();
 
                 headers = multipartData.parts[ 0 ].headers;
             }
