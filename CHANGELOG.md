@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.215.1 (2026-03-28)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor message (● [327fcd5](https://github.com/corejslib/core/commit/327fcd58c), [75a64c8](https://github.com/corejslib/core/commit/75a64c807), [f82deb1](https://github.com/corejslib/core/commit/f82deb1c5); 👬 zdm)
+
+Compare with the previous release: [v7.215.0](https://github.com/corejslib/core/compare/v7.215.0...v7.215.1)
+
 ### v7.215.0 (2026-03-28)
 
 **New features:**
