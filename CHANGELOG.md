@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.215.0 (2026-03-28)
+
+**New features:**
+
+- \[MINOR] feat: add npm api .runTests() (● [acf692c](https://github.com/corejslib/core/commit/acf692c86), [c862a31](https://github.com/corejslib/core/commit/c862a31c3), [332f197](https://github.com/corejslib/core/commit/332f197bf); 👬 zdm)
+
+- \[MINOR] feat: add stream.lastModified property (● [dc03598](https://github.com/corejslib/core/commit/dc03598f2), [83a311e](https://github.com/corejslib/core/commit/83a311eb2), [3064721](https://github.com/corejslib/core/commit/3064721e0), [70c9311](https://github.com/corejslib/core/commit/70c9311c2), [e7c3f19](https://github.com/corejslib/core/commit/e7c3f1944), [8ac846a](https://github.com/corejslib/core/commit/8ac846acf), [0978407](https://github.com/corejslib/core/commit/097840723), [1716bb5](https://github.com/corejslib/core/commit/1716bb548), [91ef5e6](https://github.com/corejslib/core/commit/91ef5e639), [b663938](https://github.com/corejslib/core/commit/b66393874), [0186731](https://github.com/corejslib/core/commit/0186731ad), [97a0b77](https://github.com/corejslib/core/commit/97a0b77b9), [e125672](https://github.com/corejslib/core/commit/e12567235); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix message constructor (● [b083a09](https://github.com/corejslib/core/commit/b083a093b); 👬 zdm)
+
+Compare with the previous release: [v7.214.1](https://github.com/corejslib/core/compare/v7.214.1...v7.215.0)
+
 ### v7.214.1 (2026-03-27)
 
 **Bug fixes:**
