@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.215.2 (2026-03-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix api upload (● [6eddc53](https://github.com/corejslib/core/commit/6eddc53dc); 👬 zdm)
+
+- \[PATCH] fix: fix message constructor (● [eee6076](https://github.com/corejslib/core/commit/eee607668), [8d60904](https://github.com/corejslib/core/commit/8d609047c); 👬 zdm)
+
+- \[PATCH] fix: fix message content disposition (● [c52bab2](https://github.com/corejslib/core/commit/c52bab269), [52cab3a](https://github.com/corejslib/core/commit/52cab3aa5), [75a21c1](https://github.com/corejslib/core/commit/75a21c16b); 👬 zdm)
+
+- \[PATCH] fix: fix storage file download (● [32f7906](https://github.com/corejslib/core/commit/32f7906ef); 👬 zdm)
+
+Compare with the previous release: [v7.215.1](https://github.com/corejslib/core/compare/v7.215.1...v7.215.2)
+
 ### v7.215.1 (2026-03-28)
 
 **Code refactoring:**
