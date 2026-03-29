@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.215.3 (2026-03-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix message constructor (● [74166a7](https://github.com/corejslib/core/commit/74166a719); 👬 zdm)
+
+Compare with the previous release: [v7.215.2](https://github.com/corejslib/core/compare/v7.215.2...v7.215.3)
+
 ### v7.215.2 (2026-03-29)
 
 **Bug fixes:**
