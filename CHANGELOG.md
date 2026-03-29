@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.216.0 (2026-03-29)
+
+**New features:**
+
+- \[MINOR] feat: add te header (● [a2848d2](https://github.com/corejslib/core/commit/a2848d28f), [9340c3b](https://github.com/corejslib/core/commit/9340c3b16), [cc06b80](https://github.com/corejslib/core/commit/cc06b8028), [3cb27a4](https://github.com/corejslib/core/commit/3cb27a417), [3137ff0](https://github.com/corejslib/core/commit/3137ff083); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename message middlewares (● [14965bb](https://github.com/corejslib/core/commit/14965bb8b), [944b14a](https://github.com/corejslib/core/commit/944b14a6a); 👬 zdm)
+
+Compare with the previous release: [v7.215.3](https://github.com/corejslib/core/compare/v7.215.3...v7.216.0)
+
 ### v7.215.3 (2026-03-29)
 
 **Bug fixes:**
