@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.217.0 (2026-03-30)
+
+**New features:**
+
+- \[MINOR] feat: add content-encoding header (● [33deb32](https://github.com/corejslib/core/commit/33deb3241), [e44f7aa](https://github.com/corejslib/core/commit/e44f7aa8d); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix message compression (● [1ab4d72](https://github.com/corejslib/core/commit/1ab4d72d9); 👬 zdm)
+
+Compare with the previous release: [v7.216.1](https://github.com/corejslib/core/compare/v7.216.1...v7.217.0)
+
 ### v7.216.1 (2026-03-30)
 
 **Bug fixes:**
