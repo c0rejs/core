@@ -56,10 +56,11 @@ suite( "file", () => {
                             "end": TESTS[ n ].end,
                         },
                     } ),
-                    text = await stream.text(),
+                    buffer = await stream.buffer(),
+                    text = buffer.toString(),
                     slice = CONTENT.slice( TESTS[ n ].start ?? undefined, TESTS[ n ].end ?? undefined );
 
-                strictEqual( slice.length, stream.contentLength );
+                strictEqual( slice.length, buffer.length );
                 strictEqual( slice, text );
             } );
         }
