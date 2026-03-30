@@ -1,5 +1,21 @@
 # Changelog
 
+### v7.216.1 (2026-03-30)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix csv stringify (● [47e04da](https://github.com/corejslib/core/commit/47e04da6c); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: remove stream metadata (● [20ffe74](https://github.com/corejslib/core/commit/20ffe7438); 👬 zdm)
+
+**Other changes:**
+
+- style: clean code (● [7b1e71a](https://github.com/corejslib/core/commit/7b1e71a28); 👬 zdm)
+
+Compare with the previous release: [v7.216.0](https://github.com/corejslib/core/compare/v7.216.0...v7.216.1)
+
 ### v7.216.0 (2026-03-29)
 
 **New features:**
