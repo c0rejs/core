@@ -3,6 +3,7 @@
 import { strictEqual } from "node:assert";
 import path from "node:path";
 import { suite, test } from "node:test";
+import { Dispatcher1Wrapper } from "undici";
 import Browser from "#lib/browser";
 import fetch from "#lib/fetch";
 import FormData from "#lib/form-data";
@@ -119,12 +120,15 @@ async function getHeaders ( header, client, postFormData, callback ) {
 
     const url = new URL( `http://localhost:${ res.data.port }/` );
 
+    // browser
     if ( client === "browser" ) {
         browser = new Browser( url, {
             "incognito": true,
             "headless": true,
         } );
     }
+
+    // node fetch
     else if ( client === "node-fetch" ) {
         const formData = new globalThis.FormData();
 
@@ -133,11 +137,13 @@ async function getHeaders ( header, client, postFormData, callback ) {
         await globalThis.fetch( url, {
             "method": "POST",
             "body": formData,
-            "dispatcher": new fetch.Dispatcher( {
+            "dispatcher": new Dispatcher1Wrapper( new fetch.Dispatcher( {
                 "pipelining": 0,
-            } ),
+            } ) ),
         } );
     }
+
+    // core fetch
     else if ( client === "core-fetch" ) {
         let body;
 
