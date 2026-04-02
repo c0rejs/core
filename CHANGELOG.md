@@ -1,5 +1,29 @@
 # Changelog
 
+### v7.218.0 (2026-04-02)
+
+**New features:**
+
+- \[MINOR] feat: add message global.File support (● [dfac730](https://github.com/corejslib/core/commit/dfac73076); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: add websocket2 http2 comments (● [7d0878e](https://github.com/corejslib/core/commit/7d0878e81); 👬 zdm)
+
+- \[PATCH] fix: fix http date parser (● [e436213](https://github.com/corejslib/core/commit/e436213d6), [3b8134f](https://github.com/corejslib/core/commit/3b8134f31), [fa6c0cd](https://github.com/corejslib/core/commit/fa6c0cde9), [ca9a8ab](https://github.com/corejslib/core/commit/ca9a8abae), [e3865b2](https://github.com/corejslib/core/commit/e3865b258), [2717ec0](https://github.com/corejslib/core/commit/2717ec050); 👬 zdm)
+
+- \[PATCH] fix: rename toBlob -> blob (● [247e8c4](https://github.com/corejslib/core/commit/247e8c4f8); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: migrate to undici v8 (● [efecfeb](https://github.com/corejslib/core/commit/efecfeb57), [4da3492](https://github.com/corejslib/core/commit/4da34921c), [38ae3c5](https://github.com/corejslib/core/commit/38ae3c51a); 👬 zdm)
+
+**Other changes:**
+
+- build(deps): bump undici@^8.0.0 (● [3ae9e2c](https://github.com/corejslib/core/commit/3ae9e2ce6); 👬 zdm)
+
+Compare with the previous release: [v7.217.0](https://github.com/corejslib/core/compare/v7.217.0...v7.218.0)
+
 ### v7.217.0 (2026-03-30)
 
 **New features:**
