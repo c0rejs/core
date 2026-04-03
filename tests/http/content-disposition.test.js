@@ -3,6 +3,7 @@
 import { strictEqual } from "node:assert";
 import path from "node:path";
 import { suite, test } from "node:test";
+import { Dispatcher1Wrapper } from "undici";
 import Browser from "#lib/browser";
 import fetch from "#lib/fetch";
 import FormData from "#lib/form-data";
@@ -136,9 +137,9 @@ async function getHeaders ( header, client, postFormData, callback ) {
         await globalThis.fetch( url, {
             "method": "POST",
             "body": formData,
-            "dispatcher": new globalThis[ Symbol.for( "undici.globalDispatcher.1" ) ].constructor( {
+            "dispatcher": new Dispatcher1Wrapper( new fetch.Dispatcher( {
                 "pipelining": 0,
-            } ),
+            } ) ),
         } );
     }
 
