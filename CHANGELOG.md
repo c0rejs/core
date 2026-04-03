@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.219.0 (2026-04-03)
+
+**New features:**
+
+- \[MINOR] feat: add npm api .updateDependencies() (● [15a13b5](https://github.com/corejslib/core/commit/15a13b5ff); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix tests (● [71930dd](https://github.com/corejslib/core/commit/71930dd97); 👬 zdm)
+
+Compare with the previous release: [v7.218.0](https://github.com/corejslib/core/compare/v7.218.0...v7.219.0)
+
 ### v7.218.0 (2026-04-02)
 
 **New features:**
