@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.219.1 (2026-04-04)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix tests (● [8699272](https://github.com/corejslib/core/commit/86992725c); 👬 zdm)
+
+Compare with the previous release: [v7.219.0](https://github.com/corejslib/core/compare/v7.219.0...v7.219.1)
+
 ### v7.219.0 (2026-04-03)
 
 **New features:**
