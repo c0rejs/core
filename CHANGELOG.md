@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.220.0 (2026-04-05)
+
+**New features:**
+
+- \[MINOR] feat: add cli parser options (● [b5811bd](https://github.com/corejslib/core/commit/b5811bd8a), [61c3100](https://github.com/corejslib/core/commit/61c3100fb); 👬 zdm)
+
+Compare with the previous release: [v7.219.1](https://github.com/corejslib/core/compare/v7.219.1...v7.220.0)
+
 ### v7.219.1 (2026-04-04)
 
 **Bug fixes:**
