@@ -28,7 +28,7 @@ methods:
           type: object
           properties:
             cwd: { type: string, path: { root: true, folder: false } }
-            expires: { type: string, format: date-time }
+            expires: { type: string, format: instant-date-time }
             maxAge: { type: string, format: interval }
             inactiveMaxAge: { type: string, format: interval }
             encrypt: { type: boolean }
