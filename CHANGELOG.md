@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.220.1 (2026-04-06)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: logger.write() removed (● [bef2565](https://github.com/corejslib/core/commit/bef256571); 👬 zdm)
+
+Compare with the previous release: [v7.220.0](https://github.com/corejslib/core/compare/v7.220.0...v7.220.1)
+
 ### v7.220.0 (2026-04-05)
 
 **New features:**
