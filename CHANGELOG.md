@@ -1,5 +1,23 @@
 # Changelog
 
+### v7.221.0 (2026-04-07)
+
+**New features:**
+
+- \[MINOR] feat: add isValidTimeZone() (● [1b8c704](https://github.com/corejslib/core/commit/1b8c70469); 👬 zdm)
+
+- \[MINOR] feat: add support for Temporal objects (● [ab7499a](https://github.com/corejslib/core/commit/ab7499a46), [eaf16d6](https://github.com/corejslib/core/commit/eaf16d648), [d05dded](https://github.com/corejslib/core/commit/d05ddedb4), [006f98b](https://github.com/corejslib/core/commit/006f98b01), [f30cf55](https://github.com/corejslib/core/commit/f30cf556a), [b83691d](https://github.com/corejslib/core/commit/b83691dc1), [4c9bb40](https://github.com/corejslib/core/commit/4c9bb404a), [5a6f91a](https://github.com/corejslib/core/commit/5a6f91ac2), [4455cd6](https://github.com/corejslib/core/commit/4455cd6da); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix interval between dates calculation (● [2231457](https://github.com/corejslib/core/commit/223145761); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename ajv date / time formats (● [a8aa5ed](https://github.com/corejslib/core/commit/a8aa5ed4b), [24b61a7](https://github.com/corejslib/core/commit/24b61a781), [1a714df](https://github.com/corejslib/core/commit/1a714dfd8), [a5e686b](https://github.com/corejslib/core/commit/a5e686b9b), [c6dd64d](https://github.com/corejslib/core/commit/c6dd64db5), [a708ef7](https://github.com/corejslib/core/commit/a708ef77c); 👬 zdm)
+
+Compare with the previous release: [v7.220.1](https://github.com/corejslib/core/compare/v7.220.1...v7.221.0)
+
 ### v7.220.1 (2026-04-06)
 
 **Code refactoring:**
