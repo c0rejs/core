@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.222.0 (2026-04-07)
+
+**New features:**
+
+- \[MINOR] feat: add nginx http3 (● [ad20eb9](https://github.com/corejslib/core/commit/ad20eb9cc), [b51013d](https://github.com/corejslib/core/commit/b51013d53), [991bdc0](https://github.com/corejslib/core/commit/991bdc064); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx cacheBypass (● [852430b](https://github.com/corejslib/core/commit/852430b31); 👬 zdm)
+
+- \[PATCH] fix: fix nginx default client body size (● [d92b852](https://github.com/corejslib/core/commit/d92b8522f), [bf9b439](https://github.com/corejslib/core/commit/bf9b43908); 👬 zdm)
+
+Compare with the previous release: [v7.221.0](https://github.com/corejslib/core/compare/v7.221.0...v7.222.0)
+
 ### v7.221.0 (2026-04-07)
 
 **New features:**
