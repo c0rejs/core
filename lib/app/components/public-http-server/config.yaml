@@ -20,7 +20,7 @@ config:
     serverNames: ~
 
     server:
-      maxBodySize: 10 MB
+      maxBodySize: 10 MiB
       cacheEnabled: true
       cacheBypass: false
       httpsRedirectPort: 443
