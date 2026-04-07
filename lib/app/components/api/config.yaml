@@ -98,7 +98,7 @@ config:
   frontend:
     location: /api
     maxParallelCallsPerClient: 1
-    maxApiRequestBodySize: 10 MB
+    maxApiRequestBodySize: 10 MiB
     idleTimeout: 960 seconds # send pings, required for Nginx, CloudFlare
     sendPingsAutomatically: true
     httpCompress: ~

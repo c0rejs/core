@@ -7,7 +7,7 @@ optionalDependencies:
 config:
   listenIpFamily: 4
 
-  maxBodySize: 10 MB
+  maxBodySize: 10 MiB
 
   cacheEnabled: true
   cacheMaxSize: ~
