@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.223.0 (2026-04-10)
+
+**New features:**
+
+- \[MINOR] feat: add SIGHUP handler (● [688f00a](https://github.com/corejslib/core/commit/688f00aec); 👬 zdm)
+
+Compare with the previous release: [v7.222.1](https://github.com/corejslib/core/compare/v7.222.1...v7.223.0)
+
 ### v7.222.1 (2026-04-08)
 
 **Bug fixes:**
