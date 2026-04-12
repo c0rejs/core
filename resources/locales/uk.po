@@ -375,7 +375,7 @@ msgstr "Увійдіть до бота \"${n}\""
 msgid "Sign out"
 msgstr "Вийти"
 
-#: ../../lib/app/components/telegram-bot-forum-chat/bot/forum-chat.js:338:43
+#: ../../lib/app/components/telegram-bot-forum-chat/bot/forum-chat.js:338:37
 #: ../../lib/app/components/telegram/bot/commands/settings/locale.js:28:36
 msgid "Some error occured. Please, try again."
 msgstr "Сталася якась помилка. Будь ласка спробуйте ще раз."
@@ -554,7 +554,7 @@ msgstr ""
 "\n"
 "Стара електронна адреса: ${n}\n"
 
-#: ../../lib/app/components/telegram-bot-forum-chat/bot/forum-chat.js:349:43
+#: ../../lib/app/components/telegram-bot-forum-chat/bot/forum-chat.js:349:37
 msgid "Your group join request has been declined."
 msgstr "Ваш запит на приєднання до групи відхилено."
 
