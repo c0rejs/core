@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.223.1 (2026-04-12)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add Ejs.isEjs() (● [e283dca](https://github.com/corejslib/core/commit/e283dca6b); 👬 zdm)
+
+- \[PATCH] refactor: refactor ejs (● [9c1d2ac](https://github.com/corejslib/core/commit/9c1d2aca3); 👬 zdm)
+
+Compare with the previous release: [v7.223.0](https://github.com/corejslib/core/compare/v7.223.0...v7.223.1)
+
 ### v7.223.0 (2026-04-10)
 
 **New features:**
