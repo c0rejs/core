@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.223.2 (2026-04-13)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix header clone (● [88c796c](https://github.com/corejslib/core/commit/88c796c9c); 👬 zdm)
+
+**Other changes:**
+
+- chore: update transtations (● [d6dc539](https://github.com/corejslib/core/commit/d6dc53961); 👬 zdm)
+
+Compare with the previous release: [v7.223.1](https://github.com/corejslib/core/compare/v7.223.1...v7.223.2)
+
 ### v7.223.1 (2026-04-12)
 
 **Code refactoring:**
