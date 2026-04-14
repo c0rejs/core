@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.224.1 (2026-04-14)
+
+**Bug fixes:**
+
+- \[PATCH] fix: remove nginx multipath (● [028a9e7](https://github.com/corejslib/core/commit/028a9e7cb); 👬 zdm)
+
+- \[PATCH] fix: update nginx api log (● [64cbb98](https://github.com/corejslib/core/commit/64cbb988e); 👬 zdm)
+
+Compare with the previous release: [v7.224.0](https://github.com/corejslib/core/compare/v7.224.0...v7.224.1)
+
 ### v7.224.0 (2026-04-14)
 
 **New features:**
