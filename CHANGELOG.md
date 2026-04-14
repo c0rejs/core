@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.223.3 (2026-04-14)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor l10nt (● [ed700e0](https://github.com/corejslib/core/commit/ed700e096); 👬 zdm)
+
+Compare with the previous release: [v7.223.2](https://github.com/corejslib/core/compare/v7.223.2...v7.223.3)
+
 ### v7.223.2 (2026-04-13)
 
 **Bug fixes:**
