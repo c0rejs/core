@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.224.0 (2026-04-14)
+
+**New features:**
+
+- \[MINOR] feat: add nginx multipath option (● [a27bbf3](https://github.com/corejslib/core/commit/a27bbf3e0); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: change nginx hsts redirect to 308 (● [15f9fd9](https://github.com/corejslib/core/commit/15f9fd9c1); 👬 zdm)
+
+- \[PATCH] fix: update nginx ssl ciphers (● [27b85c4](https://github.com/corejslib/core/commit/27b85c4f3); 👬 zdm)
+
+Compare with the previous release: [v7.223.3](https://github.com/corejslib/core/compare/v7.223.3...v7.224.0)
+
 ### v7.223.3 (2026-04-14)
 
 **Code refactoring:**
