@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.224.2 (2026-04-14)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx ciphers (● [1dc6a0a](https://github.com/corejslib/core/commit/1dc6a0a40); 👬 zdm)
+
+Compare with the previous release: [v7.224.1](https://github.com/corejslib/core/compare/v7.224.1...v7.224.2)
+
 ### v7.224.1 (2026-04-14)
 
 **Bug fixes:**
