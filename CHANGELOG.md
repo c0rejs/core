@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.224.9 (2026-04-15)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix typo (● [fc51891](https://github.com/corejslib/core/commit/fc51891cb); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor ejs (● [33197e0](https://github.com/corejslib/core/commit/33197e09e); 👬 zdm)
+
+Compare with the previous release: [v7.224.8](https://github.com/corejslib/core/compare/v7.224.8...v7.224.9)
+
 ### v7.224.8 (2026-04-15)
 
 **Other changes:**
