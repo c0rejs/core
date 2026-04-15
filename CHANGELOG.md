@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.224.8 (2026-04-15)
+
+**Other changes:**
+
+- Revert "fix: fix ejs fs" (● [a1f2ec6](https://github.com/corejslib/core/commit/a1f2ec669); 👬 zdm)
+
+    This reverts commit [5f24661](https://github.com/corejslib/core/commit/5f246617a311a9b166aff6f763474cd8b161b365).
+
+Compare with the previous release: [v7.224.7](https://github.com/corejslib/core/compare/v7.224.7...v7.224.8)
+
 ### v7.224.7 (2026-04-15)
 
 **Bug fixes:**
