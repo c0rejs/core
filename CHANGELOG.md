@@ -1,5 +1,23 @@
 # Changelog
 
+### v7.224.3 (2026-04-15)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx api log (● [4a25a97](https://github.com/corejslib/core/commit/4a25a9744); 👬 zdm)
+
+**Other changes:**
+
+- Revert "fix: fix nginx ciphers" (● [8697a30](https://github.com/corejslib/core/commit/8697a3085); 👬 zdm)
+
+    This reverts commit [1dc6a0a](https://github.com/corejslib/core/commit/1dc6a0a401c78c4fcd02c59d2f26de33377a6e0b).
+
+- Revert "fix: remove nginx multipath" (● [f0cee42](https://github.com/corejslib/core/commit/f0cee427b); 👬 zdm)
+
+    This reverts commit [028a9e7](https://github.com/corejslib/core/commit/028a9e7cb971619082530d15c0f79028a1fcdb7f).
+
+Compare with the previous release: [v7.224.2](https://github.com/corejslib/core/compare/v7.224.2...v7.224.3)
+
 ### v7.224.2 (2026-04-14)
 
 **Bug fixes:**
