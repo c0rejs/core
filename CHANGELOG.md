@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.224.6 (2026-04-15)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix ejs fs (● [891eb29](https://github.com/corejslib/core/commit/891eb29c1); 👬 zdm)
+
+Compare with the previous release: [v7.224.5](https://github.com/corejslib/core/compare/v7.224.5...v7.224.6)
+
 ### v7.224.5 (2026-04-15)
 
 **Bug fixes:**
