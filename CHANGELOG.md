@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.224.4 (2026-04-15)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx ciphers (● [39b6bad](https://github.com/corejslib/core/commit/39b6bad0f); 👬 zdm)
+
+- \[PATCH] fix: fix nginx quic multipath (● [a688768](https://github.com/corejslib/core/commit/a688768a4); 👬 zdm)
+
+Compare with the previous release: [v7.224.3](https://github.com/corejslib/core/compare/v7.224.3...v7.224.4)
+
 ### v7.224.3 (2026-04-15)
 
 **Bug fixes:**
