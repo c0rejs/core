@@ -40,6 +40,8 @@
     sslEcdhCurve: { type: string }
     sslCiphers: { type: ["null", string] }
 
+    tcpListenOptions: { type: string }
+
     compressMimeTypes: { type: array, items: { type: string }, minItems: 1, uniqueItems: true }
 
   additionalProperties: false
@@ -57,5 +59,7 @@
     - sslProtocols
     - sslEcdhCurve
     - sslCiphers
+
+    - tcpListenOptions
 
     - compressMimeTypes
