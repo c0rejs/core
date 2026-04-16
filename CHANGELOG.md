@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.224.11 (2026-04-16)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor ejs (● [668781d](https://github.com/corejslib/core/commit/668781df2), [a13da77](https://github.com/corejslib/core/commit/a13da7741); 👬 zdm)
+
+Compare with the previous release: [v7.224.10](https://github.com/corejslib/core/compare/v7.224.10...v7.224.11)
+
 ### v7.224.10 (2026-04-16)
 
 **Code refactoring:**
