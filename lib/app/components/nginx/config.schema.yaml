@@ -41,6 +41,7 @@
     sslCiphers: { type: ["null", string] }
 
     tcpListenOptions: { type: string }
+    udpListenOptions: { type: string }
 
     compressMimeTypes: { type: array, items: { type: string }, minItems: 1, uniqueItems: true }
 
@@ -61,5 +62,6 @@
     - sslCiphers
 
     - tcpListenOptions
+    - udpListenOptions
 
     - compressMimeTypes
