@@ -1,5 +1,27 @@
 # Changelog
 
+### v7.225.0 (2026-04-20)
+
+**New features:**
+
+- \[MINOR] feat: add nginx listen options (● [c4f45a1](https://github.com/corejslib/core/commit/c4f45a118); 👬 zdm)
+
+- \[MINOR] feat: add nginx udp listen options (● [cac3f76](https://github.com/corejslib/core/commit/cac3f76c6); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx config generator (● [1ec85b1](https://github.com/corejslib/core/commit/1ec85b16d); 👬 zdm)
+
+- \[PATCH] fix: fix nginx quic options (● [1ee7012](https://github.com/corejslib/core/commit/1ee7012e6); 👬 zdm)
+
+- \[PATCH] fix: fix nginx udp ssl (● [b6d6192](https://github.com/corejslib/core/commit/b6d6192ea); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor ejs (● [5a85e1e](https://github.com/corejslib/core/commit/5a85e1e91); 👬 zdm)
+
+Compare with the previous release: [v7.224.11](https://github.com/corejslib/core/compare/v7.224.11...v7.225.0)
+
 ### v7.224.11 (2026-04-16)
 
 **Code refactoring:**
