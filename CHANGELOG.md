@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.225.1 (2026-04-20)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add more options to git message .getChangelogSubject() (● [16244b2](https://github.com/corejslib/core/commit/16244b238); 👬 zdm)
+
+- \[PATCH] refactor: update .editorconfig (● [d7d18aa](https://github.com/corejslib/core/commit/d7d18aa0a); 👬 zdm)
+
+Compare with the previous release: [v7.225.0...v7.225.1](https://github.com/corejslib/core/compare/v7.225.0...v7.225.1)
+
 ### v7.225.0 (2026-04-20)
 
 **New features:**
