@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.226.0 (2026-04-24)
+
+**New features:**
+
+- \[MINOR] feat: add chrome dependencies for ubuntu 26.04 (● [086b2f3](https://github.com/corejslib/core/commit/086b2f3b2), [b3790d8](https://github.com/corejslib/core/commit/b3790d8f5); 👬 zdm)
+
+Compare with the previous release: [v7.225.1...v7.226.0](https://github.com/corejslib/core/compare/v7.225.1...v7.226.0)
+
 ### v7.225.1 (2026-04-20)
 
 **Code refactoring:**
