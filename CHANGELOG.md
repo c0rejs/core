@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.226.1 (2026-04-30)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix invalid reject call (● [b46033a](https://github.com/corejslib/core/commit/b46033a21); 👬 zdm)
+
+Compare with the previous release: [v7.226.0...v7.226.1](https://github.com/corejslib/core/compare/v7.226.0...v7.226.1)
+
 ### v7.226.0 (2026-04-24)
 
 **New features:**
