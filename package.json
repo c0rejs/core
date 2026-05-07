@@ -83,7 +83,7 @@
     "bin": {
         "install-google-chrome": "bin/install-google-chrome.js",
         "nenv": "bin/nenv.js",
-        "softvisio-api": "bin/softvisio-api.js"
+        "sapi": "bin/sapi.js"
     },
     "files": [
         "/bin",
