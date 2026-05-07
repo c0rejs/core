@@ -256,7 +256,7 @@ msgstr "Телефон"
 msgid "Please, choose what you want to do"
 msgstr "Пожалуйста, выберите, что вы хотите сделать"
 
-#: ../../lib/app/components/telegram/config.yaml:1:36
+#: ../../lib/app/components/telegram/config.yaml:1:39
 #, javascript-format
 msgid ""
 "Please, click following link to sign in to \"${n}\" Telegram bot:\n"
@@ -366,7 +366,7 @@ msgstr "Установить телефон"
 msgid "Show on the map"
 msgstr "Показать на карте"
 
-#: ../../lib/app/components/telegram/config.yaml:1:36
+#: ../../lib/app/components/telegram/config.yaml:1:39
 #, javascript-format
 msgid "Sign in to \"${n}\" bot"
 msgstr "Войдите в бот \"${n}\""
@@ -416,7 +416,7 @@ msgstr "Для входа, пожалуйста, введите свой адр�
 msgid "To write me a message, please, go to the chat."
 msgstr "Чтобы написать мне сообщение, пожалуйста, зайдите в чат."
 
-#: ../../lib/app/components/api/config.yaml:1:36
+#: ../../lib/app/components/api/config.yaml:1:39
 #, javascript-format
 msgid ""
 "Use the following link to change your email address to ${n}:\n"
@@ -435,7 +435,7 @@ msgstr ""
 "\n"
 "Если вы получили это письмо по ошибке, просто проигнорируйте его.\n"
 
-#: ../../lib/app/components/api/config.yaml:1:36
+#: ../../lib/app/components/api/config.yaml:1:39
 #, javascript-format
 msgid ""
 "Use the following link to confirm your email:\n"
@@ -454,7 +454,7 @@ msgstr ""
 "\n"
 "Если вы получили это письмо по ошибке, просто проигнорируйте его.\n"
 
-#: ../../lib/app/components/api/config.yaml:1:36
+#: ../../lib/app/components/api/config.yaml:1:39
 #, javascript-format
 msgid ""
 "Use the following link to reset your password:\n"
@@ -500,7 +500,7 @@ msgid ""
 msgstr ""
 "Вы можете использовать эти команды:\n"
 
-#: ../../lib/app/components/api/config.yaml:1:36
+#: ../../lib/app/components/api/config.yaml:1:39
 #, javascript-format
 msgid ""
 "You just signed in on the new device.\n"
@@ -539,7 +539,7 @@ msgstr "ваш аккаунт"
 msgid "Your email address was changed"
 msgstr "Ваш адрес электронной почты был изменен"
 
-#: ../../lib/app/components/api/config.yaml:1:36
+#: ../../lib/app/components/api/config.yaml:1:39
 #, javascript-format
 msgid ""
 "Your email address was changed.\n"
