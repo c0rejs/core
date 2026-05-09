@@ -1,5 +1,35 @@
 # Changelog
 
+### v7.227.0 (2026-05-09)
+
+**New features:**
+
+- \[MINOR] feat: add uuidv7() (● [c9731c5](https://github.com/corejslib/core/commit/c9731c5f5), [d9f443f](https://github.com/corejslib/core/commit/d9f443f5f), [2011b95](https://github.com/corejslib/core/commit/2011b95ac), [4dfcf61](https://github.com/corejslib/core/commit/4dfcf615e), [18462b3](https://github.com/corejslib/core/commit/18462b375), [1e9869f](https://github.com/corejslib/core/commit/1e9869f94), [7c5e0a4](https://github.com/corejslib/core/commit/7c5e0a4dd), [6916650](https://github.com/corejslib/core/commit/6916650c8), [99ffe1f](https://github.com/corejslib/core/commit/99ffe1ff6), [b5deae6](https://github.com/corejslib/core/commit/b5deae65b); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix sqlite uuid functions (● [536f667](https://github.com/corejslib/core/commit/536f6675f); 👬 zdm)
+
+- \[PATCH] fix: fix uuidFromBuffer() (● [c3b2e39](https://github.com/corejslib/core/commit/c3b2e39a9); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add uuidv7 implementation (● [af9ab04](https://github.com/corejslib/core/commit/af9ab0414), [96b3ca6](https://github.com/corejslib/core/commit/96b3ca6e8), [5962df4](https://github.com/corejslib/core/commit/5962df45e); 👬 zdm)
+
+- \[PATCH] refactor: refactor uuid (● [f266fd6](https://github.com/corejslib/core/commit/f266fd682); 👬 zdm)
+
+- \[PATCH] refactor: rename cli.config.yaml to scli.config.yaml (● [4be3df4](https://github.com/corejslib/core/commit/4be3df4fd); 👬 zdm)
+
+- \[PATCH] refactor: rename softvisio-api to sapi (● [b80b144](https://github.com/corejslib/core/commit/b80b144d4); 👬 zdm)
+
+**Other changes:**
+
+- chore: update translations (● [5538e7c](https://github.com/corejslib/core/commit/5538e7ce8); 👬 zdm)
+
+- style: lint (● [3662a9b](https://github.com/corejslib/core/commit/3662a9b7a), [8dccb56](https://github.com/corejslib/core/commit/8dccb56df), [2d12792](https://github.com/corejslib/core/commit/2d127925c); 👬 zdm)
+
+Compare with the previous release: [v7.226.1...v7.227.0](https://github.com/corejslib/core/compare/v7.226.1...v7.227.0)
+
 ### v7.226.1 (2026-04-30)
 
 **Bug fixes:**
