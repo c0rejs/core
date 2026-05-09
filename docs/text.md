@@ -55,7 +55,7 @@ Enable / disable ANSI codes.
     ```javascript
     ansi.defineColor( "teal", "008080" );
     ansi.defineColor( "teal", "#008080" );
-    ansi.defineColor( "teal", 0x80_80 );
+    ansi.defineColor( "teal", 0x8080 );
     ansi.defineColor( "teal", 32_896 );
     ansi.defineColor( "teal", [ 0, 128, 128 ] );
     ```
