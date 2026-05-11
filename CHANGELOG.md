@@ -1,5 +1,35 @@
 # Changelog
 
+### v7.228.0 (2026-05-11)
+
+**New features:**
+
+- \[MINOR] feat: add uuid .bigint (● [10f2893](https://github.com/corejslib/core/commit/10f2893d8), [a76f18d](https://github.com/corejslib/core/commit/a76f18d0a); 👬 zdm)
+
+- \[MINOR] feat: add uuid compare (● [1baa9d9](https://github.com/corejslib/core/commit/1baa9d9b5); 👬 zdm)
+
+- \[MINOR] feat: add uuid constructor support for Buffer (● [9636bf3](https://github.com/corejslib/core/commit/9636bf386); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix typo (● [ea3dcc4](https://github.com/corejslib/core/commit/ea3dcc4ef); 👬 zdm)
+
+- \[PATCH] fix: fix uuid buffer (● [c8463a8](https://github.com/corejslib/core/commit/c8463a88b); 👬 zdm)
+
+- \[PATCH] fix: remove uuid .hex (● [1e257f4](https://github.com/corejslib/core/commit/1e257f477); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename result.catch() to result.fromError() (● [2d05573](https://github.com/corejslib/core/commit/2d0557332); 👬 zdm)
+
+- \[PATCH] refactor: replace instanceof Error with Error.isError (● [42b2637](https://github.com/corejslib/core/commit/42b26374a); 👬 zdm)
+
+**Other changes:**
+
+- style: lint (● [c5ada03](https://github.com/corejslib/core/commit/c5ada03d0), [ea47c07](https://github.com/corejslib/core/commit/ea47c0755); 👬 zdm)
+
+Compare with the previous release: [v7.227.0...v7.228.0](https://github.com/corejslib/core/compare/v7.227.0...v7.228.0)
+
 ### v7.227.0 (2026-05-09)
 
 **New features:**
