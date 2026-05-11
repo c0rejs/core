@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.228.1 (2026-05-11)
+
+**Bug fixes:**
+
+- \[PATCH] fix: catch errors in promises (● [9fde4b2](https://github.com/corejslib/core/commit/9fde4b28a), [ff3ce83](https://github.com/corejslib/core/commit/ff3ce833f); 👬 zdm)
+
+**Other changes:**
+
+- style: lint (● [b3c53c4](https://github.com/corejslib/core/commit/b3c53c4ce); 👬 zdm)
+
+Compare with the previous release: [v7.228.0...v7.228.1](https://github.com/corejslib/core/compare/v7.228.0...v7.228.1)
+
 ### v7.228.0 (2026-05-11)
 
 **New features:**
