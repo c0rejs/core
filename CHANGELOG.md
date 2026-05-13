@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.229.0 (2026-05-13)
+
+**New features:**
+
+- \[MINOR] feat: add threads pool queue async iterator (● [680aaee](https://github.com/corejslib/core/commit/680aaeee0); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor ThreadsPool (● [384f1fb](https://github.com/corejslib/core/commit/384f1fb29); 👬 zdm)
+
+- \[PATCH] refactor: refactor ThreadsPoolQueue (● [50c14d9](https://github.com/corejslib/core/commit/50c14d92c); 👬 zdm)
+
+Compare with the previous release: [v7.228.1...v7.229.0](https://github.com/corejslib/core/compare/v7.228.1...v7.229.0)
+
 ### v7.228.1 (2026-05-11)
 
 **Bug fixes:**
