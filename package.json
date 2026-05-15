@@ -98,7 +98,6 @@
     },
     "dependencies": {
         "@corejslib/msgpack": "^3.0.0",
-        "@corejslib/sqlite": "^1.15.39",
         "@corejslib/utils": "^2.0.0",
         "@corejslib/uws": "^2.0.0",
         "adm-zip": "^0.5.16",
@@ -126,7 +125,7 @@
         "xz-decompress": "^0.2.3"
     },
     "engines": {
-        "node": ">=24.11.0",
-        "npm": ">=11.6.1"
+        "node": ">=24.15.0",
+        "npm": ">=11.12.1"
     }
 }
