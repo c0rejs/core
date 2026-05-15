@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.230.0 (2026-05-15)
+
+**New features:**
+
+- \[MINOR] feat: use node:sqlite (● [dfb6333](https://github.com/corejslib/core/commit/dfb6333c7); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix thread destroyable (● [c682bf7](https://github.com/corejslib/core/commit/c682bf7c7); 👬 zdm)
+
+Compare with the previous release: [v7.229.0...v7.230.0](https://github.com/corejslib/core/compare/v7.229.0...v7.230.0)
+
 ### v7.229.0 (2026-05-13)
 
 **New features:**
