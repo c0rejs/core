@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.230.1 (2026-05-16)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix sqlite meta.rows (● [dea39e7](https://github.com/corejslib/core/commit/dea39e766); 👬 zdm)
+
+**Other changes:**
+
+- docs: update readme (● [d175310](https://github.com/corejslib/core/commit/d1753105e), [5d19dfb](https://github.com/corejslib/core/commit/5d19dfbc8); 👬 zdm)
+
+Compare with the previous release: [v7.230.0...v7.230.1](https://github.com/corejslib/core/compare/v7.230.0...v7.230.1)
+
 ### v7.230.0 (2026-05-15)
 
 **New features:**
