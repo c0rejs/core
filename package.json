@@ -127,5 +127,11 @@
     "engines": {
         "node": ">=24.16.0",
         "npm": ">=11.13.0"
+    },
+    "allowScripts": {
+        "@corejslib/uws": true,
+        "bufferutil": true,
+        "es5-ext": true,
+        "utf-8-validate": true
     }
 }
