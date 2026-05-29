@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.231.1 (2026-05-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix import (● [31c95a1](https://github.com/corejslib/core/commit/31c95a1c1); 👬 zdm)
+
+Compare with the previous release: [v7.231.0...v7.231.1](https://github.com/corejslib/core/compare/v7.231.0...v7.231.1)
+
 ### v7.231.0 (2026-05-29)
 
 **New features:**
