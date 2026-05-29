@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.231.2 (2026-05-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix random values array (● [5b1202b](https://github.com/corejslib/core/commit/5b1202bd8); 👬 zdm)
+
+- \[PATCH] fix: fix uuid v7 generator (● [13a8087](https://github.com/corejslib/core/commit/13a808777); 👬 zdm)
+
+Compare with the previous release: [v7.231.1...v7.231.2](https://github.com/corejslib/core/compare/v7.231.1...v7.231.2)
+
 ### v7.231.1 (2026-05-29)
 
 **Bug fixes:**
