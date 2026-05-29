@@ -1,5 +1,35 @@
 # Changelog
 
+### v7.231.0 (2026-05-29)
+
+**New features:**
+
+- \[MINOR] feat: add uuid .counter (● [7510244](https://github.com/corejslib/core/commit/7510244e0); 👬 zdm)
+
+- \[MINOR] feat: enable native uuid v7 (● [3262331](https://github.com/corejslib/core/commit/3262331f0); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix build resources (● [1861729](https://github.com/corejslib/core/commit/186172988); 👬 zdm)
+
+- \[PATCH] fix: fix ejs.fromFile (● [f2ffab7](https://github.com/corejslib/core/commit/f2ffab71d); 👬 zdm)
+
+- \[PATCH] fix: fix gh actions (● [b1a85d0](https://github.com/corejslib/core/commit/b1a85d090); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: make ejs.fromFile async (● [692d44c](https://github.com/corejslib/core/commit/692d44cbb), [d919688](https://github.com/corejslib/core/commit/d9196881d); 👬 zdm)
+
+- \[PATCH] refactor: refactor passwords (● [61b148a](https://github.com/corejslib/core/commit/61b148ae7); 👬 zdm)
+
+- \[PATCH] refactor: update ejs cache usage (● [bf15b90](https://github.com/corejslib/core/commit/bf15b900b), [42e377e](https://github.com/corejslib/core/commit/42e377e57), [7282dc8](https://github.com/corejslib/core/commit/7282dc8ab); 👬 zdm)
+
+**Other changes:**
+
+- build: remove registries from .npmrc (● [5694be5](https://github.com/corejslib/core/commit/5694be56f); 👬 zdm)
+
+Compare with the previous release: [v7.230.2...v7.231.0](https://github.com/corejslib/core/compare/v7.230.2...v7.231.0)
+
 ### v7.230.2 (2026-05-19)
 
 **Code refactoring:**
