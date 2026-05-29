@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.231.3 (2026-05-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix passwords bit strength (● [6155314](https://github.com/corejslib/core/commit/615531454); 👬 zdm)
+
+Compare with the previous release: [v7.231.2...v7.231.3](https://github.com/corejslib/core/compare/v7.231.2...v7.231.3)
+
 ### v7.231.2 (2026-05-29)
 
 **Bug fixes:**
