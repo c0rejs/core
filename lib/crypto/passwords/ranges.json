@@ -1,5 +1,10 @@
 [
     [
+        128,
+        255,
+        "Latin-1 Supplement"
+    ],
+    [
         256,
         383,
         "Latin Extended-A"
