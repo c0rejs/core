@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.1 (2026-06-15)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix passwords gen (● [747929e](https://github.com/corejslib/core/commit/747929eca); 👬 zdm)
+
+Compare with the previous release: [v7.232.0...v7.232.1](https://github.com/corejslib/core/compare/v7.232.0...v7.232.1)
+
 ### v7.232.0 (2026-06-15)
 
 **New features:**
