@@ -1,5 +1,51 @@
 # Changelog
 
+### v7.232.0 (2026-06-15)
+
+**New features:**
+
+- \[MINOR] feat: add alphabet tags (● [2812045](https://github.com/corejslib/core/commit/281204571), [c01ac4b](https://github.com/corejslib/core/commit/c01ac4bdf); 👬 zdm)
+
+- \[MINOR] feat: add avl-tree iterator (● [9ba7082](https://github.com/corejslib/core/commit/9ba708205); 👬 zdm)
+
+- \[MINOR] feat: add passwords brute force estimations (● [54bef7d](https://github.com/corejslib/core/commit/54bef7de7), [913b61b](https://github.com/corejslib/core/commit/913b61b1b), [cb97a81](https://github.com/corejslib/core/commit/cb97a8147), [681e417](https://github.com/corejslib/core/commit/681e417dc), [3f6d0dd](https://github.com/corejslib/core/commit/3f6d0dd58); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix Numeric inspector (● [e85488b](https://github.com/corejslib/core/commit/e85488b5c); 👬 zdm)
+
+- \[PATCH] fix: update certificates reesources domains (● [a5ad306](https://github.com/corejslib/core/commit/a5ad306c7); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add interval inspector (● [44339ca](https://github.com/corejslib/core/commit/44339ca06); 👬 zdm)
+
+- \[PATCH] refactor: refactor Alphabet (● [e51e056](https://github.com/corejslib/core/commit/e51e0560c), [e0b3b48](https://github.com/corejslib/core/commit/e0b3b484b), [8e9382f](https://github.com/corejslib/core/commit/8e9382fda), [975f0d1](https://github.com/corejslib/core/commit/975f0d190), [4ea4ce6](https://github.com/corejslib/core/commit/4ea4ce687), [a8f3265](https://github.com/corejslib/core/commit/a8f3265e1), [9579a15](https://github.com/corejslib/core/commit/9579a15a2), [f4e0fe9](https://github.com/corejslib/core/commit/f4e0fe90f); 👬 zdm)
+
+- \[PATCH] refactor: refactor avl tree (● [c04b8c1](https://github.com/corejslib/core/commit/c04b8c1d9); 👬 zdm)
+
+- \[PATCH] refactor: refactor interval (● [4791209](https://github.com/corejslib/core/commit/479120995), [d94fdc1](https://github.com/corejslib/core/commit/d94fdc119); 👬 zdm)
+
+- \[PATCH] refactor: refactor random values generator (● [7b4ed8a](https://github.com/corejslib/core/commit/7b4ed8ad6); 👬 zdm)
+
+- \[PATCH] refactor: rename ip/range-set to ip/ranges (● [886b935](https://github.com/corejslib/core/commit/886b93551); 👬 zdm)
+
+- \[PATCH] refactor: use avl tree to find utf8 ranges (● [50b96c8](https://github.com/corejslib/core/commit/50b96c85a), [3849ff3](https://github.com/corejslib/core/commit/3849ff3bd), [adcbf11](https://github.com/corejslib/core/commit/adcbf1170); 👬 zdm)
+
+**Other changes:**
+
+- style: add comments (● [e8d378f](https://github.com/corejslib/core/commit/e8d378f02); 👬 zdm)
+
+- style: fix typo (● [d73e064](https://github.com/corejslib/core/commit/d73e064b4), [11656ce](https://github.com/corejslib/core/commit/11656ce32); 👬 zdm)
+
+- style: lint (● [661004b](https://github.com/corejslib/core/commit/661004b6e); 👬 zdm)
+
+- style: make isEmptyObject() stable (● [a33145a](https://github.com/corejslib/core/commit/a33145a09); 👬 zdm)
+
+- style: rewrite code (● [4da9873](https://github.com/corejslib/core/commit/4da987376); 👬 zdm)
+
+Compare with the previous release: [v7.231.3...v7.232.0](https://github.com/corejslib/core/compare/v7.231.3...v7.232.0)
+
 ### v7.231.3 (2026-05-29)
 
 **Bug fixes:**
