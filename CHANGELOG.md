@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.2 (2026-06-16)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix avl forEach loop (● [67d63a2](https://github.com/corejslib/core/commit/67d63a264); 👬 zdm)
+
+Compare with the previous release: [v7.232.1...v7.232.2](https://github.com/corejslib/core/compare/v7.232.1...v7.232.2)
+
 ### v7.232.1 (2026-06-15)
 
 **Bug fixes:**
