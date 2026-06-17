@@ -1,5 +1,21 @@
 # Changelog
 
+### v7.232.3 (2026-06-17)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix interval duration params (● [f7cd835](https://github.com/corejslib/core/commit/f7cd835f9), [9ad6fa6](https://github.com/corejslib/core/commit/9ad6fa64a), [5dcb213](https://github.com/corejslib/core/commit/5dcb213ca), [c96cf4f](https://github.com/corejslib/core/commit/c96cf4f08), [029d2ae](https://github.com/corejslib/core/commit/029d2ae95); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add Numeric.toString() radix option (● [f79b12b](https://github.com/corejslib/core/commit/f79b12b4b); 👬 zdm)
+
+- \[PATCH] refactor: refactor numeric (● [8082ffd](https://github.com/corejslib/core/commit/8082ffd00), [1942e35](https://github.com/corejslib/core/commit/1942e35f1), [7018ef5](https://github.com/corejslib/core/commit/7018ef5a2), [c0c2779](https://github.com/corejslib/core/commit/c0c27790b), [27b17aa](https://github.com/corejslib/core/commit/27b17aa1e), [00bed99](https://github.com/corejslib/core/commit/00bed99cf); 👬 zdm)
+
+- \[PATCH] refactor: refactor ranges (● [05635ff](https://github.com/corejslib/core/commit/05635ff66), [4153bcf](https://github.com/corejslib/core/commit/4153bcff5); 👬 zdm)
+
+Compare with the previous release: [v7.232.2...v7.232.3](https://github.com/corejslib/core/compare/v7.232.2...v7.232.3)
+
 ### v7.232.2 (2026-06-16)
 
 **Bug fixes:**
