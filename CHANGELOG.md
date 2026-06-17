@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.5 (2026-06-17)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor passwords (● [3e27f51](https://github.com/corejslib/core/commit/3e27f5111), [848af2f](https://github.com/corejslib/core/commit/848af2f14), [7f8f469](https://github.com/corejslib/core/commit/7f8f46921), [dbcd10d](https://github.com/corejslib/core/commit/dbcd10d92), [33156b4](https://github.com/corejslib/core/commit/33156b4a6), [76d1bb9](https://github.com/corejslib/core/commit/76d1bb9b0); 👬 zdm)
+
+Compare with the previous release: [v7.232.4...v7.232.5](https://github.com/corejslib/core/compare/v7.232.4...v7.232.5)
+
 ### v7.232.4 (2026-06-17)
 
 **Bug fixes:**
