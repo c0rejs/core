@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.232.4 (2026-06-17)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix interval default unit (● [ff5aef0](https://github.com/corejslib/core/commit/ff5aef03a); 👬 zdm)
+
+- \[PATCH] fix: fix interval toString() (● [d67adf3](https://github.com/corejslib/core/commit/d67adf3dc); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: cache numeric round results (● [777cf1f](https://github.com/corejslib/core/commit/777cf1fbb), [e3d3b77](https://github.com/corejslib/core/commit/e3d3b774d), [b082a53](https://github.com/corejslib/core/commit/b082a530d); 👬 zdm)
+
+Compare with the previous release: [v7.232.3...v7.232.4](https://github.com/corejslib/core/compare/v7.232.3...v7.232.4)
+
 ### v7.232.3 (2026-06-17)
 
 **Bug fixes:**
