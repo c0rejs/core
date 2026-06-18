@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.8 (2026-06-18)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix passwords default alphabet (● [4537e39](https://github.com/corejslib/core/commit/4537e392e); 👬 zdm)
+
+Compare with the previous release: [v7.232.7...v7.232.8](https://github.com/corejslib/core/compare/v7.232.7...v7.232.8)
+
 ### v7.232.7 (2026-06-18)
 
 **Code refactoring:**
