@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.7 (2026-06-18)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor passwords (● [fe2df7d](https://github.com/corejslib/core/commit/fe2df7d81); 👬 zdm)
+
+Compare with the previous release: [v7.232.6...v7.232.7](https://github.com/corejslib/core/compare/v7.232.6...v7.232.7)
+
 ### v7.232.6 (2026-06-18)
 
 **Code refactoring:**
