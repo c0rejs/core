@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.10 (2026-06-19)
+
+**Other changes:**
+
+- style: lint (● [fbe0220](https://github.com/corejslib/core/commit/fbe022053); 👬 zdm)
+
+Compare with the previous release: [v7.232.9...v7.232.10](https://github.com/corejslib/core/compare/v7.232.9...v7.232.10)
+
 ### v7.232.9 (2026-06-19)
 
 **Other changes:**
