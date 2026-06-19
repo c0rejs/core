@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.9 (2026-06-19)
+
+**Other changes:**
+
+- build(deps): bunp temporal-polyfill@^1.0.0 (● [c414d28](https://github.com/corejslib/core/commit/c414d28e6); 👬 zdm)
+
+Compare with the previous release: [v7.232.8...v7.232.9](https://github.com/corejslib/core/compare/v7.232.8...v7.232.9)
+
 ### v7.232.8 (2026-06-18)
 
 **Bug fixes:**
