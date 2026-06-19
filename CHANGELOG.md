@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.12 (2026-06-19)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix number format in yaml (● [c7dfd72](https://github.com/corejslib/core/commit/c7dfd7262); 👬 zdm)
+
+Compare with the previous release: [v7.232.11...v7.232.12](https://github.com/corejslib/core/compare/v7.232.11...v7.232.12)
+
 ### v7.232.11 (2026-06-19)
 
 **Bug fixes:**
