@@ -169,11 +169,7 @@ class ApiCli {
     }
 
     async call ( method, ...args ) {
-        const parans = [];
-
-        for ( const arg of args ) {
-            parans.push( JSON.parse( arg ) );
-        }
+        const parans = Array.from( args, arg => JSON.parse( arg ) );
 
         const res = await this.#getApi().call( method, ...parans );
 
