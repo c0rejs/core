@@ -5,7 +5,7 @@ dependencies:
 optionalDependencies: ~
 
 config:
-  cacheMaxSize: 10_000
+  cacheMaxSize: 10000
 
   types:
     main:

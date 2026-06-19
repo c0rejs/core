@@ -108,10 +108,10 @@ config:
   signupEnabled: true
 
   # tokens
-  apiTokensCacheMaxSize: 10_000
+  apiTokensCacheMaxSize: 10000
 
   # sessions
-  sessionsCacheMaxSize: 10_000
+  sessionsCacheMaxSize: 10000
   sessionMaxAge: 30 days
   authorizedSessionMaxAge: 5 minutes
 
