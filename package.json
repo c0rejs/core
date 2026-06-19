@@ -120,7 +120,7 @@
         "pkijs": "^3.2.4",
         "semver": "^7.7.2",
         "telegram": "^2.26.6",
-        "temporal-polyfill": "^0.3.0",
+        "temporal-polyfill": "^1.0.0",
         "undici": "^8.0.0",
         "xz-decompress": "^0.2.3"
     },
