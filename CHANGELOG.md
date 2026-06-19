@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.232.13 (2026-06-19)
+
+**Other changes:**
+
+- style: lint (● [7e8eb82](https://github.com/corejslib/core/commit/7e8eb8281), [497d483](https://github.com/corejslib/core/commit/497d48360), [f155895](https://github.com/corejslib/core/commit/f15589538), [a48066d](https://github.com/corejslib/core/commit/a48066d58); 👬 zdm)
+
+Compare with the previous release: [v7.232.12...v7.232.13](https://github.com/corejslib/core/compare/v7.232.12...v7.232.13)
+
 ### v7.232.12 (2026-06-19)
 
 **Bug fixes:**
