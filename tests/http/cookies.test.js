@@ -15,7 +15,7 @@ const TESTS = [
     },
     {
         "name": "test1",
-        "value": ` test- \x04-;",\\ мама`,
+        "value": ` test- \u{4}-;",\\ мама`,
     },
     {
         "name": "test",
