@@ -1,5 +1,21 @@
 # Changelog
 
+### v7.232.14 (2026-06-21)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix numerical sort (● [2863885](https://github.com/corejslib/core/commit/286388524), [a9ef3e2](https://github.com/corejslib/core/commit/a9ef3e2d7); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor compare function (● [fc40207](https://github.com/corejslib/core/commit/fc402077c); 👬 zdm)
+
+**Other changes:**
+
+- style: lint (● [b5166b8](https://github.com/corejslib/core/commit/b5166b80b), [797b16a](https://github.com/corejslib/core/commit/797b16a2c), [57d931c](https://github.com/corejslib/core/commit/57d931c34), [be07032](https://github.com/corejslib/core/commit/be070320f), [462b407](https://github.com/corejslib/core/commit/462b40716), [6576e99](https://github.com/corejslib/core/commit/6576e99f4), [fa87b21](https://github.com/corejslib/core/commit/fa87b21f8), [8a603d0](https://github.com/corejslib/core/commit/8a603d0a1); 👬 zdm)
+
+Compare with the previous release: [v7.232.13...v7.232.14](https://github.com/corejslib/core/compare/v7.232.13...v7.232.14)
+
 ### v7.232.13 (2026-06-19)
 
 **Other changes:**
