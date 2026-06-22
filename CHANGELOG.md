@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.233.0 (2026-06-22)
+
+**New features:**
+
+- \[MINOR] feat: change yaml noCompatMode option to yaml11 (● [c13f190](https://github.com/corejslib/core/commit/c13f1904e); 👬 zdm)
+
+Compare with the previous release: [v7.232.14...v7.233.0](https://github.com/corejslib/core/compare/v7.232.14...v7.233.0)
+
 ### v7.232.14 (2026-06-21)
 
 **Bug fixes:**
