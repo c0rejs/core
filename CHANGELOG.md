@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.233.1 (2026-06-23)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: migrate to js-yaml5 (● [68dee94](https://github.com/corejslib/core/commit/68dee943f); 👬 zdm)
+
+Compare with the previous release: [v7.233.0...v7.233.1](https://github.com/corejslib/core/compare/v7.233.0...v7.233.1)
+
 ### v7.233.0 (2026-06-22)
 
 **New features:**
