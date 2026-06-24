@@ -2,6 +2,7 @@
   type: object
   properties:
     listenIpFamily: { enum: [0, 4, 6] }
+    quicEnabled: { type: boolean }
     maxBodySize: { type: string, format: digital-size }
 
     cacheEnabled: { type: boolean }
@@ -48,6 +49,7 @@
   additionalProperties: false
   required:
     - listenIpFamily
+    - quicEnabled
     - maxBodySize
     - cacheEnabled
     - cacheInactive

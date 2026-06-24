@@ -58,8 +58,8 @@ methods:
                       properties:
                         port: { type: integer, format: ip-port }
                         type: { enum: [http, tcp, udp] }
-                        proxyProtocol: { type: boolean }
-                        ssl: { type: boolean }
+                        useProxyProtocol: { type: boolean }
+                        useSsl: { type: boolean }
                         maxBodySize: { type: string, format: digital-size }
                         cacheEnabled: { type: boolean }
                         cacheBypass: { type: boolean }
