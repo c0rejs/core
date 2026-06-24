@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.233.2 (2026-06-24)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx udp ports (● [59b1fda](https://github.com/corejslib/core/commit/59b1fda71); 👬 zdm)
+
+Compare with the previous release: [v7.233.1...v7.233.2](https://github.com/corejslib/core/compare/v7.233.1...v7.233.2)
+
 ### v7.233.1 (2026-06-23)
 
 **Code refactoring:**
