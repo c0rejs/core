@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.233.3 (2026-06-25)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx config generator (● [1455e36](https://github.com/corejslib/core/commit/1455e36e4), [abf4e0d](https://github.com/corejslib/core/commit/abf4e0d41); 👬 zdm)
+
+- \[PATCH] fix: fix nginx server names sort (● [2e1f6be](https://github.com/corejslib/core/commit/2e1f6be6a), [37edd52](https://github.com/corejslib/core/commit/37edd52c5), [192bd31](https://github.com/corejslib/core/commit/192bd3138), [f3a921e](https://github.com/corejslib/core/commit/f3a921e1a); 👬 zdm)
+
+Compare with the previous release: [v7.233.2...v7.233.3](https://github.com/corejslib/core/compare/v7.233.2...v7.233.3)
+
 ### v7.233.2 (2026-06-24)
 
 **Bug fixes:**
