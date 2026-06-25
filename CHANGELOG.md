@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.233.4 (2026-06-25)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix nginx config generator (● [3f030fb](https://github.com/corejslib/core/commit/3f030fbe3); 👬 zdm)
+
+Compare with the previous release: [v7.233.3...v7.233.4](https://github.com/corejslib/core/compare/v7.233.3...v7.233.4)
+
 ### v7.233.3 (2026-06-25)
 
 **Bug fixes:**
