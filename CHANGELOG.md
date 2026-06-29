@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.233.5 (2026-06-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: use buffered random values (● [b78012d](https://github.com/corejslib/core/commit/b78012d2c); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update password hash settings (● [b5ddf5c](https://github.com/corejslib/core/commit/b5ddf5cee); 👬 zdm)
+
+Compare with the previous release: [v7.233.4...v7.233.5](https://github.com/corejslib/core/compare/v7.233.4...v7.233.5)
+
 ### v7.233.4 (2026-06-25)
 
 **Bug fixes:**
@@ -1458,7 +1470,7 @@ Compare with the previous release: [v7.197.6](https://github.com/c0rejs/core/com
 
 **Bug fixes:**
 
-- \[PATCH] fix: increase types_hash_bucket_size (● [da36974](https://github.com/c0rejs/core/commit/da3697435); 👬 zdm)
+- \[PATCH] fix: increase types\_hash\_bucket\_size (● [da36974](https://github.com/c0rejs/core/commit/da3697435); 👬 zdm)
 
 Compare with the previous release: [v7.197.5](https://github.com/c0rejs/core/compare/v7.197.5...v7.197.6)
 
@@ -1466,7 +1478,7 @@ Compare with the previous release: [v7.197.5](https://github.com/c0rejs/core/com
 
 **Bug fixes:**
 
-- \[PATCH] fix: increase types_hash_bucket_size (● [0ead58d](https://github.com/c0rejs/core/commit/0ead58d37); 👬 zdm)
+- \[PATCH] fix: increase types\_hash\_bucket\_size (● [0ead58d](https://github.com/c0rejs/core/commit/0ead58d37); 👬 zdm)
 
 Compare with the previous release: [v7.197.4](https://github.com/c0rejs/core/compare/v7.197.4...v7.197.5)
 
@@ -1474,7 +1486,7 @@ Compare with the previous release: [v7.197.4](https://github.com/c0rejs/core/com
 
 **Bug fixes:**
 
-- \[PATCH] fix: increase types_hash_bucket_size (● [d3e7156](https://github.com/c0rejs/core/commit/d3e7156a3); 👬 zdm)
+- \[PATCH] fix: increase types\_hash\_bucket\_size (● [d3e7156](https://github.com/c0rejs/core/commit/d3e7156a3); 👬 zdm)
 
 Compare with the previous release: [v7.197.3](https://github.com/c0rejs/core/compare/v7.197.3...v7.197.4)
 
@@ -1482,7 +1494,7 @@ Compare with the previous release: [v7.197.3](https://github.com/c0rejs/core/com
 
 **Bug fixes:**
 
-- \[PATCH] fix: increase types_hash_bucket_size (● [d08fcea](https://github.com/c0rejs/core/commit/d08fcea7c); 👬 zdm)
+- \[PATCH] fix: increase types\_hash\_bucket\_size (● [d08fcea](https://github.com/c0rejs/core/commit/d08fcea7c); 👬 zdm)
 
 Compare with the previous release: [v7.197.2](https://github.com/c0rejs/core/compare/v7.197.2...v7.197.3)
 
@@ -1490,7 +1502,7 @@ Compare with the previous release: [v7.197.2](https://github.com/c0rejs/core/com
 
 **Bug fixes:**
 
-- \[PATCH] fix: increase types_hash_bucket_size (● [b69fdfc](https://github.com/c0rejs/core/commit/b69fdfcd5); 👬 zdm)
+- \[PATCH] fix: increase types\_hash\_bucket\_size (● [b69fdfc](https://github.com/c0rejs/core/commit/b69fdfcd5); 👬 zdm)
 
 Compare with the previous release: [v7.197.1](https://github.com/c0rejs/core/compare/v7.197.1...v7.197.2)
 
@@ -1498,7 +1510,7 @@ Compare with the previous release: [v7.197.1](https://github.com/c0rejs/core/com
 
 **Bug fixes:**
 
-- \[PATCH] fix: increase types_hash_bucket_size (● [b7b3231](https://github.com/c0rejs/core/commit/b7b3231f1); 👬 zdm)
+- \[PATCH] fix: increase types\_hash\_bucket\_size (● [b7b3231](https://github.com/c0rejs/core/commit/b7b3231f1); 👬 zdm)
 
 Compare with the previous release: [v7.197.0](https://github.com/c0rejs/core/compare/v7.197.0...v7.197.1)
 
