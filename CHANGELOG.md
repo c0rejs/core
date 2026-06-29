@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.233.7 (2026-06-29)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: override password hash hash length (● [696adc4](https://github.com/corejslib/core/commit/696adc473), [36b3e6e](https://github.com/corejslib/core/commit/36b3e6ed1); 👬 zdm)
+
+- \[PATCH] refactor: refactor crypto encrypt / decrypt (● [6730333](https://github.com/corejslib/core/commit/6730333d5); 👬 zdm)
+
+Compare with the previous release: [v7.233.6...v7.233.7](https://github.com/corejslib/core/compare/v7.233.6...v7.233.7)
+
 ### v7.233.6 (2026-06-29)
 
 **Bug fixes:**
