@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.233.8 (2026-06-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: remove password hash openssl preset (● [861d10e](https://github.com/corejslib/core/commit/861d10e4c); 👬 zdm)
+
+Compare with the previous release: [v7.233.7...v7.233.8](https://github.com/corejslib/core/compare/v7.233.7...v7.233.8)
+
 ### v7.233.7 (2026-06-29)
 
 **Code refactoring:**
