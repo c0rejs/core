@@ -16,7 +16,6 @@
             - argon2d
             - argon2i
             - argon2id
-            - openssl
             - owasp
             - owasp-argon2
             - owasp-argon2-12MiB
