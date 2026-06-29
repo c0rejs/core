@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.233.6 (2026-06-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix hash length (● [6fbe5ae](https://github.com/corejslib/core/commit/6fbe5aeed); 👬 zdm)
+
+- \[PATCH] fix: use buffered random values (● [5dcaad9](https://github.com/corejslib/core/commit/5dcaad9ba), [06b1c76](https://github.com/corejslib/core/commit/06b1c76c2); 👬 zdm)
+
+Compare with the previous release: [v7.233.5...v7.233.6](https://github.com/corejslib/core/compare/v7.233.5...v7.233.6)
+
 ### v7.233.5 (2026-06-29)
 
 **Bug fixes:**
