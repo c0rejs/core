@@ -29,17 +29,17 @@ const TESTS = [
 ];
 
 const iterations = 1_000_000,
-    p = 0.01, // a-level, probability of error
+    alpha = 0.01, // a-level, probability of error
     randomValues = new RandomValues( 0xFFFF );
 
-function getX2Crit ( p, df ) {
-    const t = Math.sqrt( -2 * Math.log( p ) ),
+function getChi2crit ( alpha, df ) {
+    const t = Math.sqrt( -2 * Math.log( alpha ) ),
         z = t - ( 2.515517 + 0.802853 * t + 0.010328 * t * t ) / ( 1 + 1.432788 * t + 0.189269 * t * t + 0.001308 * t * t * t );
 
     return 0.5 * ( z + Math.sqrt( 2 * df - 1 ) ) ** 2;
 }
 
-function calculateX2 ( { iterations, min = 0, max = 0, generate } ) {
+function calculateChi2 ( { iterations, min = 0, max = 0, generate } ) {
     min = BigInt( min );
     max = BigInt( max );
 
@@ -64,25 +64,25 @@ function calculateX2 ( { iterations, min = 0, max = 0, generate } ) {
         values[ value ].frequency++;
     }
 
-    var x2 = 0;
+    var chi2 = 0;
 
     for ( const value in values ) {
-        x2 += ( values[ value ].frequency - expectedFrequency ) ** 2 / expectedFrequency;
+        chi2 += ( values[ value ].frequency - expectedFrequency ) ** 2 / expectedFrequency;
     }
 
     // degreese of freedom (df)
     const df = k - 1,
-        x2crit = getX2Crit( p, df );
+        chi2crit = getChi2crit( alpha, df );
 
     return {
         "min": Number( min ),
         "max": Number( max ),
         iterations,
-        p,
+        alpha,
         df,
-        x2,
-        x2crit,
-        "ok": x2 <= x2crit,
+        chi2,
+        chi2crit,
+        "ok": chi2 <= chi2crit,
 
         // values,
     };
@@ -91,8 +91,8 @@ function calculateX2 ( { iterations, min = 0, max = 0, generate } ) {
 suite( "crypto", () => {
     suite( "random-values", () => {
         for ( let n = 0; n < TESTS.length; n++ ) {
-            test( `x2crit-${ n }`, async () => {
-                const res = calculateX2( {
+            test( `chi2crit-${ n }`, async () => {
+                const res = calculateChi2( {
                     iterations,
                     "min": 0,
                     ...TESTS[ n ],
