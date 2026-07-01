@@ -32,7 +32,7 @@ const iterations = 1_000_000,
     alpha = 0.01, // a-level, probability of error
     randomValues = new RandomValues( 0xFFFF );
 
-function getChi2crit ( alpha, df ) {
+function getChi2Crit ( alpha, df ) {
     const t = Math.sqrt( -2 * Math.log( alpha ) ),
         z = t - ( 2.515517 + 0.802853 * t + 0.010328 * t * t ) / ( 1 + 1.432788 * t + 0.189269 * t * t + 0.001308 * t * t * t );
 
@@ -72,7 +72,7 @@ function calculateChi2 ( { iterations, min = 0, max = 0, generate } ) {
 
     // degreese of freedom (df)
     const df = k - 1,
-        chi2crit = getChi2crit( alpha, df );
+        chi2Crit = getChi2Crit( alpha, df );
 
     return {
         "min": Number( min ),
@@ -81,8 +81,8 @@ function calculateChi2 ( { iterations, min = 0, max = 0, generate } ) {
         alpha,
         df,
         chi2,
-        chi2crit,
-        "ok": chi2 <= chi2crit,
+        chi2Crit,
+        "ok": chi2 <= chi2Crit,
 
         // values,
     };
@@ -91,7 +91,7 @@ function calculateChi2 ( { iterations, min = 0, max = 0, generate } ) {
 suite( "crypto", () => {
     suite( "random-values", () => {
         for ( let n = 0; n < TESTS.length; n++ ) {
-            test( `chi2crit-${ n }`, async () => {
+            test( `chi2Crit-${ n }`, async () => {
                 const res = calculateChi2( {
                     iterations,
                     "min": 0,
