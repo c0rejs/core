@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.233.9 (2026-07-01)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix random-values test (● [6b056da](https://github.com/corejslib/core/commit/6b056daea); 👬 zdm)
+
+- \[PATCH] fix: fix ssh crypt settings (● [3dace05](https://github.com/corejslib/core/commit/3dace05fa); 👬 zdm)
+
+- \[PATCH] fix: fix var name (● [072fa9d](https://github.com/corejslib/core/commit/072fa9d59); 👬 zdm)
+
+Compare with the previous release: [v7.233.8...v7.233.9](https://github.com/corejslib/core/compare/v7.233.8...v7.233.9)
+
 ### v7.233.8 (2026-06-29)
 
 **Bug fixes:**
