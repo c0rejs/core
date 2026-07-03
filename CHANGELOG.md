@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.235.1 (2026-07-03)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix getRandomArrayBuffer (● [cf2be75](https://github.com/corejslib/core/commit/cf2be7594); 👬 zdm)
+
+Compare with the previous release: [v7.235.0...v7.235.1](https://github.com/corejslib/core/compare/v7.235.0...v7.235.1)
+
 ### v7.235.0 (2026-07-03)
 
 **New features:**
