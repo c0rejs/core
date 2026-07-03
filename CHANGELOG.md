@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.235.0 (2026-07-03)
+
+**New features:**
+
+- \[MINOR] feat: add .isRealFile property (● [be6a671](https://github.com/corejslib/core/commit/be6a67196); 👬 zdm)
+
+Compare with the previous release: [v7.234.0...v7.235.0](https://github.com/corejslib/core/compare/v7.234.0...v7.235.0)
+
 ### v7.234.0 (2026-07-03)
 
 **New features:**
