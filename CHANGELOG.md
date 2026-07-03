@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.234.0 (2026-07-03)
+
+**New features:**
+
+- \[MINOR] feat: add ffmpeg api (● [9e87813](https://github.com/corejslib/core/commit/9e878139d); 👬 zdm)
+
+Compare with the previous release: [v7.233.9...v7.234.0](https://github.com/corejslib/core/compare/v7.233.9...v7.234.0)
+
 ### v7.233.9 (2026-07-01)
 
 **Bug fixes:**
