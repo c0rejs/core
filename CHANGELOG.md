@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.235.2 (2026-07-03)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update ffmpeg api (● [d25004f](https://github.com/corejslib/core/commit/d25004f46); 👬 zdm)
+
+Compare with the previous release: [v7.235.1...v7.235.2](https://github.com/corejslib/core/compare/v7.235.1...v7.235.2)
+
 ### v7.235.1 (2026-07-03)
 
 **Bug fixes:**
