@@ -1,5 +1,17 @@
 # Changelog
 
+### v7.235.3 (2026-07-05)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor ffmpeg api (● [3091c36](https://github.com/corejslib/core/commit/3091c367c), [290d203](https://github.com/corejslib/core/commit/290d2030c), [2aedc6e](https://github.com/corejslib/core/commit/2aedc6e0e), [ba3a514](https://github.com/corejslib/core/commit/ba3a5141d), [9b12f7f](https://github.com/corejslib/core/commit/9b12f7f16), [09089a1](https://github.com/corejslib/core/commit/09089a190); 👬 zdm)
+
+**Other changes:**
+
+- chore: relocate scripts (● [57cb7b8](https://github.com/corejslib/core/commit/57cb7b8fb); 👬 zdm)
+
+Compare with the previous release: [v7.235.2...v7.235.3](https://github.com/corejslib/core/compare/v7.235.2...v7.235.3)
+
 ### v7.235.2 (2026-07-03)
 
 **Code refactoring:**
