@@ -1,18 +1,13 @@
 # Utils
 
 ```javascript
-import * as utils from "@softvisio/utils";
+import * as utils from "@corejslib/utils";
 ```
 
 ### utils.sleep( timeout )
 
 - `timeout` {integer} Timeout to sleep.
 - Returns: {Promise} Resolves when timeout passed.
-
-### utils.quoteMeta( string )
-
-- `string` {string}
-- Returns: {string} String with the {RegExp} meta characters quoted.
 
 ### utils.getRandomArrayIndex( array )
 
@@ -24,12 +19,12 @@ import * as utils from "@softvisio/utils";
 - `array` {Array}
 - Returns: {any} Random array value.
 
-### utils.objectIsPlain( object )
+### utils.isPlainObject( object )
 
 - `object` {Object} Object to check.
 - Returns: {boolean} `true` if `object` is plain object.
 
-### utils.objectIsEmpty( object )
+### utils.isEmptyObject( object )
 
 - `object` {Object} Object to check.
 - Returns: {boolean} `true` if `object` has no properties.
@@ -63,7 +58,7 @@ This function will be removed when node `import.meta.resolve()` will be released
 ## Net
 
 ```javascript
-import * as net from "@softvisio/core/utils/net";
+import * as net from "@corejslib/core/utils/net";
 ```
 
 ### net.getDefaultPort( protocol )

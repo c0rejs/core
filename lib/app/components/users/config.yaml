@@ -1,6 +1,6 @@
 dependencies:
   - dbh
-  - passwordHash
+  - crypto
 
 optionalDependencies: ~
 
@@ -9,6 +9,6 @@ config:
     email: ~
     password: ~
 
-  cacheMaxSize: 10_000
+  cacheMaxSize: 10000
   newUserEnabledByDefault: true # new users are enabled by default
-  passwordsStrength: strong
+  allowWeakPasswords: false

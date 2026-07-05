@@ -1,26 +1,26 @@
 {
-    "name": "@softvisio/core",
-    "version": "7.181.0",
+    "name": "@corejslib/core",
+    "version": "7.235.3",
     "description": "Softisio core",
     "keywords": [
         "softvisio",
         "core"
     ],
-    "homepage": "https://softvisio-node.github.io/core/",
+    "homepage": "https://corejslib.github.io/core/",
     "bugs": {
-        "url": "https://github.com/softvisio-node/core/issues",
+        "url": "https://github.com/corejslib/core/issues",
         "email": "root <root@softvisio.net>"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/softvisio-node/core.git"
+        "url": "git+https://github.com/corejslib/core.git"
     },
     "license": "ISC",
     "author": "root <root@softvisio.net>",
     "type": "module",
     "imports": {
         "#browser/*": "./lib/_browser/*.js",
-        "#lib/*": "@softvisio/core/*",
+        "#lib/*": "@corejslib/core/*",
         "#resources/*": "./resources/*"
     },
     "exports": {
@@ -42,6 +42,10 @@
         "./blob": {
             "browser": "./lib/_browser/blob.js",
             "node": "./lib/blob.js"
+        },
+        "./ejs": {
+            "browser": "./lib/_browser/ejs.js",
+            "node": "./lib/ejs.js"
         },
         "./env": {
             "browser": "./lib/_browser/env.js",
@@ -79,7 +83,7 @@
     "bin": {
         "install-google-chrome": "bin/install-google-chrome.js",
         "nenv": "bin/nenv.js",
-        "softvisio-api": "bin/softvisio-api.js"
+        "sapi": "bin/sapi.js"
     },
     "files": [
         "/bin",
@@ -90,14 +94,12 @@
     "scripts": {
         "build": "node bin/build.js",
         "install": "node bin/install.js",
-        "test": "node --test tests/**/*.test.js"
+        "test": "node --test \"tests/**/*.test.js\""
     },
     "dependencies": {
-        "@softvisio/argon2": "^1.2.5",
-        "@softvisio/msgpack": "^3.0.0",
-        "@softvisio/sqlite": "^1.15.39",
-        "@softvisio/utils": "^2.0.0",
-        "@softvisio/uws": "^2.0.0",
+        "@corejslib/msgpack": "^3.0.0",
+        "@corejslib/utils": "^2.0.0",
+        "@corejslib/uws": "^2.0.0",
         "adm-zip": "^0.5.16",
         "ajv": "^8.0.1",
         "ajv-errors": "^3.0.0",
@@ -105,9 +107,8 @@
         "ajv-formats-draft2019": "^1.4.3",
         "ajv-keywords": "^5.0.0",
         "decimal.js": "^10.4.3",
-        "ejs": "^3.1.5",
         "fast-xml-parser": "^5.0.0",
-        "js-yaml": "^4.1.0",
+        "js-yaml": "^5.0.0",
         "json5": "^2.2.0",
         "linkedom": "^0.18.4",
         "mdast-util-from-markdown": "^2.0.1",
@@ -119,12 +120,12 @@
         "pkijs": "^3.2.4",
         "semver": "^7.7.2",
         "telegram": "^2.26.6",
-        "temporal-polyfill": "^0.3.0",
-        "undici": "^7.0.0",
+        "temporal-polyfill": "^1.0.0",
+        "undici": "^8.0.0",
         "xz-decompress": "^0.2.3"
     },
     "engines": {
-        "node": ">=22.11.0",
-        "npm": ">=10.9.0"
+        "node": ">=24.16.0",
+        "npm": ">=11.13.0"
     }
 }

@@ -1,13 +1,13 @@
 # Introduction
 
 ```sh
-npm install @softvisio/core
+npm install @corejslib/core
 ```
 
 ## Usage
 
 ```javascript
-import Api from "@softvisio/core/api";
+import Api from "@corejslib/core/api";
 
 const api = new Api( {
     "url": "/api/",

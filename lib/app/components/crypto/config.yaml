@@ -7,4 +7,7 @@ optionalDependencies:
 config:
   algorithm: AES-256-GCM
   key: ~
-  useLocalStorage: false
+  useLocalKeyring: false
+
+  passwordHash:
+    preset: owasp

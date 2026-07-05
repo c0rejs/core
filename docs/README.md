@@ -1,9 +1,9 @@
 # Introduction
 
-Link to the resources: <https://github.com/softvisio-node/core/releases/tag/resources>.
+Link to the resources: <https://github.com/corejslib/core/releases/tag/resources>.
 
 ## Install
 
 ```sh
-npm install @softvisio/core
+npm install @corejslib/core
 ```

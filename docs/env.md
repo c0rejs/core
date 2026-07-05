@@ -3,7 +3,7 @@
 Provides set of function to manage project environment.
 
 ```javascript
-import env from "@softvisio/core/env";
+import env from "@corejslib/core/env";
 
 console.log( env.root );
 ```

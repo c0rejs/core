@@ -12,7 +12,7 @@
 
     cacheMaxSize: { type: integer, minimum: 1 }
     newUserEnabledByDefault: { type: boolean } # new users are enabled by default
-    passwordsStrength: { enum: [weak, normal, strong] }
+    allowWeakPasswords: { type: boolean }
 
   additionalProperties: false
-  required: [root, cacheMaxSize, newUserEnabledByDefault, passwordsStrength]
+  required: [root, cacheMaxSize, newUserEnabledByDefault, allowWeakPasswords]

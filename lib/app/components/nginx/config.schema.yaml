@@ -2,7 +2,7 @@
   type: object
   properties:
     listenIpFamily: { enum: [0, 4, 6] }
-    dockerEnabled: { type: boolean }
+    quicEnabled: { type: boolean }
     maxBodySize: { type: string, format: digital-size }
 
     cacheEnabled: { type: boolean }
@@ -41,10 +41,15 @@
     sslEcdhCurve: { type: string }
     sslCiphers: { type: ["null", string] }
 
+    tcpListenOptions: { type: string }
+    udpListenOptions: { type: string }
+
+    compressMimeTypes: { type: array, items: { type: string }, minItems: 1, uniqueItems: true }
+
   additionalProperties: false
   required:
     - listenIpFamily
-    - dockerEnabled
+    - quicEnabled
     - maxBodySize
     - cacheEnabled
     - cacheInactive
@@ -57,3 +62,8 @@
     - sslProtocols
     - sslEcdhCurve
     - sslCiphers
+
+    - tcpListenOptions
+    - udpListenOptions
+
+    - compressMimeTypes

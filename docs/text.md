@@ -1,7 +1,7 @@
 # Text
 
 ```javascript
-import * as text from "@softvisio/core/text";
+import * as text from "@corejslib/core/text";
 ```
 
 ### text.wrap( string, maxLength, options )
@@ -16,10 +16,10 @@ import * as text from "@softvisio/core/text";
 ## ansi
 
 ```javascript
-import { ansi } from "@softvisio/core/text";
+import { ansi } from "@corejslib/core/text";
 
 // or
-import ansi from "@softvisio/core/text/ansi";
+import ansi from "@corejslib/core/text/ansi";
 
 console.log(ansi.cold.while.onRed("test"));
 ```
@@ -55,7 +55,7 @@ Enable / disable ANSI codes.
     ```javascript
     ansi.defineColor( "teal", "008080" );
     ansi.defineColor( "teal", "#008080" );
-    ansi.defineColor( "teal", 0x80_80 );
+    ansi.defineColor( "teal", 0x8080 );
     ansi.defineColor( "teal", 32_896 );
     ansi.defineColor( "teal", [ 0, 128, 128 ] );
     ```
@@ -97,10 +97,10 @@ Removes ANSI reset code from the string.
 Draw text table.
 
 ```javascript
-import { Table } from "@softvisio/core/text";
+import { Table } from "@corejslib/core/text";
 
 // or
-import Table from "@softvisio/core/text/table";
+import Table from "@corejslib/core/text/table";
 
 const table = new Table({});
 
