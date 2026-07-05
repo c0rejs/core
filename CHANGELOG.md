@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.235.4 (2026-07-05)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix app public config validation (● [12476e9](https://github.com/corejslib/core/commit/12476e99e); 👬 zdm)
+
+Compare with the previous release: [v7.235.3...v7.235.4](https://github.com/corejslib/core/compare/v7.235.3...v7.235.4)
+
 ### v7.235.3 (2026-07-05)
 
 **Code refactoring:**
