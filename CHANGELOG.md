@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.1.0 (2026-07-08)
+
+**New features:**
+
+- \[MINOR] feat: add ip ranges iterator (● [8c3b97a](https://github.com/corejslib/core/commit/8c3b97a01); 👬 zdm)
+
+Compare with the previous release: [v8.0.0...v8.1.0](https://github.com/corejslib/core/compare/v8.0.0...v8.1.0)
+
 ### v8.0.0 (2026-07-06)
 
 **Migration notes:**
