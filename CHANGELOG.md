@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.1.6 (2026-07-09)
+
+**Bug fixes:**
+
+- \[PATCH] fix: pin npm\@11 (● [af534d0](https://github.com/corejslib/core/commit/af534d04e); 👬 zdm)
+
+Compare with the previous release: [v8.1.5...v8.1.6](https://github.com/corejslib/core/compare/v8.1.5...v8.1.6)
+
 ### v8.1.5 (2026-07-09)
 
 **Bug fixes:**
