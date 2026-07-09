@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.1.7 (2026-07-09)
+
+**Bug fixes:**
+
+- \[PATCH] fix: unpin npm\@11 (● [2062ea3](https://github.com/corejslib/core/commit/2062ea307); 👬 zdm)
+
+Compare with the previous release: [v8.1.6...v8.1.7](https://github.com/corejslib/core/compare/v8.1.6...v8.1.7)
+
 ### v8.1.6 (2026-07-09)
 
 **Bug fixes:**
