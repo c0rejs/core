@@ -100,7 +100,7 @@
         "@corejslib/msgpack": "^3.0.0",
         "@corejslib/utils": "^2.0.0",
         "@corejslib/uws": "^2.0.0",
-        "adm-zip": "^0.5.16",
+        "adm-zip": "^0.6.0",
         "ajv": "^8.0.1",
         "ajv-errors": "^3.0.0",
         "ajv-formats": "^3.0.0",
