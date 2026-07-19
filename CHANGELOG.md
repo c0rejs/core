@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.2.1 (2026-07-19)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: remove http server .beginWrite() (● [98f8740](https://github.com/corejslib/core/commit/98f874081); 👬 zdm)
+
+Compare with the previous release: [v8.2.0...v8.2.1](https://github.com/corejslib/core/compare/v8.2.0...v8.2.1)
+
 ### v8.2.0 (2026-07-19)
 
 **New features:**
