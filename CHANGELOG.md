@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.2.2 (2026-07-19)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix subnets getter (● [fac6248](https://github.com/corejslib/core/commit/fac624875); 👬 zdm)
+
+Compare with the previous release: [v8.2.1...v8.2.2](https://github.com/corejslib/core/compare/v8.2.1...v8.2.2)
+
 ### v8.2.1 (2026-07-19)
 
 **Code refactoring:**
