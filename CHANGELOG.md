@@ -1,5 +1,47 @@
 # Changelog
 
+### v8.2.0 (2026-07-19)
+
+**New features:**
+
+- \[MINOR] feat: add big ranges (● [2b28ac8](https://github.com/corejslib/core/commit/2b28ac834); 👬 zdm)
+
+- \[MINOR] feat: add ranges .hasIntersectingRanges property (● [3c54251](https://github.com/corejslib/core/commit/3c542510b); 👬 zdm)
+
+- \[MINOR] feat: add segmented-tree module (● [05be862](https://github.com/corejslib/core/commit/05be8621f), [096d7ae](https://github.com/corejslib/core/commit/096d7ae36), [36295a5](https://github.com/corejslib/core/commit/36295a5a2), [8c0f04e](https://github.com/corejslib/core/commit/8c0f04e83), [2a97dbe](https://github.com/corejslib/core/commit/2a97dbe80), [90114c5](https://github.com/corejslib/core/commit/90114c536), [720d349](https://github.com/corejslib/core/commit/720d349f7), [839d1e2](https://github.com/corejslib/core/commit/839d1e209), [b1c16d5](https://github.com/corejslib/core/commit/b1c16d522), [3df72dc](https://github.com/corejslib/core/commit/3df72dc5b), [3ddccbc](https://github.com/corejslib/core/commit/3ddccbcef), [a2bb84c](https://github.com/corejslib/core/commit/a2bb84c1c), [084628a](https://github.com/corejslib/core/commit/084628a12); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix ip ranges search (● [cd4bb16](https://github.com/corejslib/core/commit/cd4bb169b), [c2a1485](https://github.com/corejslib/core/commit/c2a1485dd), [90ed8c1](https://github.com/corejslib/core/commit/90ed8c161); 👬 zdm)
+
+- \[PATCH] fix: fix npm api (● [afeafd9](https://github.com/corejslib/core/commit/afeafd9f1); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: migrate to teleproto (● [86aaa01](https://github.com/corejslib/core/commit/86aaa0195); 👬 zdm)
+
+- \[PATCH] refactor: refactor avl tree (● [c08931f](https://github.com/corejslib/core/commit/c08931f9b), [b543e6d](https://github.com/corejslib/core/commit/b543e6d79); 👬 zdm)
+
+- \[PATCH] refactor: refactor ip ranges (● [1eabb1d](https://github.com/corejslib/core/commit/1eabb1d6d), [2409837](https://github.com/corejslib/core/commit/2409837ae), [826d82d](https://github.com/corejslib/core/commit/826d82dc4), [ed01706](https://github.com/corejslib/core/commit/ed0170674), [55f393d](https://github.com/corejslib/core/commit/55f393dea); 👬 zdm)
+
+- \[PATCH] refactor: refactor ranges (● [77288fc](https://github.com/corejslib/core/commit/77288fcab), [f86e8d2](https://github.com/corejslib/core/commit/f86e8d2df); 👬 zdm)
+
+- \[PATCH] refactor: use http server .beginWrite() (● [6d60f34](https://github.com/corejslib/core/commit/6d60f34a0); 👬 zdm)
+
+- \[PATCH] refactor: use result.setMeta() (● [250a1b2](https://github.com/corejslib/core/commit/250a1b2d9); 👬 zdm)
+
+- \[PATCH] refactor: use segmented tree in ranges (● [b3b94d6](https://github.com/corejslib/core/commit/b3b94d66f); 👬 zdm)
+
+**Other changes:**
+
+- build(deps): bunp adm-zip@^0.6.0 (● [f40d3ea](https://github.com/corejslib/core/commit/f40d3ea4e); 👬 zdm)
+
+- build(deps): bunp npm@>=12.0.1 (● [30e00d6](https://github.com/corejslib/core/commit/30e00d6e4), [8548be3](https://github.com/corejslib/core/commit/8548be376); 👬 zdm)
+
+- style: lint (● [a0cef18](https://github.com/corejslib/core/commit/a0cef185c), [e1a6a1c](https://github.com/corejslib/core/commit/e1a6a1c82); 👬 zdm)
+
+Compare with the previous release: [v8.1.8...v8.2.0](https://github.com/corejslib/core/compare/v8.1.8...v8.2.0)
+
 ### v8.1.8 (2026-07-09)
 
 **Bug fixes:**
