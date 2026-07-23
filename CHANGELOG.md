@@ -1,5 +1,19 @@
 # Changelog
 
+### v8.3.0 (2026-07-23)
+
+**New features:**
+
+- \[MINOR] feat: add Range .compare() (● [a090765](https://github.com/corejslib/core/commit/a09076525); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix avl cmp (● [32ec4d4](https://github.com/corejslib/core/commit/32ec4d4ea); 👬 zdm)
+
+- \[PATCH] fix: fix ip ranges api (● [5a0ab2e](https://github.com/corejslib/core/commit/5a0ab2e9a); 👬 zdm)
+
+Compare with the previous release: [v8.2.2...v8.3.0](https://github.com/corejslib/core/compare/v8.2.2...v8.3.0)
+
 ### v8.2.2 (2026-07-19)
 
 **Bug fixes:**
