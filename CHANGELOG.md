@@ -1,5 +1,25 @@
 # Changelog
 
+### v8.4.0 (2026-07-24)
+
+**New features:**
+
+- \[MINOR] feat: add ip-ranges getRandomAddress() method (● [f8f76d3](https://github.com/corejslib/core/commit/f8f76d330); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix digital-size (● [c739a0e](https://github.com/corejslib/core/commit/c739a0e52); 👬 zdm)
+
+- \[PATCH] fix: fix ip address v4 parser (● [6758b74](https://github.com/corejslib/core/commit/6758b7415); 👬 zdm)
+
+- \[PATCH] fix: fix ip range constructor (● [af174e1](https://github.com/corejslib/core/commit/af174e1b3); 👬 zdm)
+
+- \[PATCH] fix: fix random-values (● [4b4ddf4](https://github.com/corejslib/core/commit/4b4ddf42f), [4ea33ee](https://github.com/corejslib/core/commit/4ea33eee8), [63f6d9c](https://github.com/corejslib/core/commit/63f6d9c63); 👬 zdm)
+
+- \[PATCH] fix: fix streaming-splitter.js (● [01189ed](https://github.com/corejslib/core/commit/01189edf1); 👬 zdm)
+
+Compare with the previous release: [v8.3.0...v8.4.0](https://github.com/corejslib/core/compare/v8.3.0...v8.4.0)
+
 ### v8.3.0 (2026-07-23)
 
 **New features:**
