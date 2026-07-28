@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.4.6 (2026-07-28)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add optimizations to Numeric constructor (● [79b0f28](https://github.com/corejslib/core/commit/79b0f28f9); 👬 zdm)
+
+Compare with the previous release: [v8.4.5...v8.4.6](https://github.com/corejslib/core/compare/v8.4.5...v8.4.6)
+
 ### v8.4.5 (2026-07-28)
 
 **Bug fixes:**
