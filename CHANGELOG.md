@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.4.1 (2026-07-28)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor numeric (● [dc6e100](https://github.com/corejslib/core/commit/dc6e10081), [7286ad6](https://github.com/corejslib/core/commit/7286ad60d); 👬 zdm)
+
+Compare with the previous release: [v8.4.0...v8.4.1](https://github.com/corejslib/core/compare/v8.4.0...v8.4.1)
+
 ### v8.4.0 (2026-07-24)
 
 **New features:**
