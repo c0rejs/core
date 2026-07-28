@@ -67,10 +67,6 @@
             "browser": "./lib/_browser/is-browser.js",
             "node": "./lib/is-browser.js"
         },
-        "./numeric/numeric": {
-            "browser": "./lib/_browser/numeric/numeric.js",
-            "node": "./lib/numeric/numeric.js"
-        },
         "./utils": {
             "browser": "./lib/_browser/utils.js",
             "node": "./lib/utils.js"
@@ -106,7 +102,6 @@
         "ajv-formats": "^3.0.0",
         "ajv-formats-draft2019": "^1.4.3",
         "ajv-keywords": "^5.0.0",
-        "decimal.js": "^10.4.3",
         "fast-xml-parser": "^5.0.0",
         "js-yaml": "^5.0.0",
         "json5": "^2.2.0",
