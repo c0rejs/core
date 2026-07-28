@@ -1,5 +1,17 @@
 # Changelog
 
+### v8.4.4 (2026-07-28)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix Numeric constructor (● [638ff11](https://github.com/corejslib/core/commit/638ff1171); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: optimize Interval (● [70127ac](https://github.com/corejslib/core/commit/70127acec); 👬 zdm)
+
+Compare with the previous release: [v8.4.3...v8.4.4](https://github.com/corejslib/core/compare/v8.4.3...v8.4.4)
+
 ### v8.4.3 (2026-07-28)
 
 **Bug fixes:**
