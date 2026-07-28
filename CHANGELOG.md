@@ -1,5 +1,17 @@
 # Changelog
 
+### v8.4.3 (2026-07-28)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix access to privale props (● [743fd0b](https://github.com/corejslib/core/commit/743fd0b80); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: optimize Interval (● [5ea7d54](https://github.com/corejslib/core/commit/5ea7d5440), [98cfd9d](https://github.com/corejslib/core/commit/98cfd9dd1), [e01ad8e](https://github.com/corejslib/core/commit/e01ad8ee1), [1c5c430](https://github.com/corejslib/core/commit/1c5c4304c), [4d4c5b2](https://github.com/corejslib/core/commit/4d4c5b28d); 👬 zdm)
+
+Compare with the previous release: [v8.4.2...v8.4.3](https://github.com/corejslib/core/compare/v8.4.2...v8.4.3)
+
 ### v8.4.2 (2026-07-28)
 
 **Bug fixes:**
