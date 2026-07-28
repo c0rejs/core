@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.4.5 (2026-07-28)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix Numeric .isInteger (● [937845a](https://github.com/corejslib/core/commit/937845abf); 👬 zdm)
+
+- \[PATCH] fix: fix Numeric fractional digits (● [ff9022a](https://github.com/corejslib/core/commit/ff9022a23); 👬 zdm)
+
+Compare with the previous release: [v8.4.4...v8.4.5](https://github.com/corejslib/core/compare/v8.4.4...v8.4.5)
+
 ### v8.4.4 (2026-07-28)
 
 **Bug fixes:**
