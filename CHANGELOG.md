@@ -1,5 +1,19 @@
 # Changelog
 
+### v8.4.2 (2026-07-28)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix numeric scale compare (● [90dd183](https://github.com/corejslib/core/commit/90dd18315), [b9b34be](https://github.com/corejslib/core/commit/b9b34bece), [9ca4b20](https://github.com/corejslib/core/commit/9ca4b20a0), [1cf31ad](https://github.com/corejslib/core/commit/1cf31ad66); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: cache Numeric compareRank (● [c37b7a9](https://github.com/corejslib/core/commit/c37b7a9c4); 👬 zdm)
+
+- \[PATCH] refactor: cache Numeric sign (● [3ac0618](https://github.com/corejslib/core/commit/3ac06181c); 👬 zdm)
+
+Compare with the previous release: [v8.4.1...v8.4.2](https://github.com/corejslib/core/compare/v8.4.1...v8.4.2)
+
 ### v8.4.1 (2026-07-28)
 
 **Code refactoring:**
