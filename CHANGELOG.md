@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.4.8 (2026-07-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix Numecit precision calculation (● [2511705](https://github.com/corejslib/core/commit/251170585), [b1acf7c](https://github.com/corejslib/core/commit/b1acf7c1c), [c454e54](https://github.com/corejslib/core/commit/c454e5435); 👬 zdm)
+
+Compare with the previous release: [v8.4.7...v8.4.8](https://github.com/corejslib/core/compare/v8.4.7...v8.4.8)
+
 ### v8.4.7 (2026-07-29)
 
 **Bug fixes:**
