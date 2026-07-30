@@ -8,6 +8,6 @@ const randomBytes = 16,
 
 const iterations = Numeric( 2, { "precision": 1000 } ).pow( 8 * randomBytes ),
     seconds = iterations.divide( iterationsPerSecond ),
-    years = seconds.divide( secondsPerYear ).ceil().toString();
+    years = seconds.divide( secondsPerYear ).ceiled.toString();
 
 console.log( `${ years } years needed to brute-force ${ randomBytes } random bytes` );
