@@ -1,5 +1,37 @@
 # Changelog
 
+### v8.5.0 (2026-07-30)
+
+**New features:**
+
+- \[MINOR] feat: add Numeric constructor .radix option (● [12470f2](https://github.com/corejslib/core/commit/12470f234), [afaf9df](https://github.com/corejslib/core/commit/afaf9df49); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: parse Numeric strings contained \_ sep (● [8b754b6](https://github.com/corejslib/core/commit/8b754b601); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: add new Numeric modulo modes (● [3ede987](https://github.com/corejslib/core/commit/3ede9879a); 👬 zdm)
+
+- \[PATCH] refactor: add new Numeric rounding modes (● [2254515](https://github.com/corejslib/core/commit/225451530); 👬 zdm)
+
+- \[PATCH] refactor: move math module to Numeric static (● [636386a](https://github.com/corejslib/core/commit/636386a43); 👬 zdm)
+
+- \[PATCH] refactor: rename Numeric roundMode to roundingMode (● [c58c2d0](https://github.com/corejslib/core/commit/c58c2d076); 👬 zdm)
+
+- \[PATCH] refactor: update Numeric .ceil() signature (● [539a1fc](https://github.com/corejslib/core/commit/539a1fc28), [c397eea](https://github.com/corejslib/core/commit/c397eeaea); 👬 zdm)
+
+- \[PATCH] refactor: update Numeric .floor() signature (● [fec2118](https://github.com/corejslib/core/commit/fec2118c5); 👬 zdm)
+
+- \[PATCH] refactor: update Numeric .round method (● [19c444e](https://github.com/corejslib/core/commit/19c444ef5), [eec9788](https://github.com/corejslib/core/commit/eec9788dd); 👬 zdm)
+
+- \[PATCH] refactor: update Numeric .round() signature (● [d8f1993](https://github.com/corejslib/core/commit/d8f1993b3); 👬 zdm)
+
+- \[PATCH] refactor: update Numeric .truncate() signature (● [bbbce4e](https://github.com/corejslib/core/commit/bbbce4ed0); 👬 zdm)
+
+Compare with the previous release: [v8.4.8...v8.5.0](https://github.com/corejslib/core/compare/v8.4.8...v8.5.0)
+
 ### v8.4.8 (2026-07-29)
 
 **Bug fixes:**
