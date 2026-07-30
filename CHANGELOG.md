@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.5.1 (2026-07-30)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix Numeric static round (● [a76b1c0](https://github.com/corejslib/core/commit/a76b1c0bb), [5e947e3](https://github.com/corejslib/core/commit/5e947e38d), [215c54e](https://github.com/corejslib/core/commit/215c54eaa); 👬 zdm)
+
+Compare with the previous release: [v8.5.0...v8.5.1](https://github.com/corejslib/core/compare/v8.5.0...v8.5.1)
+
 ### v8.5.0 (2026-07-30)
 
 **New features:**
