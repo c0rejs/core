@@ -45,7 +45,7 @@ This property is writable under the `nodejs` only.
 
 ### env.getUserConfig()
 
-- Returns: {Promise} Fullfils with the `softvisio/config.js` export.
+- Returns: {Promise} Fullfils with the `corejslib/config.js` export.
 
 ### env.getXdgConfigDir( name )
 
