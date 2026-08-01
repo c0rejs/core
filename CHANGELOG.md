@@ -1,5 +1,23 @@
 # Changelog
 
+### v8.6.0 (2026-08-01)
+
+**New features:**
+
+- \[MINOR] feat: add env .isDocker (● [a4566f8](https://github.com/corejslib/core/commit/a4566f820); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: rename sapi to capi (● [14b5bb1](https://github.com/corejslib/core/commit/14b5bb12a); 👬 zdm)
+
+**Other changes:**
+
+- chore: rename softvisio to corejslib (● [209c8bf](https://github.com/corejslib/core/commit/209c8bf6a); 👬 zdm)
+
+- docs: update (● [2fc3c88](https://github.com/corejslib/core/commit/2fc3c889a); 👬 zdm)
+
+Compare with the previous release: [v8.5.2...v8.6.0](https://github.com/corejslib/core/compare/v8.5.2...v8.6.0)
+
 ### v8.5.2 (2026-08-01)
 
 **Bug fixes:**
