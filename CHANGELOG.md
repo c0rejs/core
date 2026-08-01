@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.5.2 (2026-08-01)
+
+**Bug fixes:**
+
+- \[PATCH] fix: update package keywords (● [0a7e868](https://github.com/corejslib/core/commit/0a7e868fb); 👬 zdm)
+
+Compare with the previous release: [v8.5.1...v8.5.2](https://github.com/corejslib/core/compare/v8.5.1...v8.5.2)
+
 ### v8.5.1 (2026-07-30)
 
 **Bug fixes:**
