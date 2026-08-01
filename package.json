@@ -76,9 +76,9 @@
         }
     },
     "bin": {
+        "capi": "bin/capi.js",
         "install-google-chrome": "bin/install-google-chrome.js",
-        "nenv": "bin/nenv.js",
-        "sapi": "bin/sapi.js"
+        "nenv": "bin/nenv.js"
     },
     "files": [
         "/bin",
