@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.7.0 (2026-08-02)
+
+**New features:**
+
+- \[MINOR] feat: rename softvisio proxy to cproxy (● [4d8bc89](https://github.com/corejslib/core/commit/4d8bc897b); 👬 zdm)
+
+Compare with the previous release: [v8.6.0...v8.7.0](https://github.com/corejslib/core/compare/v8.6.0...v8.7.0)
+
 ### v8.6.0 (2026-08-01)
 
 **New features:**
