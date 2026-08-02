@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.7.1 (2026-08-02)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix npm api pack (● [a75da72](https://github.com/corejslib/core/commit/a75da7274); 👬 zdm)
+
+Compare with the previous release: [v8.7.0...v8.7.1](https://github.com/corejslib/core/compare/v8.7.0...v8.7.1)
+
 ### v8.7.0 (2026-08-02)
 
 **New features:**
