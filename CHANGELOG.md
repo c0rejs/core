@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.7.2 (2026-08-03)
+
+**Other changes:**
+
+- chore(metadata): update package metadata (● [0feb169](https://github.com/corejslib/core/commit/0feb169f1); 👬 zdm)
+
+Compare with the previous release: [v8.7.1...v8.7.2](https://github.com/corejslib/core/compare/v8.7.1...v8.7.2)
+
 ### v8.7.1 (2026-08-02)
 
 **Bug fixes:**
