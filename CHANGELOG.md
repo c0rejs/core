@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.7.3 (2026-08-03)
+
+**Other changes:**
+
+- build: update dependabot config (● [d05780d](https://github.com/corejslib/core/commit/d05780d6e); 👬 zdm)
+
+- chore(metadata): update package metadata (● [acf0be6](https://github.com/corejslib/core/commit/acf0be6ef); 👬 zdm)
+
+Compare with the previous release: [v8.7.2...v8.7.3](https://github.com/corejslib/core/compare/v8.7.2...v8.7.3)
+
 ### v8.7.2 (2026-08-03)
 
 **Other changes:**
