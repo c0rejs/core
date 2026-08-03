@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.8.0 (2026-08-03)
+
+**New features:**
+
+- \[MINOR] feat: add File .extname, .dirname (● [a52a445](https://github.com/corejslib/core/commit/a52a44533); 👬 zdm)
+
+Compare with the previous release: [v8.7.3...v8.8.0](https://github.com/corejslib/core/compare/v8.7.3...v8.8.0)
+
 ### v8.7.3 (2026-08-03)
 
 **Other changes:**
