@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.8.2 (2026-08-04)
+
+**Other changes:**
+
+- chore: rename capi to zapi (● [4f68a61](https://github.com/corejslib/core/commit/4f68a6188); 👬 zdm)
+
+- chore: rename ccli to zcli (● [ac783ec](https://github.com/corejslib/core/commit/ac783ece3), [b6328d0](https://github.com/corejslib/core/commit/b6328d07c), [b209861](https://github.com/corejslib/core/commit/b209861db); 👬 zdm)
+
+Compare with the previous release: [v8.8.1...v8.8.2](https://github.com/corejslib/core/compare/v8.8.1...v8.8.2)
+
 ### v8.8.1 (2026-08-04)
 
 **Other changes:**
