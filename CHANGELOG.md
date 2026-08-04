@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.8.1 (2026-08-04)
+
+**Other changes:**
+
+- style: lint (● [d0ecb66](https://github.com/corejslib/core/commit/d0ecb66ff), [fa8b6a5](https://github.com/corejslib/core/commit/fa8b6a5ef), [d87252c](https://github.com/corejslib/core/commit/d87252c84), [71e030e](https://github.com/corejslib/core/commit/71e030e2d); 👬 zdm)
+
+Compare with the previous release: [v8.8.0...v8.8.1](https://github.com/corejslib/core/compare/v8.8.0...v8.8.1)
+
 ### v8.8.0 (2026-08-03)
 
 **New features:**
