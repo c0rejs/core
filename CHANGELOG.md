@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.8.3 (2026-08-06)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix npm dry-run mode (● [777579e](https://github.com/corejslib/core/commit/777579e20); 👬 zdm)
+
+- \[PATCH] fix: harden environment loading (● [95783e4](https://github.com/corejslib/core/commit/95783e4a3); 👬 zdm)
+
+Compare with the previous release: [v8.8.2...v8.8.3](https://github.com/corejslib/core/compare/v8.8.2...v8.8.3)
+
 ### v8.8.2 (2026-08-04)
 
 **Other changes:**
