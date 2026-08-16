@@ -11,30 +11,45 @@ function testPattern ( tests ) {
                 ? tests[ n ].pattern
                 : [ tests[ n ].pattern ] ) );
 
-            let property, args, res;
-
-            if ( Array.isArray( tests[ n ].property ) ) {
-                [ property, ...args ] = tests[ n ].property;
-            }
-            else {
-                property = tests[ n ].property;
-                args = [];
-            }
-
-            if ( typeof pattern[ property ] === "function" ) {
-                res = pattern[ property ]( ...args );
-            }
-            else {
-                res = pattern[ property ];
-            }
+            const res = tests[ n ].test( pattern );
 
             strictEqual( res, tests[ n ].result );
         } );
     }
 }
 
+function runTests ( tests ) {
+    for ( const item of tests ) {
+        if ( !Array.isArray( item.pattern ) ) {
+            item.pattern = [ item.pattern ];
+        }
+
+        let id = item.pattern[ 0 ];
+
+        if ( item.pattern[ 1 ] ) {
+            for ( const name in item.pattern[ 1 ] ) {
+                id += `,${ name }=${ item.pattern[ 1 ][ name ] }`;
+            }
+        }
+
+        const pattern = new GlobPattern( ...item.pattern );
+
+        for ( const expected of [ false, true ] ) {
+            if ( !item[ expected ] ) continue;
+
+            for ( const value of item[ expected ] ) {
+                test( `${ id },${ value }`, () => {
+                    const actual = pattern.test( value );
+
+                    strictEqual( actual, expected, `Pattern: ${ pattern.pattern }, value: ${ value }` );
+                } );
+            }
+        }
+    }
+}
+
 suite( "glob-pattern", () => {
-    suite( "static-pattern", () => {
+    suite( "static", () => {
         const tests = [
             {
                 "pattern": [
@@ -43,7 +58,7 @@ suite( "glob-pattern", () => {
                         "caseSensitive": false,
                     },
                 ],
-                "property": [ "test", "PATH" ],
+                "test": pattern => pattern.test( "PATH" ),
                 "result": true,
             },
             {
@@ -53,7 +68,7 @@ suite( "glob-pattern", () => {
                         "caseSensitive": true,
                     },
                 ],
-                "property": [ "test", "PATH" ],
+                "test": pattern => pattern.test( "PATH" ),
                 "result": false,
             },
             {
@@ -63,7 +78,7 @@ suite( "glob-pattern", () => {
                         "caseSensitive": true,
                     },
                 ],
-                "property": [ "test", "aaa/bbb" ],
+                "test": pattern => pattern.test( "aaa/bbb" ),
                 "result": true,
             },
 
@@ -75,14 +90,12 @@ suite( "glob-pattern", () => {
                         "caseSensitive": true,
                     },
                 ],
-                "property": [
-                    "test",
-                    "aaa/bbb",
-                    {
+                "test": pattern => {
+                    return pattern.test( "aaa/bbb", {
                         "prefix": "aaa/bbb\\../ccc\\\\",
                         "normalize": true,
-                    },
-                ],
+                    } );
+                },
                 "result": true,
             },
         ];
@@ -90,37 +103,175 @@ suite( "glob-pattern", () => {
         testPattern( tests );
     } );
 
-    suite( "dynamic-pattern", () => {
+    suite( "star-*", () => {
         const tests = [
             {
-                "pattern": [
-                    "**",
-                    {
-                        "caseSensitive": false,
-                    },
-                ],
-                "property": [ "test", "PATH" ],
-                "result": true,
+                "pattern": [ "*" ],
+                "true": [ "a" ],
+                "false": [ "", "/a/" ],
             },
             {
-                "pattern": [
-                    "/**",
-                    {
-                        "caseSensitive": false,
-                    },
-                ],
-                "property": [ "test", "/aaa/bbb/ccc" ],
-                "result": true,
+                "pattern": [ "/*" ],
+                "true": [ "/a" ],
+                "false": [ "", "/a/" ],
             },
             {
-                "pattern": [
-                    "/**/",
-                    {
-                        "caseSensitive": false,
-                    },
-                ],
-                "property": [ "test", "/aaa/bbb/ccc/" ],
-                "result": true,
+                "pattern": [ "/*/" ],
+                "true": [ "/a/" ],
+                "false": [ "", "/a" ],
+            },
+            {
+                "pattern": [ "a*b" ],
+                "true": [ "ab", "a1b", "a12b" ],
+                "false": [ "" ],
+            },
+        ];
+
+        runTests( tests );
+    } );
+
+    suite( "globstar-**", () => {
+        const tests = [
+
+            // `**`
+            {
+                "pattern": [ "**" ],
+                "true": [ "/", "/a", "/a/", "/a/b", "/a/b/", "a", "a/", "a/b", "a/b/" ],
+                "false": [ "" ],
+            },
+
+            // `**` with prefix `/`
+            {
+                "pattern": [ "**", { "prefix": "/" } ],
+                "true": [ "/", "/-a", "/a", "/a/", "/a/b" ],
+                "false": [ "", "a", "a/", "a/b", "a/b/" ],
+            },
+
+            // `**` with prefix `/prefix`
+            {
+                "pattern": [ "**", { "prefix": "/prefix" } ],
+                "true": [ "/prefix", "/prefix/", "/prefix/a", "/prefix/a/", "/prefix/a/b", "/prefix/a/b/" ],
+                "false": [ "", "/", "/prefix-a" ],
+            },
+        ];
+
+        runTests( tests );
+    } );
+
+    suite( "globstar-**/", () => {
+        const tests = [
+            {
+                "pattern": [ "**/" ],
+                "true": [ "/", "/a/", "/a/b/", "a/", "a/b/" ],
+                "false": [ "", "/a", "/a/b", "a", "a/b" ],
+            },
+            {
+                "pattern": [ "**/a/b" ],
+                "true": [ "/a/b", "a/b" ],
+                "false": [ "", "/", "/a", "/a/", "/a/b/", "a", "a/", "a/b/" ],
+            },
+            {
+                "pattern": [ "**/", { "prefix": "/" } ],
+                "true": [ "/", "/a/", "/a/b/" ],
+                "false": [ "", "/-a", "/a", "/a/b", "a", "a/", "a/b", "a/b/" ],
+            },
+            {
+                "pattern": [ "**/", { "prefix": "/prefix" } ],
+                "true": [ "/prefix/", "/prefix/a/", "/prefix/a/b/" ],
+                "false": [ "", "/", "/prefix", "/prefix-a", "/prefix/a", "/prefix/a/b" ],
+            },
+        ];
+
+        runTests( tests );
+    } );
+
+    suite( "globstar-/**", () => {
+        const tests = [
+            {
+                "pattern": [ "/**" ],
+                "true": [ "/", "/a", "/a/", "/a/b", "/a/b/" ],
+                "false": [ "", "a", "a/", "a/b", "a/b/" ],
+            },
+            {
+                "pattern": [ "a/b/**" ],
+                "true": [ "a/b", "a/b/" ],
+                "false": [ "", "/", "/a", "/a/", "/a/b", "/a/b/", "a", "a/" ],
+            },
+            {
+                "pattern": [ "/**", { "prefix": "/" } ],
+                "true": [ "/", "/-a", "/a", "/a/", "/a/b", "/a/b/" ],
+                "false": [ "", "a", "a/", "a/b", "a/b/" ],
+            },
+            {
+                "pattern": [ "/**", { "prefix": "/prefix" } ],
+                "true": [ "/prefix/", "/prefix/a", "/prefix/a/", "/prefix/a/b", "/prefix/a/b/" ],
+                "false": [ "", "/", "/prefix", "/prefix-a" ],
+            },
+        ];
+
+        runTests( tests );
+    } );
+
+    suite( "globstar-/**/", () => {
+        const tests = [
+            {
+                "pattern": [ "/**/" ],
+                "true": [ "/", "/a/b/" ],
+                "false": [ "", "/a", "/a/b", "a", "a/b", "a/b/" ],
+            },
+            {
+                "pattern": [ "a/**/" ],
+                "false": [ "a/b" ],
+                "true": [ "a/", "a/b/" ],
+            },
+            {
+                "pattern": [ "a/**/b" ],
+                "true": [ "a/b", "a/1/2/b" ],
+                "false": [ "a/", "a/b/" ],
+            },
+        ];
+
+        runTests( tests );
+    } );
+
+    suite( "directories", () => {
+        const tests = [
+            {
+                "pattern": [ "a" ],
+                "true": [ "a" ],
+                "false": [ "a/" ],
+            },
+            {
+                "pattern": [ "a/" ],
+                "true": [ "a/" ],
+                "false": [ "a" ],
+            },
+            {
+                "pattern": [ "**" ],
+                "true": [ "a", "a/" ],
+                "false": [],
+            },
+            {
+                "pattern": [ "**/" ],
+                "true": [ "a/" ],
+                "false": [ "a" ],
+            },
+        ];
+
+        runTests( tests );
+    } );
+
+    suite( "other", () => {
+        const tests = [
+            {
+                "pattern": [ "a*b", { "allowBraces": true } ],
+                "test": pattern => pattern.regexp.source,
+                "result": String.raw`^a[^\/]*b$`,
+            },
+            {
+                "pattern": [ "*{a,\\*b}", { "allowBraces": true } ],
+                "test": pattern => pattern.regexp.source,
+                "result": String.raw`^(?:[^\/]*a|[^\/]*\*b)$`,
             },
         ];
 
