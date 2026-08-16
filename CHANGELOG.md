@@ -1,5 +1,17 @@
 # Changelog
 
+### v8.8.4 (2026-08-16)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor glob api (● [0f538dc](https://github.com/corejslib/core/commit/0f538dc92); 👬 zdm)
+
+**Other changes:**
+
+- style: comment fixme bug (● [1be0847](https://github.com/corejslib/core/commit/1be084732); 👬 zdm)
+
+Compare with the previous release: [v8.8.3...v8.8.4](https://github.com/corejslib/core/compare/v8.8.3...v8.8.4)
+
 ### v8.8.3 (2026-08-06)
 
 **Bug fixes:**
