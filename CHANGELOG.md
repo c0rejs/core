@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.8.5 (2026-08-16)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix js-yaml tags (● [1e2a72c](https://github.com/corejslib/core/commit/1e2a72ca1); 👬 zdm)
+
+Compare with the previous release: [v8.8.4...v8.8.5](https://github.com/corejslib/core/compare/v8.8.4...v8.8.5)
+
 ### v8.8.4 (2026-08-16)
 
 **Code refactoring:**
