@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.9.0 (2026-08-18)
+
+**New features:**
+
+- \[MINOR] feat: add markdown frontmatter support (● [abfc384](https://github.com/corejslib/core/commit/abfc384bc); 👬 zdm)
+
+Compare with the previous release: [v8.8.6...v8.9.0](https://github.com/corejslib/core/compare/v8.8.6...v8.9.0)
+
 ### v8.8.6 (2026-08-18)
 
 **Code refactoring:**
