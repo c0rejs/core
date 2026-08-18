@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.8.6 (2026-08-18)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename glob pattern options (● [b3db275](https://github.com/corejslib/core/commit/b3db27514); 👬 zdm)
+
+Compare with the previous release: [v8.8.5...v8.8.6](https://github.com/corejslib/core/compare/v8.8.5...v8.8.6)
+
 ### v8.8.5 (2026-08-16)
 
 **Bug fixes:**
