@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.9.1 (2026-08-18)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix markdown list indentation (● [4723e43](https://github.com/corejslib/core/commit/4723e4360), [c67f9d9](https://github.com/corejslib/core/commit/c67f9d972); 👬 zdm)
+
+Compare with the previous release: [v8.9.0...v8.9.1](https://github.com/corejslib/core/compare/v8.9.0...v8.9.1)
+
 ### v8.9.0 (2026-08-18)
 
 **New features:**
