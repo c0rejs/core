@@ -106,6 +106,7 @@
         "json5": "^2.2.0",
         "linkedom": "^0.18.4",
         "mdast-util-from-markdown": "^2.0.1",
+        "mdast-util-frontmatter": "^2.0.1",
         "mdast-util-gfm": "^3.0.0",
         "mdast-util-to-markdown": "^2.1.0",
         "micromark-extension-gfm": "^3.0.0",
