@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.9.2 (2026-08-19)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: remove markdown list indentation (● [eb7196e](https://github.com/corejslib/core/commit/eb7196e57); 👬 zdm)
+
+Compare with the previous release: [v8.9.1...v8.9.2](https://github.com/corejslib/core/compare/v8.9.1...v8.9.2)
+
 ### v8.9.1 (2026-08-18)
 
 **Bug fixes:**
