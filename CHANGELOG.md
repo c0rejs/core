@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.9.3 (2026-08-20)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix glob api (● [bf097aa](https://github.com/corejslib/core/commit/bf097aa83); 👬 zdm)
+
+Compare with the previous release: [v8.9.2...v8.9.3](https://github.com/corejslib/core/compare/v8.9.2...v8.9.3)
+
 ### v8.9.2 (2026-08-19)
 
 **Code refactoring:**
