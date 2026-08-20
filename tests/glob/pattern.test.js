@@ -92,7 +92,7 @@ suite( "glob-pattern", () => {
                 ],
                 "test": pattern => {
                     return pattern.test( "aaa/bbb", {
-                        "prefix": "aaa/bbb\\../ccc\\\\",
+                        "prefix": "aaa/bbb/../ccc//",
                         "normalize": true,
                     } );
                 },
@@ -103,7 +103,7 @@ suite( "glob-pattern", () => {
         testPattern( tests );
     } );
 
-    suite( "star-*", () => {
+    suite( "star", () => {
         const tests = [
             {
                 "pattern": [ "*" ],
@@ -143,15 +143,15 @@ suite( "glob-pattern", () => {
             // `**` with prefix `/`
             {
                 "pattern": [ "**", { "prefix": "/" } ],
-                "true": [ "/", "/-a", "/a", "/a/", "/a/b" ],
-                "false": [ "", "a", "a/", "a/b", "a/b/" ],
+                "true": [ "/-a", "/a", "/a/", "/a/b" ],
+                "false": [ "", "/", "a", "a/", "a/b", "a/b/" ],
             },
 
             // `**` with prefix `/prefix`
             {
                 "pattern": [ "**", { "prefix": "/prefix" } ],
-                "true": [ "/prefix", "/prefix/", "/prefix/a", "/prefix/a/", "/prefix/a/b", "/prefix/a/b/" ],
-                "false": [ "", "/", "/prefix-a" ],
+                "true": [ "/prefix/a", "/prefix/a/", "/prefix/a/b", "/prefix/a/b/" ],
+                "false": [ "", "/", "/prefix", "/prefix/", "/prefix-a" ],
             },
         ];
 
@@ -172,13 +172,13 @@ suite( "glob-pattern", () => {
             },
             {
                 "pattern": [ "**/", { "prefix": "/" } ],
-                "true": [ "/", "/a/", "/a/b/" ],
-                "false": [ "", "/-a", "/a", "/a/b", "a", "a/", "a/b", "a/b/" ],
+                "true": [ "/a/", "/a/b/" ],
+                "false": [ "", "/", "/-a", "/a", "/a/b", "a", "a/", "a/b", "a/b/" ],
             },
             {
                 "pattern": [ "**/", { "prefix": "/prefix" } ],
-                "true": [ "/prefix/", "/prefix/a/", "/prefix/a/b/" ],
-                "false": [ "", "/", "/prefix", "/prefix-a", "/prefix/a", "/prefix/a/b" ],
+                "true": [ "/prefix/a/", "/prefix/a/b/" ],
+                "false": [ "", "/", "/prefix/", "/prefix", "/prefix-a", "/prefix/a", "/prefix/a/b" ],
             },
         ];
 
@@ -199,13 +199,13 @@ suite( "glob-pattern", () => {
             },
             {
                 "pattern": [ "/**", { "prefix": "/" } ],
-                "true": [ "/", "/-a", "/a", "/a/", "/a/b", "/a/b/" ],
-                "false": [ "", "a", "a/", "a/b", "a/b/" ],
+                "true": [ "/-a", "/a", "/a/", "/a/b", "/a/b/" ],
+                "false": [ "", "/", "a", "a/", "a/b", "a/b/" ],
             },
             {
                 "pattern": [ "/**", { "prefix": "/prefix" } ],
-                "true": [ "/prefix/", "/prefix/a", "/prefix/a/", "/prefix/a/b", "/prefix/a/b/" ],
-                "false": [ "", "/", "/prefix", "/prefix-a" ],
+                "true": [ "/prefix/a", "/prefix/a/", "/prefix/a/b", "/prefix/a/b/" ],
+                "false": [ "", "/", "/prefix/", "/prefix", "/prefix-a" ],
             },
         ];
 
@@ -216,18 +216,33 @@ suite( "glob-pattern", () => {
         const tests = [
             {
                 "pattern": [ "/**/" ],
-                "true": [ "/", "/a/b/" ],
-                "false": [ "", "/a", "/a/b", "a", "a/b", "a/b/" ],
+                "true": [ "/a/b/" ],
+                "false": [ "", "/", "/a", "/a/b", "a", "a/b", "a/b/" ],
+            },
+            {
+                "pattern": [ "/**/", { "prefix": "prefix" } ],
+                "true": [ "prefix/a/", "prefix/a/b/" ],
+                "false": [ "", "/", "prefix", "prefix/", "prefix/a", "prefix/a/b" ],
             },
             {
                 "pattern": [ "a/**/" ],
-                "false": [ "a/b" ],
-                "true": [ "a/", "a/b/" ],
+                "true": [ "a/b/" ],
+                "false": [ "a/", "a/b" ],
+            },
+            {
+                "pattern": [ "a/**/", { "prefix": "prefix" } ],
+                "true": [ "prefix/a/b/" ],
+                "false": [ "prefix/a/", "prefix/a/b" ],
             },
             {
                 "pattern": [ "a/**/b" ],
                 "true": [ "a/b", "a/1/2/b" ],
                 "false": [ "a/", "a/b/" ],
+            },
+            {
+                "pattern": [ "a/**/b", { "prefix": "prefix" } ],
+                "true": [ "prefix/a/b", "prefix/a/1/2/b" ],
+                "false": [ "prefix/a/", "prefix/a/b/" ],
             },
         ];
 
