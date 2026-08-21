@@ -1,5 +1,21 @@
 # Changelog
 
+### v8.10.0 (2026-08-21)
+
+**New features:**
+
+- \[MINOR] feat: add glob pattern .testList() (● [5a0e172](https://github.com/corejslib/core/commit/5a0e17255); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update xml parser (● [f6f521f](https://github.com/corejslib/core/commit/f6f521fa8); 👬 zdm)
+
+**Other changes:**
+
+- build(deps): add micromark-extension-frontmatter (● [c77a197](https://github.com/corejslib/core/commit/c77a197e2); 👬 zdm)
+
+Compare with the previous release: [v8.9.3...v8.10.0](https://github.com/corejslib/core/compare/v8.9.3...v8.10.0)
+
 ### v8.9.3 (2026-08-20)
 
 **Bug fixes:**
