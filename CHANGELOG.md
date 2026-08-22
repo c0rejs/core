@@ -1,5 +1,23 @@
 # Changelog
 
+### v8.10.2 (2026-08-22)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix ascii posix class (● [fecdbde](https://github.com/corejslib/core/commit/fecdbdeb1); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: optimize glob pattern code (● [0d1e5ea](https://github.com/corejslib/core/commit/0d1e5eaaa); 👬 zdm)
+
+- \[PATCH] refactor: optimize glob patterns code (● [80bb58d](https://github.com/corejslib/core/commit/80bb58dd1); 👬 zdm)
+
+**Other changes:**
+
+- style: fix typo (● [afb68d8](https://github.com/corejslib/core/commit/afb68d8b4); 👬 zdm)
+
+Compare with the previous release: [v8.10.1...v8.10.2](https://github.com/corejslib/core/compare/v8.10.1...v8.10.2)
+
 ### v8.10.1 (2026-08-21)
 
 **Code refactoring:**
