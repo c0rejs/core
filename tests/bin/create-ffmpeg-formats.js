@@ -20,7 +20,7 @@ function getFormats () {
         data = execFfmpeg( "-formats" );
 
     for ( const line of data.split( /\r?\n/v ).slice( 5 ) ) {
-        const [ type, format ] = line.trim().split( / +/v );
+        const [ type, format ] = line.trim().split( / +/v, 2 );
 
         formats[ format ] = {
             format,

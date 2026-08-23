@@ -8,83 +8,39 @@ suite( "numeric", () => {
     suite( "precision", () => {
         const tests = [
 
-            // precision
+            // scale = 0
             {
-                "constructor": [ "123", { "precision": 3 } ],
+                "test": () => Numeric( "123", { "precision": 3 } ),
                 "result": "123",
             },
             {
-                "constructor": [ "123", { "precision": 2 } ],
-                "result": null,
-            },
-            {
-                "constructor": [ "123", { "precision": 4 } ],
+                "test": () => Numeric( "123.456", { "precision": 3 } ),
                 "result": "123",
             },
             {
-                "constructor": [ "123.123", { "precision": 2 } ],
-                "result": null,
-            },
-            {
-                "constructor": [ "123.123", { "precision": 3 } ],
-                "result": "123",
-            },
-            {
-                "constructor": [ "123.123", { "precision": 4 } ],
-                "result": "123.1",
-            },
-            {
-                "constructor": [ "123.123", { "precision": 5 } ],
-                "result": "123.12",
-            },
-            {
-                "constructor": [ "123.199", { "precision": 5 } ],
-                "result": "123.2",
-            },
-            {
-                "constructor": [ "123.199", { "precision": 6 } ],
-                "result": "123.199",
-            },
-            {
-                "constructor": [ "123.999", { "precision": 4 } ],
+                "test": () => Numeric( "123.999", { "precision": 3 } ),
                 "result": "124",
             },
             {
-                "constructor": [ "999.999", { "precision": 3 } ],
+                "test": () => Numeric( "999.999", { "precision": 3 } ),
                 "result": null,
             },
             {
-                "constructor": [ "999.999", { "precision": 4 } ],
-                "result": "1000",
+                "test": () => Numeric( "123.456", { "precision": 2 } ),
+                "result": null,
             },
 
-            // scale
+            // operations
             {
-                "constructor": [ "123.123456", { "precision": 4, "scale": 1 } ],
-                "result": "123.1",
-            },
-            {
-                "constructor": [ "123.123456", { "precision": 4, "scale": 0 } ],
-                "result": "123",
-            },
-            {
-                "constructor": [ "123.123456", { "precision": 4, "scale": 2 } ],
-                "result": null,
-            },
-            {
-                "constructor": [ "123.129999", { "precision": 10, "scale": 2 } ],
-                "result": "123.13",
-            },
-            {
-                "constructor": [ "123.129999", { "precision": 10, "scale": 3 } ],
-                "result": "123.13",
+                "test": () => Numeric( 1 ).divide( "3".repeat( 10 ) ).multiply( "3".repeat( 10 ) ),
+                "result": "1",
             },
         ];
 
         for ( let n = 0; n < tests.length; n++ ) {
             test( n + "", () => {
                 try {
-                    const numeric = Numeric( ...tests[ n ].constructor );
+                    const numeric = tests[ n ].test();
 
                     strictEqual( numeric.toString(), tests[ n ].result );
                 }

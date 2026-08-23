@@ -65,7 +65,7 @@ msgstr "Власник бота"
 msgid "bot's statistics"
 msgstr "статистика бота"
 
-#: ../../lib/app/components/telegram/bot/commands/settings/bot-statistics.js:37:20
+#: ../../lib/app/components/telegram/bot/commands/settings/bot-statistics.js:37:27
 #, javascript-format
 msgid ""
 "Bot's statistics (${n}):\n"
@@ -299,7 +299,7 @@ msgstr "Лише для читання"
 msgid "Read-only permissions"
 msgstr "Дозволи лише для читання"
 
-#: ../../lib/app/components/telegram/bot/commands/settings/bot-statistics.js:48:40
+#: ../../lib/app/components/telegram/bot/commands/settings/bot-statistics.js:49:40
 msgid "Refresh"
 msgstr "Оновити"
 
@@ -477,7 +477,7 @@ msgstr ""
 msgid "Various security related notifications"
 msgstr "Різні сповіщення щодо безпеки"
 
-#: ../../lib/app/components/telegram/bot/commands/settings/bot-statistics.js:54:40
+#: ../../lib/app/components/telegram/bot/commands/settings/bot-statistics.js:55:40
 msgid "View charts"
 msgstr "Перегляд діаграм"
 
@@ -490,7 +490,7 @@ msgstr ""
 "Напишіть мені повідомлення.\n"
 "Щоб вийти з чату, скористайтеся кнопкою \"Меню\"."
 
-#: ../../lib/app/components/telegram/bot/commands/settings/account.js:263:20
+#: ../../lib/app/components/telegram/bot/commands/settings/account.js:264:24
 msgid "You are signed in as"
 msgstr "Ви ввійшли як"
 

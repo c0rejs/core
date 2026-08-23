@@ -36,7 +36,9 @@ function getChi2Crit ( alpha, df ) {
     const t = Math.sqrt( -2 * Math.log( alpha ) ),
         z = t - ( 2.515517 + 0.802853 * t + 0.010328 * t * t ) / ( 1 + 1.432788 * t + 0.189269 * t * t + 0.001308 * t * t * t );
 
-    return 0.5 * ( z + Math.sqrt( 2 * df - 1 ) ) ** 2;
+    // Wilson-Hilferty approximation, much more accurate than the Fisher
+    // approximation for small df (e.g. binary / digit generators).
+    return df * ( 1 - 2 / ( 9 * df ) + z * Math.sqrt( 2 / ( 9 * df ) ) ) ** 3;
 }
 
 function calculateChi2 ( { iterations, min = 0, max = 0, generate } ) {
@@ -52,14 +54,16 @@ function calculateChi2 ( { iterations, min = 0, max = 0, generate } ) {
 
     const values = {};
 
+    for ( let v = min; v <= max; v++ ) {
+        values[ v ] = {
+            "frequency": 0,
+        };
+    }
+
     for ( let n = 0; n < iterations; n++ ) {
         const value = generate( max );
 
         if ( value < min || value > max ) throw `Value outside the range: ${ value }`;
-
-        values[ value ] ??= {
-            "frequency": 0,
-        };
 
         values[ value ].frequency++;
     }
