@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.11.0 (2026-08-25)
+
+**New features:**
+
+- \[MINOR] feat: add progress (● [eb5f505](https://github.com/corejslib/core/commit/eb5f505ec); 👬 zdm)
+
+Compare with the previous release: [v8.10.2...v8.11.0](https://github.com/corejslib/core/compare/v8.10.2...v8.11.0)
+
 ### v8.10.2 (2026-08-22)
 
 **Bug fixes:**
