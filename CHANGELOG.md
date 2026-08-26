@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.11.1 (2026-08-26)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix bugs in progress (● [b193b1a](https://github.com/corejslib/core/commit/b193b1acb), [dc0ab67](https://github.com/corejslib/core/commit/dc0ab6796), [e0b9049](https://github.com/corejslib/core/commit/e0b90499b), [7c3bdcd](https://github.com/corejslib/core/commit/7c3bdcd6e), [d3a9c39](https://github.com/corejslib/core/commit/d3a9c3991), [7d9bc87](https://github.com/corejslib/core/commit/7d9bc8704), [d379e7f](https://github.com/corejslib/core/commit/d379e7f32), [245ef41](https://github.com/corejslib/core/commit/245ef4144), [f8acb0b](https://github.com/corejslib/core/commit/f8acb0bd0), [dccd7bc](https://github.com/corejslib/core/commit/dccd7bc9c), [e3a03da](https://github.com/corejslib/core/commit/e3a03da80); 👬 zdm)
+
+- \[PATCH] fix: fix DisposableStack usage (● [932c8ec](https://github.com/corejslib/core/commit/932c8ec11); 👬 zdm)
+
+Compare with the previous release: [v8.11.0...v8.11.1](https://github.com/corejslib/core/compare/v8.11.0...v8.11.1)
+
 ### v8.11.0 (2026-08-25)
 
 **New features:**
