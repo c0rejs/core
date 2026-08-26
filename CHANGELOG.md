@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.11.2 (2026-08-26)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: improve random-values performance (● [8e6b9d4](https://github.com/corejslib/core/commit/8e6b9d420); 👬 zdm)
+
+- \[PATCH] refactor: update random-values tests (● [a5a3250](https://github.com/corejslib/core/commit/a5a325029); 👬 zdm)
+
+Compare with the previous release: [v8.11.1...v8.11.2](https://github.com/corejslib/core/compare/v8.11.1...v8.11.2)
+
 ### v8.11.1 (2026-08-26)
 
 **Bug fixes:**
