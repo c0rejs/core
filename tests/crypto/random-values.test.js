@@ -24,8 +24,9 @@ const TESTS = [
     { "max": 1000, "generate": max => randomValues.getRandomInt( max ) },
     { "max": 10_000, "generate": max => randomValues.getRandomInt( max ) },
 
-    // crypto
-    { "max": 10_000, "generate": max => crypto.randomInt( 0, Number( max ) + 1 ) },
+    // internal
+    { "max": 1000, "generate": max => crypto.randomInt( 0, Number( max ) + 1 ) },
+    { "max": 1000, "generate": max => Math.trunc( Math.random() * ( Number( max ) + 1 ) ) },
 ];
 
 const iterations = 1_000_000,
