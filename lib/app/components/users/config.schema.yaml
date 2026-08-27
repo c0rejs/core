@@ -13,6 +13,7 @@
     cacheMaxSize: { type: integer, minimum: 1 }
     newUserEnabledByDefault: { type: boolean } # new users are enabled by default
     allowWeakPasswords: { type: boolean }
+    allowPwnedPasswords: { type: boolean }
 
   additionalProperties: false
-  required: [root, cacheMaxSize, newUserEnabledByDefault, allowWeakPasswords]
+  required: [root, cacheMaxSize, newUserEnabledByDefault, allowWeakPasswords, allowPwnedPasswords]

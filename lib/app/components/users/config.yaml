@@ -12,3 +12,4 @@ config:
   cacheMaxSize: 10000
   newUserEnabledByDefault: true # new users are enabled by default
   allowWeakPasswords: false
+  allowPwnedPasswords: false
