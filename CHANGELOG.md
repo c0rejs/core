@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.12.1 (2026-08-27)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix app signup (● [a29b149](https://github.com/corejslib/core/commit/a29b14900); 👬 zdm)
+
+Compare with the previous release: [v8.12.0...v8.12.1](https://github.com/corejslib/core/compare/v8.12.0...v8.12.1)
+
 ### v8.12.0 (2026-08-27)
 
 **New features:**
