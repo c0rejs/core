@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.12.0 (2026-08-27)
+
+**New features:**
+
+- \[MINOR] feat: add pwnedpasswords.com api (● [ac209f4](https://github.com/corejslib/core/commit/ac209f4ac), [9282683](https://github.com/corejslib/core/commit/92826839b), [79664cf](https://github.com/corejslib/core/commit/79664cf6a); 👬 zdm)
+
+Compare with the previous release: [v8.11.2...v8.12.0](https://github.com/corejslib/core/compare/v8.11.2...v8.12.0)
+
 ### v8.11.2 (2026-08-26)
 
 **Code refactoring:**
