@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.12.2 (2026-08-27)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix global values access (● [7c13a72](https://github.com/corejslib/core/commit/7c13a72dc), [3b445e8](https://github.com/corejslib/core/commit/3b445e82d); 👬 zdm)
+
+- \[PATCH] fix: use webcrypto (● [8c042d1](https://github.com/corejslib/core/commit/8c042d1aa); 👬 zdm)
+
+Compare with the previous release: [v8.12.1...v8.12.2](https://github.com/corejslib/core/compare/v8.12.1...v8.12.2)
+
 ### v8.12.1 (2026-08-27)
 
 **Bug fixes:**
