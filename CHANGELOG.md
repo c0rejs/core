@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.12.4 (2026-08-28)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix filetype by shebang detection (● [b6d3c46](https://github.com/corejslib/core/commit/b6d3c4603); 👬 zdm)
+
+Compare with the previous release: [v8.12.3...v8.12.4](https://github.com/corejslib/core/compare/v8.12.3...v8.12.4)
+
 ### v8.12.3 (2026-08-28)
 
 **Bug fixes:**
