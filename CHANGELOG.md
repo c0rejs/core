@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.12.3 (2026-08-28)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix shebang (● [bb7bf97](https://github.com/corejslib/core/commit/bb7bf9753); 👬 zdm)
+
+Compare with the previous release: [v8.12.2...v8.12.3](https://github.com/corejslib/core/compare/v8.12.2...v8.12.3)
+
 ### v8.12.2 (2026-08-27)
 
 **Bug fixes:**
