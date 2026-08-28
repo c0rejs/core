@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node
 
 import Browser from "#lib/browser";
 import Cli from "#lib/cli";

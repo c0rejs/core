@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node
 
 import ansi from "#lib/ansi";
 import Api from "#lib/api";

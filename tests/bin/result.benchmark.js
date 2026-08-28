@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node
 
 import "#lib/result";
 import benchmark from "#lib/benchmark";

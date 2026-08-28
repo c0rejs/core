@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node
 
 import childProcess from "node:child_process";
 import { shellQuote } from "#lib/utils";

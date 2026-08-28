@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node
 
 import Cli from "#lib/cli";
 import ExternalResourceBuilder from "#lib/external-resource-builder";
