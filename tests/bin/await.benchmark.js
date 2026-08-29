@@ -25,7 +25,6 @@ const tests = {
 };
 
 await benchmark( "Await speed test", tests, {
-    "iterations": null,
-    "seconds": 3,
-    "threads": 1,
+
+    // "maxTotalTime": 5000,
 } );

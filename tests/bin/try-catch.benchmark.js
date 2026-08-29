@@ -19,8 +19,9 @@ const tests = {
     },
 };
 
-await benchmark( "Try / catch speed test", tests, {
-    "iterations": 100_000_000,
-    "seconds": 3,
-    "threads": 1,
-} );
+for ( let n = 0; n < 3; n++ ) {
+    await benchmark( "Try / catch speed test", tests, {
+
+        // "maxTotalTime": 5000,
+    } );
+}

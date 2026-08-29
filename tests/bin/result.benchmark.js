@@ -22,6 +22,6 @@ const tests = {
 };
 
 await benchmark( "Result", tests, {
-    "iterations": 1_000_000,
-    "seconds": 2,
+
+    // "maxTotalTime": 5000,
 } );
