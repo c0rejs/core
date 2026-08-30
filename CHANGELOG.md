@@ -1,5 +1,15 @@
 # Changelog
 
+### v8.13.1 (2026-08-30)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor mime (● [86a81a1](https://github.com/corejslib/core/commit/86a81a192); 👬 zdm)
+
+- \[PATCH] refactor: rename emitSync to runCallbacks (● [910ab5d](https://github.com/corejslib/core/commit/910ab5d0f); 👬 zdm)
+
+Compare with the previous release: [v8.13.0...v8.13.1](https://github.com/corejslib/core/compare/v8.13.0...v8.13.1)
+
 ### v8.13.0 (2026-08-30)
 
 **New features:**
