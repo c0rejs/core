@@ -1,5 +1,17 @@
 # Changelog
 
+### v8.13.0 (2026-08-30)
+
+**New features:**
+
+- \[MINOR] feat: add mime shebang regexps (● [0490bb2](https://github.com/corejslib/core/commit/0490bb212); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor benchmarks (● [53b4456](https://github.com/corejslib/core/commit/53b44565b); 👬 zdm)
+
+Compare with the previous release: [v8.12.4...v8.13.0](https://github.com/corejslib/core/compare/v8.12.4...v8.13.0)
+
 ### v8.12.4 (2026-08-28)
 
 **Bug fixes:**
