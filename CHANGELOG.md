@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.13.2 (2026-08-30)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor mime (● [25c1afa](https://github.com/corejslib/core/commit/25c1afacd), [2217441](https://github.com/corejslib/core/commit/22174413f); 👬 zdm)
+
+Compare with the previous release: [v8.13.1...v8.13.2](https://github.com/corejslib/core/compare/v8.13.1...v8.13.2)
+
 ### v8.13.1 (2026-08-30)
 
 **Code refactoring:**
