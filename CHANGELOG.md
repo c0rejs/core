@@ -1,5 +1,17 @@
 # Changelog
 
+### v8.13.3 (2026-09-05)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix ejs id accessor (● [e4dd983](https://github.com/corejslib/core/commit/e4dd983b2); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor mime (● [4428a5f](https://github.com/corejslib/core/commit/4428a5f93); 👬 zdm)
+
+Compare with the previous release: [v8.13.2...v8.13.3](https://github.com/corejslib/core/compare/v8.13.2...v8.13.3)
+
 ### v8.13.2 (2026-08-30)
 
 **Code refactoring:**
