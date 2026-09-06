@@ -1,5 +1,13 @@
 # Changelog
 
+### v8.13.4 (2026-09-06)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: use var prefixes in sql functions (● [bc3ef5d](https://github.com/corejslib/core/commit/bc3ef5d46); 👬 zdm)
+
+Compare with the previous release: [v8.13.3...v8.13.4](https://github.com/corejslib/core/compare/v8.13.3...v8.13.4)
+
 ### v8.13.3 (2026-09-05)
 
 **Bug fixes:**
