@@ -44,6 +44,9 @@ config:
     log_checkpoints: false
     log_line_prefix: "[%t] "
 
+    # plpgsql
+    plpgsql.variable_conflict: error
+
   nginx:
     enabled: false
     port: 5432
