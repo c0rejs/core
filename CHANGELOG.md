@@ -1,5 +1,17 @@
 # Changelog
 
+### v8.13.5 (2026-09-07)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix sql select into (● [0336359](https://github.com/corejslib/core/commit/0336359e5); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename .install() to .update() (● [7f06d4e](https://github.com/corejslib/core/commit/7f06d4e2c); 👬 zdm)
+
+Compare with the previous release: [v8.13.4...v8.13.5](https://github.com/corejslib/core/compare/v8.13.4...v8.13.5)
+
 ### v8.13.4 (2026-09-06)
 
 **Code refactoring:**
