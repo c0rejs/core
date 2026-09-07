@@ -28,7 +28,7 @@ externalResources.add( "corejslib/core/resources/subnets" );
 externalResources.add( "corejslib/core/resources/tld" );
 externalResources.add( "corejslib/core/resources/user-agent" );
 
-const res = await externalResources.install( {
+const res = await externalResources.update( {
     "force": process.cli.options.force,
 } );
 
